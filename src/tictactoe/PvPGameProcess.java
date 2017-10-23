@@ -25,9 +25,10 @@ public class PvPGameProcess {
         return first;
     }
 
-    public static void isWinner(){
-        checkWinner.refreshData(GameField.getButtons());
-        if(checkWinner.CheckWin(first) || checkWinner.CheckWin(second) || checkWinner.CheckDraw())
+    public static void isWinner(int X,int Y){
+        XOButton[][] buttons = GameField.getButtons();
+        checkWinner.refreshData(buttons);
+        if(checkWinner.CheckWin(first, X, Y) || checkWinner.CheckWin(second, X, Y) || checkWinner.CheckDraw())
             endGame();
     }
 

@@ -20,6 +20,8 @@ public class GameField extends JPanel {
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
                 buttons[i][j] = new XOButton(whichGame);
+                buttons[i][j].X = i;
+                buttons[i][j].Y = j;
                 add(buttons[i][j]);
             }
         }

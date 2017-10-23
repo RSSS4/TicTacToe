@@ -10,6 +10,7 @@ public class XOButton extends JButton {
     // first - 1, second - 2
     private int who;
     private boolean free;
+    int X,Y;
 
     // 1 - pvp, 2 - pvm
     public XOButton(int whichGame) {
@@ -44,7 +45,7 @@ public class XOButton extends JButton {
             public void actionPerformed(ActionEvent e) {
                 setWho(PvPGameProcess.turn());
                 free = false;
-                PvPGameProcess.isWinner();
+                PvPGameProcess.isWinner( X, Y);
             }
         });
     }
@@ -55,21 +56,21 @@ public class XOButton extends JButton {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (PvMGameProcess.getTurn() == 0) {
-                    PvMGameProcess.isWinner();
+                    PvMGameProcess.isWinner(X,Y);
                     int which = PvMGameProcess.getTurn();
                     setWho(which == 0 ? 2 : 1);
-                    PvMGameProcess.isWinner();
+                    PvMGameProcess.isWinner(X,Y);
                     PvMGameProcess.setComp(true);
                     PvMGameProcess.getBot().BotHit();
                 }
                 if (PvMGameProcess.getTurn() == 1) {
                     int which = PvMGameProcess.getTurn();
                     setWho(which == 0 ? 2 : 1);
-                    PvMGameProcess.isWinner();
+                    PvMGameProcess.isWinner(X,Y);
                     PvMGameProcess.setComp(true);
                     PvMGameProcess.getBot().BotHit();
                     PvMGameProcess.setComp(false);
-                    PvMGameProcess.isWinner();
+                    PvMGameProcess.isWinner(X,Y);
                 }
             }
         });

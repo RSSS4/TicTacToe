@@ -48,9 +48,10 @@ public class PvMGameProcess {
         return false;
     }
 
-    public static void isWinner() {
-        checkWinner.refreshData(GameField.getButtons());
-        if (checkWinner.CheckWin(1) || checkWinner.CheckWin(2) || checkWinner.CheckDraw())
+    public static void isWinner(int X,int Y) {
+        XOButton[][] buttons = GameField.getButtons();
+        checkWinner.refreshData(buttons);
+        if (checkWinner.CheckWin(1,X,Y) || checkWinner.CheckWin(2,X,Y) || checkWinner.CheckDraw())
             endGame();
     }
 

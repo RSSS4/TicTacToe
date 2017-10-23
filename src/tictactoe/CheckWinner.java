@@ -19,64 +19,60 @@ public class CheckWinner {
     }
 
     private boolean checkLine(int startX, int startY, int dx, int dy, int who) {
+        int a,b;
         for (int i = 0; i < fieldSize; i++) {
-            if (CheckOutOfArray(startX + i * dx, startY + i * dy)) {                 //Check if index is not out of array
-                if (buttons[startX + i * dx][startY + i * dy].getWho() != who) {  //if value at buttons[x][y] != symb -> reset cycle
-                    CountWin = 0;
-                    continue;
+            if (CheckOutOfArray(startX - i * dx, startY - i * dy)) {
+                if(buttons[startX - i * dx][startY - i * dy].getWho()==who) {
+                    CountWin++;
+                    if(CountWin==PointsToWin)
+                        return true;
                 }
-            } else                                                                                //if index is out of array break cycleS
+                else
+                    break;
+            }
+            else
                 break;
-            CountWin++;
-            if (CountWin == PointsToWin)                       //Player win if CW==PTW
-                return true;
+        }
+
+         CountWin--; //because we starting at start position twice
+
+        for (int i = 0; i < fieldSize; i++) {
+            if (CheckOutOfArray(startX + i * dx, startY + i * dy)) {
+                if(buttons[startX + i * dx][startY + i * dy].getWho()==who) {
+                    CountWin++;
+                    if(CountWin==PointsToWin)
+                        return true;
+                }
+                else
+                    break;
+            }
+            else
+                break;
         }
         return false;
     }
 
-    public boolean CheckWin(int who) {                        //get curr value of button
-        System.out.println(who);
-        for (int i = 0; i < fieldSize; i++) {
+    public boolean CheckWin(int who, int X, int Y) {                        //get curr value of button
             CountWin = 0;
-            if (checkLine(i, 0, 0, 1, who)) {                       //currSymb = X or O
-                System.out.println("Player " + who + " win!");               //Find similars in rows(horizontal)
-                return true;
-            }
+
+        if (checkLine(X, Y, 0, 1, who)) {
+            System.out.println("Player " + who + " win!");               //Find similars in rows(horizontal)
+            return true;
         }
-        for (int i = 0; i < fieldSize; i++) {
-            CountWin = 0;
-            if (checkLine(0, i, 1, 0, who)) {
-                System.out.println("Player " + who + " win!");               //Find similars in cols(vertical)
-                return true;
-            }
+         CountWin = 0;
+        if (checkLine(X, Y, 1, 0, who)) {
+            System.out.println("Player " + who + " win!");               //Find similars in cols(vertical)
+            return true;
         }
-        for (int i = 0; i < fieldSize; i++) {
-            CountWin = 0;
-            if (checkLine(i, 0, 1, 1, who)) {
-                System.out.println("Player " + who + " win!");               //Find similars on DOWNmain diagonal
-                return true;
-            }
+        CountWin = 0;
+        if (checkLine(X, Y, 1, 1, who)) {
+            System.out.println("Player " + who + " win!");               //Find similars in cols(vertical)
+            return true;
         }
-        for (int i = 0; i < fieldSize; i++) {
-            CountWin = 0;
-            if (checkLine(0, i, 1, 1, who)) {
-                System.out.println("Player " + who + " win!");               //Find similars on UPmain diagonal
-                return true;
-            }
-        }
-        for (int i = 0; i < fieldSize; i++) {
-            CountWin = 0;
-            if (checkLine(i, fieldSize - 1, 1, -1, who)) {
-                System.out.println("Player " + who + " win!");               //Find similars on DOWNside diagonal
-                return true;
-            }
-        }
-        for (int i = 0; i < fieldSize; i++) {
-            CountWin = 0;
-            if (checkLine(0, fieldSize - i, 1, -1, who)) {
-                System.out.println("Player " + who + " win!");               //Find similars on UPside diagonal
-                return true;
-            }
+        CountWin = 0;
+        if (checkLine(X, Y, -1, 1, who)) {
+            System.out.println("Player " + who + " win!");               //Find similars in cols(vertical)
+            return true;
         }
         return false;
     }
