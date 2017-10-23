@@ -54,7 +54,6 @@ public class CheckWinner {
 
     public boolean CheckWin(int who, int X, int Y) {                        //get curr value of button
             CountWin = 0;
-
         if (checkLine(X, Y, 0, 1, who)) {
             System.out.println("Player " + who + " win!");               //Find similars in rows(horizontal)
             return true;

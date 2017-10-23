@@ -39,6 +39,7 @@ public class Bot {
             j = RandValue();
             if (buttons[i][j].isFree() && !PvMGameProcess.isEndGame()) {
                 buttons[i][j].setWho(who);
+                PvMGameProcess.isWinner(i,j);
                 break;
             }
             if (PvMGameProcess.isEndGame())
