@@ -1,6 +1,8 @@
 package tictactoe;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class MainMenu extends JPanel {
@@ -9,6 +11,8 @@ public class MainMenu extends JPanel {
     private JButton pvm;
     private JButton pvp;
     private JButton settings;
+    private JButton music;
+    private JButton exit;
 
     public MainMenu(String bgimg) {
         this(new ImageIcon(bgimg).getImage());
@@ -26,9 +30,31 @@ public class MainMenu extends JPanel {
         c.fill = GridBagConstraints.NONE;
         c.gridx = 2;
         c.gridy = 0;
-        c.insets = new Insets(-180, 0, 0, -120);
+        c.insets = new Insets(-190, 0, 0, -130);
         c.anchor = GridBagConstraints.NORTHEAST;
         add(settings, c);
+
+        music = new JButton();
+        music.setIcon(AllImages.music);
+        music.setPreferredSize(new Dimension(music.getIcon().getIconWidth(), music.getIcon().getIconHeight()));
+        c.fill = GridBagConstraints.NONE;
+        c.gridx = 2;
+        c.gridy = 0;
+        c.insets = new Insets(-130, 0, 0, -130);
+        c.anchor = GridBagConstraints.NORTHEAST;
+        music.setVisible(false);
+        add(music, c);
+
+        exit = new JButton();
+        exit.setIcon(AllImages.exit);
+        exit.setPreferredSize(new Dimension(exit.getIcon().getIconWidth(), exit.getIcon().getIconHeight()));
+        c.fill = GridBagConstraints.NONE;
+        c.gridx = 2;
+        c.gridy = 1;
+        c.insets = new Insets(-70, 0, 0, -130);
+        c.anchor = GridBagConstraints.NORTHEAST;
+        exit.setVisible(false);
+        add(exit, c);
 
         pvp = new JButton();
         pvp.setIcon(AllImages.pvp);
@@ -36,7 +62,7 @@ public class MainMenu extends JPanel {
         c.fill = GridBagConstraints.NONE;
         c.gridx = 0;
         c.gridy = 1;
-        c.insets = new Insets(0, 40, 100, 10);
+        c.insets = new Insets(10, 40, 100, 10);
         c.anchor = GridBagConstraints.PAGE_START;
         add(pvp, c);
 
@@ -46,13 +72,18 @@ public class MainMenu extends JPanel {
         c.fill = GridBagConstraints.NONE;
         c.gridx = 0;
         c.gridy = 1;
-        c.insets = new Insets(100, 40, 0, 10);
+        c.insets = new Insets(120, 40, 0, 10);
         c.anchor = GridBagConstraints.PAGE_END;
         add(pvm, c);
+
     }
 
     public void paintComponent(Graphics g) {
         g.drawImage(bgimg, 0, 0, null);
+    }
+
+    public JButton getSettings() {
+        return settings;
     }
 
     public JButton getPvPButton() {
@@ -61,6 +92,14 @@ public class MainMenu extends JPanel {
 
     public JButton getPvMButton() {
         return pvm;
+    }
+
+    public JButton getMusic() {
+        return music;
+    }
+
+    public JButton getExit() {
+        return exit;
     }
 
 }

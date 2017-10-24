@@ -28,5 +28,17 @@ public class AllImages {
 
     public static ImageIcon x7 = new ImageIcon("X7.png");
 
+    public static ImageIcon restart = new ImageIcon("restart.png");
+
     public static ImageIcon play = new ImageIcon("play.png");
+
+    public static ImageIcon close = new ImageIcon("close.png");
+
+    public static ImageIcon music = new ImageIcon("music.png");
+
+    public static ImageIcon nomusic = new ImageIcon("nomusic.png");
+
+    public static ImageIcon mainM = new ImageIcon("mainM.png");
+
+    public static ImageIcon exit = new ImageIcon("exit.png");
 }

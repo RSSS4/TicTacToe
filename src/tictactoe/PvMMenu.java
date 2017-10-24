@@ -14,6 +14,9 @@ public class PvMMenu extends JPanel {
     public JRadioButton hard;
     private JButton playPvM;
     private JButton settings;
+    private JButton music;
+    private JButton mainM;
+    private JButton exit;
 
     public PvMMenu(String bgimg) {
         this(new ImageIcon(bgimg).getImage());
@@ -30,10 +33,43 @@ public class PvMMenu extends JPanel {
         settings.setPreferredSize(new Dimension(settings.getIcon().getIconWidth(), settings.getIcon().getIconHeight()));
         c.fill = GridBagConstraints.NONE;
         c.gridx = 2;
-        c.gridy = 1;
-        c.insets = new Insets(-165, 90, 70, -150);
+        c.gridy = 0;
+        c.insets = new Insets(-180, 90, 0, -155);
         c.anchor = GridBagConstraints.NORTHEAST;
         add(settings, c);
+
+        music = new JButton();
+        music.setIcon(AllImages.music);
+        music.setPreferredSize(new Dimension(music.getIcon().getIconWidth(), music.getIcon().getIconHeight()));
+        c.fill = GridBagConstraints.NONE;
+        c.gridx = 2;
+        c.gridy = 1;
+        c.insets = new Insets(-120, 90, 0, -155);
+        c.anchor = GridBagConstraints.NORTHEAST;
+        music.setVisible(false);
+        add(music, c);
+
+        mainM = new JButton();
+        mainM.setIcon(AllImages.mainM);
+        mainM.setPreferredSize(new Dimension(mainM.getIcon().getIconWidth(), mainM.getIcon().getIconHeight()));
+        c.fill = GridBagConstraints.NONE;
+        c.gridx = 2;
+        c.gridy = 2;
+        c.insets = new Insets(-60, 90, 0, -155);
+        c.anchor = GridBagConstraints.NORTHEAST;
+        mainM.setVisible(false);
+        add(mainM, c);
+
+        exit = new JButton();
+        exit.setIcon(AllImages.exit);
+        exit.setPreferredSize(new Dimension(exit.getIcon().getIconWidth(), exit.getIcon().getIconHeight()));
+        c.fill = GridBagConstraints.NONE;
+        c.gridx = 2;
+        c.gridy = 2;
+        c.insets = new Insets(0, 90, -5, -155);
+        c.anchor = GridBagConstraints.NORTHEAST;
+        exit.setVisible(false);
+        add(exit, c);
 
         ButtonGroup selectSize = new ButtonGroup();
 
@@ -43,7 +79,7 @@ public class PvMMenu extends JPanel {
         c.fill = GridBagConstraints.NONE;
         c.gridx = 1;
         c.gridy = 2;
-        c.insets = new Insets(20, -70, 40, 30);
+        c.insets = new Insets(0, -70, 40, 30);
         c.anchor = GridBagConstraints.WEST;
         add(three, c);
         selectSize.add(three);
@@ -53,7 +89,7 @@ public class PvMMenu extends JPanel {
         c.fill = GridBagConstraints.NONE;
         c.gridx = 1;
         c.gridy = 3;
-        c.insets = new Insets(0, -70, 40, 30);
+        c.insets = new Insets(5, -70, 40, 30);
         c.anchor = GridBagConstraints.WEST;
         add(five, c);
         selectSize.add(five);
@@ -63,7 +99,7 @@ public class PvMMenu extends JPanel {
         c.fill = GridBagConstraints.NONE;
         c.gridx = 1;
         c.gridy = 4;
-        c.insets = new Insets(0, -70, 40, 30);
+        c.insets = new Insets(5, -70, 40, 30);
         c.anchor = GridBagConstraints.WEST;
         add(seven, c);
         selectSize.add(seven);
@@ -76,7 +112,7 @@ public class PvMMenu extends JPanel {
         c.fill = GridBagConstraints.NONE;
         c.gridx = 2;
         c.gridy = 2;
-        c.insets = new Insets(20, 150, 40, 0);
+        c.insets = new Insets(0, 150, 40, 0);
         c.anchor = GridBagConstraints.WEST;
         add(easy, c);
         selectDifficulty.add(easy);
@@ -86,7 +122,7 @@ public class PvMMenu extends JPanel {
         c.fill = GridBagConstraints.NONE;
         c.gridx = 2;
         c.gridy = 3;
-        c.insets = new Insets(0, 150, 40, 0);
+        c.insets = new Insets(5, 150, 40, 0);
         c.anchor = GridBagConstraints.WEST;
         add(medium, c);
         selectDifficulty.add(medium);
@@ -96,7 +132,7 @@ public class PvMMenu extends JPanel {
         c.fill = GridBagConstraints.NONE;
         c.gridx = 2;
         c.gridy = 4;
-        c.insets = new Insets(0, 150, 40, 0);
+        c.insets = new Insets(5, 150, 40, 0);
         c.anchor = GridBagConstraints.WEST;
         add(hard, c);
         selectDifficulty.add(hard);
@@ -116,6 +152,21 @@ public class PvMMenu extends JPanel {
     public JButton getPlayPvMButton() {
         return playPvM;
     }
+
+    public JButton getSettings() {
+        return settings;
+    }
+
+    public JButton getMusic() {
+        return music;
+    }
+
+    public JButton getMainMenu() {
+        return mainM;
+    }
+
+    public JButton getExit() {
+        return exit;}
 
     public void paintComponent(Graphics g) {
         g.drawImage(bgimg, 0, 0, null);

@@ -10,6 +10,9 @@ public class PvPMenu extends JPanel {
     private JButton five;
     private JButton seven;
     private JButton settings;
+    private JButton music;
+    private JButton mainM;
+    private JButton exit;
 
     public PvPMenu(String bgimg) {
         this(new ImageIcon(bgimg).getImage());
@@ -27,9 +30,42 @@ public class PvPMenu extends JPanel {
         c.fill = GridBagConstraints.NONE;
         c.gridx = 2;
         c.gridy = 0;
-        c.insets = new Insets(-165, 90, 0, -115);
+        c.insets = new Insets(-190, 90, 0, -130);
         c.anchor = GridBagConstraints.NORTHEAST;
         add(settings, c);
+
+        music = new JButton();
+        music.setIcon(AllImages.music);
+        music.setPreferredSize(new Dimension(music.getIcon().getIconWidth(), music.getIcon().getIconHeight()));
+        c.fill = GridBagConstraints.NONE;
+        c.gridx = 2;
+        c.gridy = 0;
+        c.insets = new Insets(-130, 90, 0, -130);
+        c.anchor = GridBagConstraints.NORTHEAST;
+        music.setVisible(false);
+        add(music, c);
+
+        mainM = new JButton();
+        mainM.setIcon(AllImages.mainM);
+        mainM.setPreferredSize(new Dimension(mainM.getIcon().getIconWidth(), mainM.getIcon().getIconHeight()));
+        c.fill = GridBagConstraints.NONE;
+        c.gridx = 2;
+        c.gridy = 1;
+        c.insets = new Insets(-70, 90, 0, -130);
+        c.anchor = GridBagConstraints.NORTHEAST;
+        mainM.setVisible(false);
+        add(mainM, c);
+
+        exit = new JButton();
+        exit.setIcon(AllImages.exit);
+        exit.setPreferredSize(new Dimension(exit.getIcon().getIconWidth(), exit.getIcon().getIconHeight()));
+        c.fill = GridBagConstraints.NONE;
+        c.gridx = 2;
+        c.gridy = 1;
+        c.insets = new Insets(-10, 90, 0, -130);
+        c.anchor = GridBagConstraints.NORTHEAST;
+        exit.setVisible(false);
+        add(exit, c);
 
         three = new JButton();
         three.setIcon(AllImages.three);
@@ -66,6 +102,21 @@ public class PvPMenu extends JPanel {
     public void paintComponent(Graphics g) {
         g.drawImage(bgimg, 0, 0, null);
     }
+
+    public JButton getSettings() {
+        return settings;
+    }
+
+    public JButton getMusic() {
+        return music;
+    }
+
+    public JButton getMainMenu() {
+        return mainM;
+    }
+
+    public JButton getExit() {
+        return exit;}
 
     public JButton getThreeButton() {
         return three;
