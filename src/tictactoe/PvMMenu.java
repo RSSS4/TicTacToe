@@ -166,7 +166,8 @@ public class PvMMenu extends JPanel {
     }
 
     public JButton getExit() {
-        return exit;}
+        return exit;
+    }
 
     public void paintComponent(Graphics g) {
         g.drawImage(bgimg, 0, 0, null);

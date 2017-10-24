@@ -31,11 +31,11 @@ public class GamePanel extends JPanel implements ActionListener {
 
     private GridBagConstraints c;
 
-    public GamePanel(String bgforfield, int size, int difficulty,int whichGame) {
-        this(new ImageIcon(bgforfield).getImage(), size, difficulty,whichGame);
+    public GamePanel(String bgforfield, int size, int difficulty, int whichGame) {
+        this(new ImageIcon(bgforfield).getImage(), size, difficulty, whichGame);
     }
 
-    public GamePanel(Image bgforfield, int size, int difficulty,int whichGame) {
+    public GamePanel(Image bgforfield, int size, int difficulty, int whichGame) {
         this.bgforfield = bgforfield;
         this.fieldSize = size;
         this.difficulty = difficulty;
@@ -132,7 +132,7 @@ public class GamePanel extends JPanel implements ActionListener {
         exit.setVisible(false);
         add(exit, c);
 
-        field = new GameField(size,whichGame);
+        field = new GameField(size, whichGame);
         field.setSize(400, 400);
         field.setBackground(new Color(81, 99, 109));
         c.fill = GridBagConstraints.BOTH;
@@ -186,7 +186,8 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     public JButton getExit() {
-        return exit;}
+        return exit;
+    }
 
     @Override
     public void actionPerformed(ActionEvent e) {

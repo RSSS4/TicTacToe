@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class PvMGameProcess {
 
+    private static ResultFrame result;
+
     private static CheckWinner checkWinner;
     private static int difficulty;
 
@@ -27,7 +29,7 @@ public class PvMGameProcess {
         bot = new Bot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
-        if(comp)
+        if (comp)
             bot.BotHit();
     }
 
@@ -36,11 +38,25 @@ public class PvMGameProcess {
         return r.nextInt(2);
     }
 
-    public static void isWinner(int X,int Y) {
+    public static void isWinner(int X, int Y) {
         XOButton[][] buttons = GameField.getButtons();
         checkWinner.refreshData(buttons);
-        if (checkWinner.CheckWin(1,X,Y) || checkWinner.CheckWin(2,X,Y) || checkWinner.CheckDraw())
+        if (checkWinner.CheckWin(1, X, Y)) {
             endGame();
+            if (turn == 0)
+                result = new ResultFrame(3);
+            else
+                result = new ResultFrame(4);
+        } else if (checkWinner.CheckWin(2, X, Y)) {
+            endGame();
+            if (turn == 0)
+                result = new ResultFrame(4);
+            else
+                result = new ResultFrame(3);
+        } else if (checkWinner.CheckDraw()) {
+            endGame();
+            result = new ResultFrame(5);
+        }
     }
 
     public static void endGame() {
@@ -54,14 +70,14 @@ public class PvMGameProcess {
         }
     }
 
-    public static void refresh(){
+    public static void refresh() {
         EndGame = false;
         turn = randFirstTurn();
         System.out.println(turn + " turn");
         bot = new Bot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
-        if(comp)
+        if (comp)
             bot.BotHit();
     }
 
@@ -93,7 +109,7 @@ public class PvMGameProcess {
         return bot;
     }
 
-    public static int getfieldSize(){
+    public static int getfieldSize() {
         return fieldSize;
     }
 }

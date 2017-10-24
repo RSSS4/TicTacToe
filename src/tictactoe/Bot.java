@@ -36,8 +36,7 @@ public class Bot {
                 BotEasy();
             else if (difficulty == 2) {
                 BotMedium();
-            }
-            else
+            } else
                 BotHard();
         }
     }

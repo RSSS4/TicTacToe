@@ -116,7 +116,8 @@ public class PvPMenu extends JPanel {
     }
 
     public JButton getExit() {
-        return exit;}
+        return exit;
+    }
 
     public JButton getThreeButton() {
         return three;
