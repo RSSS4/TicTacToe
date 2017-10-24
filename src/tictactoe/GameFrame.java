@@ -120,7 +120,7 @@ public class GameFrame extends JFrame {
                     fieldSize = 7;
                 if (pvmMenu.easy.isSelected())
                     difficulty = 1;
-                else if (pvmMenu.five.isSelected())
+                else if (pvmMenu.medium.isSelected())
                     difficulty = 2;
                 else
                     difficulty = 3;

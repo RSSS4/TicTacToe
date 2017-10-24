@@ -19,7 +19,6 @@ public class CheckWinner {
     }
 
     private boolean checkLine(int startX, int startY, int dx, int dy, int who) {
-        int a,b;
         for (int i = 0; i < fieldSize; i++) {
             if (CheckOutOfArray(startX - i * dx, startY - i * dy)) {
                 if(buttons[startX - i * dx][startY - i * dy].getWho()==who) {

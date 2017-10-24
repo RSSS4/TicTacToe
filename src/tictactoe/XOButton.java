@@ -37,6 +37,9 @@ public class XOButton extends JButton {
                         : (GameField.getfieldSize() == 5 ? AllImages.o5 : AllImages.o7));
         }
     }
+    public void setTest(int who){
+        this.who = who;
+    }
 
     public void gamePvP() {
         this.addActionListener(new ActionListener() {

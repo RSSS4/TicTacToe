@@ -36,18 +36,6 @@ public class PvMGameProcess {
         return r.nextInt(2);
     }
 
-    public boolean checkIfPlayerTerned() {
-        int count = 0;
-        XOButton[][] buttons = GameField.getButtons();
-        for (int i = 0; i < fieldSize; i++)
-            for (int j = 0; j < fieldSize; j++)
-                if (buttons[i][j].isFree())
-                    count++;
-        if (count % 2 == 0)
-            return true;
-        return false;
-    }
-
     public static void isWinner(int X,int Y) {
         XOButton[][] buttons = GameField.getButtons();
         checkWinner.refreshData(buttons);
