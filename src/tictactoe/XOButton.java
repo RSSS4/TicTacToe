@@ -67,14 +67,14 @@ public class XOButton extends JButton {
                     setWho(which == 0 ? 2 : 1);
                     PvMGameProcess.isWinner(X, Y);
                     PvMGameProcess.setComp(true);
-                    PvMGameProcess.getBot().BotHit();
+                    PvMGameProcess.Lvl();
                 }
                 if (PvMGameProcess.getTurn() == 1 && free) {
                     int which = PvMGameProcess.getTurn();
                     setWho(which == 0 ? 2 : 1);
                     PvMGameProcess.isWinner(X, Y);
                     PvMGameProcess.setComp(true);
-                    PvMGameProcess.getBot().BotHit();
+                    PvMGameProcess.Lvl();
                     PvMGameProcess.setComp(false);
                     PvMGameProcess.isWinner(X, Y);
                 }

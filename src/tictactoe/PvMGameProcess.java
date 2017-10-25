@@ -2,7 +2,7 @@ package tictactoe;
 
 import java.util.Random;
 
-public class PvMGameProcess {
+public class PvMGameProcess{
 
     private static ResultFrame result;
 
@@ -18,19 +18,32 @@ public class PvMGameProcess {
 
     private static boolean EndGame = false;
 
-    private static Bot bot;
+    private static Bot boteasy;
+    private static Bot botmid;
+    private static Bot bothard;
 
     public PvMGameProcess(int fieldSize, int difficulty) {
         this.fieldSize = fieldSize;
         this.difficulty = difficulty;
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
         turn = randFirstTurn();
+        boteasy = new EasyBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
+        botmid = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
+        bothard = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         System.out.println(turn + " turn");
-        bot = new Bot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
         if (comp)
-            bot.BotHit();
+            Lvl();
+    }
+
+    public static void Lvl(){
+        if (difficulty == 1)
+            boteasy.HitBot();
+        else if (difficulty == 2) {
+            botmid.HitBot();
+        } else
+            bothard.HitBot();
     }
 
     private static int randFirstTurn() {
@@ -74,11 +87,19 @@ public class PvMGameProcess {
         EndGame = false;
         turn = randFirstTurn();
         System.out.println(turn + " turn");
-        bot = new Bot(fieldSize, difficulty, turn == 0 ? 1 : 2);
+        boteasy = new EasyBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
+        botmid = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
+        bothard = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
-        if (comp)
-            bot.BotHit();
+            if (comp) {
+                if (difficulty == 1)
+                    boteasy.HitBot();
+                else if (difficulty == 2) {
+                    botmid.HitBot();
+                } else
+                    bothard.HitBot();
+            }
     }
 
     public static boolean isEndGame() {
@@ -105,9 +126,9 @@ public class PvMGameProcess {
         PvMGameProcess.comp = comp;
     }
 
-    public static Bot getBot() {
-        return bot;
-    }
+//    public static Bot getBot() {
+//        return bot;
+//    }
 
     public static int getfieldSize() {
         return fieldSize;
