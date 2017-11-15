@@ -1,6 +1,8 @@
-package tictactoe.view;
+package tictactoe.model;
 
-import tictactoe.model.*;
+import tictactoe.view.GameField;
+import tictactoe.view.ResultFrame;
+import tictactoe.view.XOButton;
 
 import java.util.Random;
 
@@ -94,14 +96,14 @@ public class PvMGameProcess{
         bothard = new HardBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
-            if (comp) {
-                if (difficulty == 1)
-                    boteasy.HitBot();
-                else if (difficulty == 2) {
-                    botmid.HitBot();
-                } else
-                    bothard.HitBot();
-            }
+        if (comp) {
+            if (difficulty == 1)
+                boteasy.HitBot();
+            else if (difficulty == 2) {
+                botmid.HitBot();
+            } else
+                bothard.HitBot();
+        }
     }
 
     public static boolean isEndGame() {

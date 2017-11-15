@@ -1,6 +1,7 @@
 package tictactoe.view;
 
-import tictactoe.model.AllImages;
+import tictactoe.model.PvMGameProcess;
+import tictactoe.model.PvPGameProcess;
 
 import javax.swing.*;
 import java.awt.event.*;

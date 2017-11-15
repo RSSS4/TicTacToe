@@ -1,6 +1,7 @@
 package tictactoe.view;
 
-import tictactoe.model.AllImages;
+import tictactoe.model.PvMGameProcess;
+import tictactoe.model.PvPGameProcess;
 
 import javax.swing.*;
 import java.awt.*;
@@ -23,7 +24,7 @@ public class XOButton extends JButton {
 
         free = true;
 
-        setBackground(new Color(81, 99, 109));
+        setBackground(new Color(127, 131, 135));
         setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));
     }
 

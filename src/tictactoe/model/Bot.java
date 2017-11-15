@@ -1,7 +1,6 @@
 package tictactoe.model;
 
 import tictactoe.view.GameField;
-import tictactoe.view.PvMGameProcess;
 import tictactoe.view.XOButton;
 
 import java.util.Random;

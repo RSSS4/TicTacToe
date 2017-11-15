@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79f2e9c9-9bac-4986-9d40-9202814b7422" name="Default" comment="" />
+    <list default="true" id="79f2e9c9-9bac-4986-9d40-9202814b7422" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/result/pvmLose.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/result/pvmWin.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/XObuttons/O3.png" afterPath="$PROJECT_DIR$/res/XObuttons/O3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/XObuttons/O5.png" afterPath="$PROJECT_DIR$/res/XObuttons/O5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/XObuttons/O7.png" afterPath="$PROJECT_DIR$/res/XObuttons/O7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/XObuttons/X3.png" afterPath="$PROJECT_DIR$/res/XObuttons/X3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/XObuttons/X5.png" afterPath="$PROJECT_DIR$/res/XObuttons/X5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/XObuttons/X7.png" afterPath="$PROJECT_DIR$/res/XObuttons/X7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/result/draw.png" afterPath="$PROJECT_DIR$/res/result/draw.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/result/firstWin.png" afterPath="$PROJECT_DIR$/res/result/firstWin.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/result/secondWin.png" afterPath="$PROJECT_DIR$/res/result/secondWin.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/model/Bot.java" afterPath="$PROJECT_DIR$/src/tictactoe/model/Bot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/model/EasyBot.java" afterPath="$PROJECT_DIR$/src/tictactoe/model/EasyBot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/model/HardBot.java" afterPath="$PROJECT_DIR$/src/tictactoe/model/HardBot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/model/MediumBot.java" afterPath="$PROJECT_DIR$/src/tictactoe/model/MediumBot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/model/PvMGameProcess.java" afterPath="$PROJECT_DIR$/src/tictactoe/model/PvMGameProcess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/model/PvPGameProcess.java" afterPath="$PROJECT_DIR$/src/tictactoe/model/PvPGameProcess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/view/GameFrame.java" afterPath="$PROJECT_DIR$/src/tictactoe/view/GameFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/view/GamePanel.java" afterPath="$PROJECT_DIR$/src/tictactoe/view/GamePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/view/MainMenu.java" afterPath="$PROJECT_DIR$/src/tictactoe/view/MainMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/view/PvMMenu.java" afterPath="$PROJECT_DIR$/src/tictactoe/view/PvMMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/view/PvPMenu.java" afterPath="$PROJECT_DIR$/src/tictactoe/view/PvPMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/view/Result.java" afterPath="$PROJECT_DIR$/src/tictactoe/view/Result.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/view/ResultFrame.java" afterPath="$PROJECT_DIR$/src/tictactoe/view/ResultFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tictactoe/view/XOButton.java" afterPath="$PROJECT_DIR$/src/tictactoe/view/XOButton.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,25 +39,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CheckWinner.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tictactoe/model/CheckWinner.java">
+      <file leaf-file-name="AllImages.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/view/AllImages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ResultVariable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/model/ResultVariable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tictactoe/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="102">
+              <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
               <folding>
                 <element signature="e#118#119#0" expanded="true" />
                 <element signature="e#166#167#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GamePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/view/GamePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/view/MainMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PvMMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/view/PvMMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PvPMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/view/PvPMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/view/Result.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/view/ResultFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XOButton.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tictactoe/view/XOButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,11 +157,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/tictactoe/model/Bot.java" />
         <option value="$PROJECT_DIR$/src/tictactoe/model/CheckWinner.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/model/EasyBot.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/model/HardBot.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/model/MediumBot.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/model/PvMGameProcess.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/model/PvPGameProcess.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/view/ResultVariable.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/model/AllImages.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/view/GameField.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/view/GameFrame.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/view/GamePanel.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/view/MainMenu.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/view/PvMMenu.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/view/PvPMenu.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/view/Result.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/view/ResultFrame.java" />
+        <option value="$PROJECT_DIR$/src/tictactoe/view/XOButton.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="117" />
     <option name="y" value="-18" />
     <option name="width" value="1386" />
@@ -73,8 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,8 +240,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -253,7 +379,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -263,7 +390,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -299,14 +426,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tictactoe/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/view/AllImages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="e#118#119#0" expanded="true" />
-            <element signature="e#166#167#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -323,9 +447,214 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tictactoe/model/CheckWinner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/model/CheckWinner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../gg/TicTacToe/src/tictactoe/model/Bot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/model/CheckWinner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="80" column="1" lean-forward="false" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/model/EasyBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/model/HardBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="359" column="0" lean-forward="true" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/model/MediumBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/model/PvMGameProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="139" column="1" lean-forward="false" selection-start-line="139" selection-start-column="1" selection-end-line="139" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/model/PvPGameProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="66" column="1" lean-forward="false" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/model/Bot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/view/GameField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/view/GameFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="460" column="0" lean-forward="true" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/view/GamePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/view/MainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/view/PvMMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/view/PvPMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/view/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../gg/TicTacToe/src/tictactoe/view/XOButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/view/ResultFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/view/XOButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/view/AllImages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/model/ResultVariable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tictactoe/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

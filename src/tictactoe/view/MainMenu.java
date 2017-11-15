@@ -1,7 +1,5 @@
 package tictactoe.view;
 
-import tictactoe.model.AllImages;
-
 import java.awt.*;
 import javax.swing.*;
 

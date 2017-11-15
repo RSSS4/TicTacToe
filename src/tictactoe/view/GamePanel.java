@@ -1,6 +1,7 @@
 package tictactoe.view;
 
-import tictactoe.model.AllImages;
+import tictactoe.model.PvMGameProcess;
+import tictactoe.model.PvPGameProcess;
 
 import javax.swing.*;
 
@@ -47,31 +48,31 @@ public class GamePanel extends JPanel  {
 
         playerLeftText.setEditable(false);
         playerLeftText.setFont(fontOfText);
-        playerLeftText.setForeground(new Color(255, 69, 0));
-        playerLeftText.setBackground(new Color(81, 99, 109));
+        playerLeftText.setForeground(new Color(255, 255, 255));
+        playerLeftText.setBackground(new Color(127, 131, 135));
 
         playerCenterText.setEditable(false);
         playerCenterText.setFont(fontOfText);
         playerCenterText.setForeground(new Color(255, 255, 255));
-        playerCenterText.setBackground(new Color(81, 99, 109));
+        playerCenterText.setBackground(new Color(127, 131, 135));
 
         playerRightText.setEditable(false);
         playerRightText.setFont(fontOfText);
-        playerRightText.setForeground(new Color(255, 218, 185));
-        playerRightText.setBackground(new Color(81, 99, 109));
+        playerRightText.setForeground(new Color(255, 255, 255));
+        playerRightText.setBackground(new Color(127, 131, 135));
 
         playerText.setEditable(false);
         playerText.setFont(fontOfText);
-        playerText.setForeground(new Color(255, 69, 0));
-        playerText.setBackground(new Color(81, 99, 109));
+        playerText.setForeground(new Color(255, 255, 255));
+        playerText.setBackground(new Color(127, 131, 135));
 
         modtText.setEditable(false);
         modtText.setFont(fontOfText);
-        modtText.setForeground(new Color(255, 218, 185));
-        modtText.setBackground(new Color(81, 99, 109));
+        modtText.setForeground(new Color(255, 255, 255));
+        modtText.setBackground(new Color(127, 131, 135));
 
         JPanel panelfortext = new JPanel();
-        panelfortext.setBackground(new Color(81, 99, 109));
+        panelfortext.setBackground(new Color(127, 131, 135));
         if (difficulty == 0) {
             panelfortext.add(playerLeftText);
             panelfortext.add(playerCenterText);

@@ -1,5 +1,7 @@
 package tictactoe.view;
 
+import tictactoe.model.ResultVariable;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,8 +11,8 @@ public class ResultFrame extends JFrame{
     private ResultVariable.ResultVar result;
     private Result resultPanel;
 
-    private String pvmWin = "res/result/pvmWin.png";
-    private String pvmLose = "res/result/pvmLose.png";
+    private String pvmWin = "res/result/win.png";
+    private String pvmLose = "res/result/lose.png";
     private String firstWin = "res/result/firstWin.png";
     private String secondWin = "res/result/secondWin.png";
     private String draw = "res/result/draw.png";

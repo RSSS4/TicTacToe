@@ -1,6 +1,8 @@
-package tictactoe.view;
+package tictactoe.model;
 
-import tictactoe.model.CheckWinner;
+import tictactoe.view.GameField;
+import tictactoe.view.ResultFrame;
+import tictactoe.view.XOButton;
 
 public class PvPGameProcess {
 
