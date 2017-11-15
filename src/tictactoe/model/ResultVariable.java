@@ -1,4 +1,4 @@
-package tictactoe.view;
+package tictactoe.model;
 
 public class ResultVariable {
 
