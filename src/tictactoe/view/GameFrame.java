@@ -9,18 +9,20 @@ import java.awt.event.*;
 public class GameFrame extends JFrame {
 
     private String bgimg = "res/bg/bg.jpg";
-    private String bgforfield = "res/bg/bgforfield.jpg";
+    private String bgforfield;
     private String bgforpvp = "res/bg/bgforpvp.jpg";
     private String bgforpvm = "res/bg/bgforpvm.jpg";
 
     private int fieldSize;
     private int difficulty;
     private int settIsClicked = 0;
+    private static boolean musicPlay = true;
 
     private MainMenu mainMenu;
     private PvPMenu pvpMenu;
     private PvMMenu pvmMenu;
     private GamePanel gameField;
+    private Music music;
 
     private PvPGameProcess pvpgame;
     private PvMGameProcess pvmgame;
@@ -33,8 +35,11 @@ public class GameFrame extends JFrame {
         mainMenu = new MainMenu(bgimg);
         pvpMenu = new PvPMenu(bgforpvp);
         pvmMenu = new PvMMenu(bgforpvm);
+        music = new Music();
 
         add(mainMenu);
+
+        music.playMusic();
 
         pack();
         setSize(600, 600);
@@ -55,13 +60,36 @@ public class GameFrame extends JFrame {
                     settIsClicked = 1;
                     mainMenu.getSettings().setIcon(AllImages.close);
                     mainMenu.getMusic().setVisible(true);
+                    if (musicPlay == true)
+                        mainMenu.getMusic().setIcon(AllImages.music);
+                    else
+                        mainMenu.getMusic().setIcon(AllImages.nomusic);
+                    mainMenu.getMusic().addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            if (musicPlay == true)
+                            {
+                                musicPlay = false;
+                                music.getmusic().stop();
+                                mainMenu.getMusic().setIcon(AllImages.nomusic);
+                                refresh();
+                            }
+                            else
+                            {
+                                musicPlay = true;
+                                music.getmusic().start();
+                                music.getmusic().loop(10);
+                                mainMenu.getMusic().setIcon(AllImages.music);
+                                refresh();
+                            }
+                        }
+                    });
                     mainMenu.getExit().setVisible(true);
                     mainMenu.getExit().addActionListener(new ActionListener() {
 
                         @Override
                         public void actionPerformed(ActionEvent arg0) {
-                            dispose();
-                            refresh();
+                            exit();
                         }
                     });
                     refresh();
@@ -98,6 +126,30 @@ public class GameFrame extends JFrame {
                     settIsClicked = 1;
                     pvpMenu.getSettings().setIcon(AllImages.close);
                     pvpMenu.getMusic().setVisible(true);
+                    if (musicPlay == true)
+                        pvpMenu.getMusic().setIcon(AllImages.music);
+                    else
+                        pvpMenu.getMusic().setIcon(AllImages.nomusic);
+                    pvpMenu.getMusic().addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            if (musicPlay == true)
+                            {
+                                musicPlay = false;
+                                music.getmusic().stop();
+                                pvpMenu.getMusic().setIcon(AllImages.nomusic);
+                                refresh();
+                            }
+                            else
+                            {
+                                musicPlay = true;
+                                music.getmusic().start();
+                                music.getmusic().loop(10);
+                                pvpMenu.getMusic().setIcon(AllImages.music);
+                                refresh();
+                            }
+                        }
+                    });
                     pvpMenu.getMainMenu().setVisible(true);
                     pvpMenu.getMainMenu().addActionListener(new ActionListener() {
 
@@ -118,8 +170,7 @@ public class GameFrame extends JFrame {
 
                         @Override
                         public void actionPerformed(ActionEvent arg0) {
-                            dispose();
-                            refresh();
+                            exit();
                         }
                     });
                     refresh();
@@ -143,6 +194,7 @@ public class GameFrame extends JFrame {
                 pvpMenu.getMusic().setVisible(false);
                 pvpMenu.getMainMenu().setVisible(false);
                 pvpMenu.getExit().setVisible(false);
+                bgforfield = "res/bg/bg3.jpg";
                 gameField = new GamePanel(bgforfield, 3, 0, 1);
                 gameField.getSettings().addActionListener(new ActionListener() {
 
@@ -152,11 +204,28 @@ public class GameFrame extends JFrame {
                             settIsClicked = 1;
                             gameField.getSettings().setIcon(AllImages.close);
                             gameField.getMusic().setVisible(true);
+                            if (musicPlay == true)
+                                gameField.getMusic().setIcon(AllImages.music);
+                            else
+                                gameField.getMusic().setIcon(AllImages.nomusic);
                             gameField.getMusic().addActionListener(new ActionListener() {
                                 @Override
-                                public void actionPerformed(ActionEvent arg0) {
-
-                                    refresh();
+                                public void actionPerformed(ActionEvent e) {
+                                    if (musicPlay == true)
+                                    {
+                                        musicPlay = false;
+                                        music.getmusic().stop();
+                                        gameField.getMusic().setIcon(AllImages.nomusic);
+                                        refresh();
+                                    }
+                                    else
+                                    {
+                                        musicPlay = true;
+                                        music.getmusic().start();
+                                        music.getmusic().loop(10);
+                                        gameField.getMusic().setIcon(AllImages.music);
+                                        refresh();
+                                    }
                                 }
                             });
                             gameField.getMainMenu().setVisible(true);
@@ -183,8 +252,7 @@ public class GameFrame extends JFrame {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
-                                    dispose();
-                                    refresh();
+                                    exit();
                                 }
                             });
                             refresh();
@@ -216,6 +284,7 @@ public class GameFrame extends JFrame {
                 pvpMenu.getMusic().setVisible(false);
                 pvpMenu.getMainMenu().setVisible(false);
                 pvpMenu.getExit().setVisible(false);
+                bgforfield = "res/bg/bg5.jpg";
                 gameField = new GamePanel(bgforfield, 5, 0, 1);
                 gameField.getSettings().addActionListener(new ActionListener() {
 
@@ -225,6 +294,30 @@ public class GameFrame extends JFrame {
                             settIsClicked = 1;
                             gameField.getSettings().setIcon(AllImages.close);
                             gameField.getMusic().setVisible(true);
+                            if (musicPlay == true)
+                                gameField.getMusic().setIcon(AllImages.music);
+                            else
+                                gameField.getMusic().setIcon(AllImages.nomusic);
+                            gameField.getMusic().addActionListener(new ActionListener() {
+                                @Override
+                                public void actionPerformed(ActionEvent e) {
+                                    if (musicPlay == true)
+                                    {
+                                        musicPlay = false;
+                                        music.getmusic().stop();
+                                        gameField.getMusic().setIcon(AllImages.nomusic);
+                                        refresh();
+                                    }
+                                    else
+                                    {
+                                        musicPlay = true;
+                                        music.getmusic().start();
+                                        music.getmusic().loop(10);
+                                        gameField.getMusic().setIcon(AllImages.music);
+                                        refresh();
+                                    }
+                                }
+                            });
                             gameField.getMainMenu().setVisible(true);
                             gameField.getMainMenu().addActionListener(new ActionListener() {
 
@@ -240,8 +333,7 @@ public class GameFrame extends JFrame {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
-                                    dispose();
-                                    refresh();
+                                    exit();
                                 }
                             });
                             refresh();}
@@ -273,6 +365,7 @@ public class GameFrame extends JFrame {
                 pvpMenu.getMusic().setVisible(false);
                 pvpMenu.getMainMenu().setVisible(false);
                 pvpMenu.getExit().setVisible(false);
+                bgforfield = "res/bg/bg7.jpg";
                 gameField = new GamePanel(bgforfield, 7, 0, 1);
                 gameField.getSettings().addActionListener(new ActionListener() {
 
@@ -283,6 +376,30 @@ public class GameFrame extends JFrame {
                             settIsClicked =1;
                             gameField.getSettings().setIcon(AllImages.close);
                             gameField.getMusic().setVisible(true);
+                            if (musicPlay == true)
+                                gameField.getMusic().setIcon(AllImages.music);
+                            else
+                                gameField.getMusic().setIcon(AllImages.nomusic);
+                            gameField.getMusic().addActionListener(new ActionListener() {
+                                @Override
+                                public void actionPerformed(ActionEvent e) {
+                                    if (musicPlay == true)
+                                    {
+                                        musicPlay = false;
+                                        music.getmusic().stop();
+                                        gameField.getMusic().setIcon(AllImages.nomusic);
+                                        refresh();
+                                    }
+                                    else
+                                    {
+                                        musicPlay = true;
+                                        music.getmusic().start();
+                                        music.getmusic().loop(10);
+                                        gameField.getMusic().setIcon(AllImages.music);
+                                        refresh();
+                                    }
+                                }
+                            });
                             gameField.getMainMenu().setVisible(true);
                             gameField.getMainMenu().addActionListener(new ActionListener() {
 
@@ -298,8 +415,7 @@ public class GameFrame extends JFrame {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
-                                    dispose();
-                                    refresh();
+                                    exit();
                                 }
                             });
                             refresh();}
@@ -345,6 +461,30 @@ public class GameFrame extends JFrame {
                     settIsClicked = 1;
                     pvmMenu.getSettings().setIcon(AllImages.close);
                     pvmMenu.getMusic().setVisible(true);
+                    if (musicPlay == true)
+                        pvmMenu.getMusic().setIcon(AllImages.music);
+                    else
+                        pvmMenu.getMusic().setIcon(AllImages.nomusic);
+                    pvmMenu.getMusic().addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            if (musicPlay == true)
+                            {
+                                musicPlay = false;
+                                music.getmusic().stop();
+                                pvmMenu.getMusic().setIcon(AllImages.nomusic);
+                                refresh();
+                            }
+                            else
+                            {
+                                musicPlay = true;
+                                music.getmusic().start();
+                                music.getmusic().loop(10);
+                                pvmMenu.getMusic().setIcon(AllImages.music);
+                                refresh();
+                            }
+                        }
+                    });
                     pvmMenu.getMainMenu().setVisible(true);
                     pvmMenu.getMainMenu().addActionListener(new ActionListener() {
 
@@ -365,8 +505,7 @@ public class GameFrame extends JFrame {
 
                         @Override
                         public void actionPerformed(ActionEvent arg0) {
-                            dispose();
-                            refresh();
+                            exit();
                         }
                     });
                     refresh();
@@ -390,19 +529,21 @@ public class GameFrame extends JFrame {
                 pvmMenu.getMusic().setVisible(false);
                 pvmMenu.getMainMenu().setVisible(false);
                 pvmMenu.getExit().setVisible(false);
-                if (pvmMenu.three.isSelected())
+                if (pvmMenu.three.isSelected()){
                     fieldSize = 3;
-                else if (pvmMenu.five.isSelected())
+                    bgforfield = "res/bg/bg3.jpg";}
+                else if (pvmMenu.five.isSelected()){
                     fieldSize = 5;
-                else
+                    bgforfield = "res/bg/bg5.jpg";}
+                else {
                     fieldSize = 7;
+                    bgforfield = "res/bg/bg7.jpg";}
                 if (pvmMenu.easy.isSelected())
                     difficulty = 1;
                 else if (pvmMenu.medium.isSelected())
                     difficulty = 2;
                 else
                     difficulty = 3;
-
                 gameField = new GamePanel(bgforfield, fieldSize, difficulty, 2);
                 gameField.getSettings().addActionListener(new ActionListener() {
 
@@ -412,6 +553,30 @@ public class GameFrame extends JFrame {
                             settIsClicked = 1;
                             gameField.getSettings().setIcon(AllImages.close);
                             gameField.getMusic().setVisible(true);
+                            if (musicPlay == true)
+                                gameField.getMusic().setIcon(AllImages.music);
+                            else
+                                gameField.getMusic().setIcon(AllImages.nomusic);
+                            gameField.getMusic().addActionListener(new ActionListener() {
+                                @Override
+                                public void actionPerformed(ActionEvent e) {
+                                    if (musicPlay == true)
+                                    {
+                                        musicPlay = false;
+                                        music.getmusic().stop();
+                                        gameField.getMusic().setIcon(AllImages.nomusic);
+                                        refresh();
+                                    }
+                                    else
+                                    {
+                                        musicPlay = true;
+                                        music.getmusic().start();
+                                        music.getmusic().loop(10);
+                                        gameField.getMusic().setIcon(AllImages.music);
+                                        refresh();
+                                    }
+                                }
+                            });
                             gameField.getMainMenu().setVisible(true);
                             gameField.getMainMenu().addActionListener(new ActionListener() {
 
@@ -428,8 +593,7 @@ public class GameFrame extends JFrame {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
-                                    dispose();
-                                    refresh();
+                                    exit();
                                 }
                             });
                             refresh();
@@ -451,6 +615,12 @@ public class GameFrame extends JFrame {
                 refresh();
             }
         });
+    }
+
+    private void exit(){
+        music.getmusic().stop();
+        dispose();
+        refresh();
     }
 
     private void refresh() {
