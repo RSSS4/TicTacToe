@@ -23,11 +23,11 @@ public class GamePanel extends JPanel  {
     private int fieldSize;
     private int difficulty;
 
-    private JTextArea playerLeftText = new JTextArea("Player #1");
+    private static JTextArea playerLeftText = new JTextArea("Player #1");
     private JTextArea playerCenterText = new JTextArea("VS");
-    private JTextArea playerRightText = new JTextArea("Player #2");
-    private JTextArea playerText = new JTextArea("Player");
-    private JTextArea modtText = new JTextArea("Jarvis");
+    private static JTextArea playerRightText = new JTextArea("Player #2");
+    private static JTextArea playerText = new JTextArea("Player");
+    private static JTextArea modtText = new JTextArea("Jarvis");
 
     private Font fontOfText = new Font("Verdana", Font.BOLD, 30);
 
@@ -63,7 +63,6 @@ public class GamePanel extends JPanel  {
 
         playerText.setEditable(false);
         playerText.setFont(fontOfText);
-        playerText.setForeground(new Color(255, 255, 255));
         playerText.setBackground(new Color(127, 131, 135));
 
         modtText.setEditable(false);
@@ -201,6 +200,22 @@ public class GamePanel extends JPanel  {
 
     public JButton getMainMenu() {
         return mainM;
+    }
+
+    public static JTextArea PlayerLeftText(){
+       return playerLeftText;
+    }
+
+    public static JTextArea PlayerRightText(){
+        return playerRightText;
+    }
+
+    public static JTextArea ModText(){
+        return modtText;
+    }
+
+    public static JTextArea PlayerText(){
+        return playerText;
     }
 
     public JButton getExit() {

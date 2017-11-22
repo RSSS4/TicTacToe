@@ -1,5 +1,6 @@
 package tictactoe.model;
 
+import tictactoe.view.ChangeColor;
 import tictactoe.view.GameField;
 import tictactoe.view.ResultFrame;
 import tictactoe.view.XOButton;
@@ -37,17 +38,22 @@ public class PvMGameProcess{
         System.out.println(turn + " turn");
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
-        if (comp)
+        if (comp){
             Lvl();
+        }
+        else
+            ChangeColor.ChangePvMTextColor(false);
     }
 
     public static void Lvl(){
+        ChangeColor.ChangePvMTextColor(true);
         if (difficulty == 1)
             boteasy.HitBot();
         else if (difficulty == 2) {
             botmid.HitBot();
         } else
             bothard.HitBot();
+        ChangeColor.ChangePvMTextColor(false);
     }
 
     private static int randFirstTurn() {

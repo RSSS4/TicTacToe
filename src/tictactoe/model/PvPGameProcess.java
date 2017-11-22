@@ -1,8 +1,8 @@
 package tictactoe.model;
 
-import tictactoe.view.GameField;
-import tictactoe.view.ResultFrame;
-import tictactoe.view.XOButton;
+import tictactoe.view.*;
+
+import java.awt.*;
 
 public class PvPGameProcess {
 
@@ -21,10 +21,11 @@ public class PvPGameProcess {
     public PvPGameProcess(int fieldSize){
         this.fieldSize = fieldSize;
         checkWinner = new CheckWinner(fieldSize,fieldSize==3?3:(fieldSize==5?4:5));
+        ChangeColor.ChangePvPTextColor(turn);
     }
-
     public static int turn(){
         turn = !turn;
+        ChangeColor.ChangePvPTextColor(turn);
         if(turn) return second;
         return first;
     }
@@ -58,6 +59,7 @@ public class PvPGameProcess {
 
     public static void refresh(){
         turn = true;
+        ChangeColor.ChangePvPTextColor(turn);
     }
 
     public static int getfieldSize(){

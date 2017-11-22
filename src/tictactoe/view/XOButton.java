@@ -45,7 +45,6 @@ public class XOButton extends JButton {
         this.free = free;
         this.who = who;
     }
-
     public void gamePvP() {
         this.addActionListener(new ActionListener() {
 
