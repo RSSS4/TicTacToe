@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ResultFrame extends JFrame{
+public class ResultFrame extends JFrame {
 
     private ResultVariable.ResultVar result;
     private Result resultPanel;
@@ -27,7 +27,7 @@ public class ResultFrame extends JFrame{
         setResizable(false);
         setVisible(true);
 
-        switch (result){
+        switch (result) {
             case FIRSTWIN:
                 resultPanel = new Result(firstWin);
                 add(resultPanel);
@@ -46,9 +46,10 @@ public class ResultFrame extends JFrame{
                 break;
             default:
                 resultPanel = new Result(draw);
-                add(resultPanel);}
+                add(resultPanel);
+        }
 
-        resultPanel.getOk().addActionListener(new ActionListener() {
+        resultPanel.GetOk().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
                 dispose();

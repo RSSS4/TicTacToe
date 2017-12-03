@@ -19,13 +19,13 @@ public class EasyBot extends Bot {
         this.difficulty = difficulty;
         this.fieldSize = fieldSize;
         this.who = who;
-        buttons = GameField.getButtons();
+        buttons = GameField.GetButtons();
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
     }
 
     @Override
     public void HitBot() {
-        if (PvMGameProcess.getTurn() == 0) {
+        if (PvMGameProcess.GetTurn() == 0) {
             if (who == 0) {
                 enemywho = 1;
             } else enemywho = 2;
@@ -38,16 +38,16 @@ public class EasyBot extends Bot {
         for (int k = 0; k < fieldSize; k++) {
             if (isFind) break;
             for (int s = 0; s < fieldSize; s++) {
-                checkWinner.refreshData(buttons);
-                if (buttons[k][s].isFree() && !PvMGameProcess.isEndGame()) {
-                    buttons[k][s].setTest(enemywho, false);
+                checkWinner.RefreshData(buttons);
+                if (buttons[k][s].IsFree() && !PvMGameProcess.IsEndGame()) {
+                    buttons[k][s].SetTest(enemywho, false);
                     if (checkWinner.CheckWin(enemywho, k, s)) {
-                        buttons[k][s].setTest(0, true);
-                        buttons[k][s].setWho(who);
+                        buttons[k][s].SetTest(0, true);
+                        buttons[k][s].SetWho(who);
                         isFind = true;
-                        PvMGameProcess.isWinner(k, s);
+                        PvMGameProcess.IsWinner(k, s);
                         break;
-                    } else buttons[k][s].setTest(0, true);
+                    } else buttons[k][s].SetTest(0, true);
                 }
             }
         }

@@ -39,7 +39,7 @@ public class GameFrame extends JFrame {
 
         add(mainMenu);
 
-        music.playMusic();
+        music.PlayMusic();
 
         pack();
         setSize(600, 600);
@@ -49,220 +49,211 @@ public class GameFrame extends JFrame {
 
         mainMenu.setVisible(true);
         pvpMenu.setVisible(false);
-        refresh();
+        Refresh();
 
 
-        mainMenu.getSettings().addActionListener(new ActionListener() {
+        mainMenu.GetSettings().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent arg0) {
                 if (settIsClicked == 0) {
                     settIsClicked = 1;
-                    mainMenu.getSettings().setIcon(AllImages.close);
-                    mainMenu.getMusic().setVisible(true);
+                    mainMenu.GetSettings().setIcon(AllImages.close);
+                    mainMenu.GetMusic().setVisible(true);
                     if (musicPlay == true)
-                        mainMenu.getMusic().setIcon(AllImages.music);
+                        mainMenu.GetMusic().setIcon(AllImages.music);
                     else
-                        mainMenu.getMusic().setIcon(AllImages.nomusic);
-                    mainMenu.getMusic().addActionListener(new ActionListener() {
+                        mainMenu.GetMusic().setIcon(AllImages.nomusic);
+                    mainMenu.GetMusic().addActionListener(new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                            if (musicPlay == true)
-                            {
+                            if (musicPlay == true) {
                                 musicPlay = false;
-                                music.getmusic().stop();
-                                mainMenu.getMusic().setIcon(AllImages.nomusic);
-                                refresh();
-                            }
-                            else
-                            {
+                                music.GetMusic().stop();
+                                mainMenu.GetMusic().setIcon(AllImages.nomusic);
+                                Refresh();
+                            } else {
                                 musicPlay = true;
-                                music.getmusic().start();
-                                music.getmusic().loop(10);
-                                mainMenu.getMusic().setIcon(AllImages.music);
-                                refresh();
+                                music.GetMusic().start();
+                                music.GetMusic().loop(10);
+                                mainMenu.GetMusic().setIcon(AllImages.music);
+                                Refresh();
                             }
                         }
                     });
-                    mainMenu.getExit().setVisible(true);
-                    mainMenu.getExit().addActionListener(new ActionListener() {
+                    mainMenu.GetExit().setVisible(true);
+                    mainMenu.GetExit().addActionListener(new ActionListener() {
 
                         @Override
                         public void actionPerformed(ActionEvent arg0) {
                             exit();
                         }
                     });
-                    refresh();
+                    Refresh();
                 } else {
                     settIsClicked = 0;
-                    mainMenu.getSettings().setIcon(AllImages.settings);
-                    mainMenu.getMusic().setVisible(false);
-                    mainMenu.getExit().setVisible(false);
-                    refresh();
+                    mainMenu.GetSettings().setIcon(AllImages.settings);
+                    mainMenu.GetMusic().setVisible(false);
+                    mainMenu.GetExit().setVisible(false);
+                    Refresh();
                 }
             }
         });
 
-        mainMenu.getPvPButton().addActionListener(new ActionListener() {
+        mainMenu.GetPvPButton().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent arg0) {
                 settIsClicked = 0;
-                mainMenu.getSettings().setIcon(AllImages.settings);
-                mainMenu.getMusic().setVisible(false);
-                mainMenu.getExit().setVisible(false);
+                mainMenu.GetSettings().setIcon(AllImages.settings);
+                mainMenu.GetMusic().setVisible(false);
+                mainMenu.GetExit().setVisible(false);
                 add(pvpMenu);
                 pvpMenu.setVisible(true);
                 mainMenu.setVisible(false);
-                refresh();
+                Refresh();
             }
         });
 
-        pvpMenu.getSettings().addActionListener(new ActionListener() {
+        pvpMenu.GetSettings().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent arg0) {
                 if (settIsClicked == 0) {
                     settIsClicked = 1;
-                    pvpMenu.getSettings().setIcon(AllImages.close);
-                    pvpMenu.getMusic().setVisible(true);
+                    pvpMenu.GetSettings().setIcon(AllImages.close);
+                    pvpMenu.GetMusic().setVisible(true);
                     if (musicPlay == true)
-                        pvpMenu.getMusic().setIcon(AllImages.music);
+                        pvpMenu.GetMusic().setIcon(AllImages.music);
                     else
-                        pvpMenu.getMusic().setIcon(AllImages.nomusic);
-                    pvpMenu.getMusic().addActionListener(new ActionListener() {
+                        pvpMenu.GetMusic().setIcon(AllImages.nomusic);
+                    pvpMenu.GetMusic().addActionListener(new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                            if (musicPlay == true)
-                            {
+                            if (musicPlay == true) {
                                 musicPlay = false;
-                                music.getmusic().stop();
-                                pvpMenu.getMusic().setIcon(AllImages.nomusic);
-                                refresh();
-                            }
-                            else
-                            {
+                                music.GetMusic().stop();
+                                pvpMenu.GetMusic().setIcon(AllImages.nomusic);
+                                Refresh();
+                            } else {
                                 musicPlay = true;
-                                music.getmusic().start();
-                                music.getmusic().loop(10);
-                                pvpMenu.getMusic().setIcon(AllImages.music);
-                                refresh();
+                                music.GetMusic().start();
+                                music.GetMusic().loop(10);
+                                pvpMenu.GetMusic().setIcon(AllImages.music);
+                                Refresh();
                             }
                         }
                     });
-                    pvpMenu.getMainMenu().setVisible(true);
-                    pvpMenu.getMainMenu().addActionListener(new ActionListener() {
+                    pvpMenu.GetMainMenu().setVisible(true);
+                    pvpMenu.GetMainMenu().addActionListener(new ActionListener() {
 
                         @Override
                         public void actionPerformed(ActionEvent arg0) {
                             settIsClicked = 0;
-                            pvpMenu.getSettings().setIcon(AllImages.settings);
-                            pvpMenu.getMusic().setVisible(false);
-                            pvpMenu.getMainMenu().setVisible(false);
-                            pvpMenu.getExit().setVisible(false);
+                            pvpMenu.GetSettings().setIcon(AllImages.settings);
+                            pvpMenu.GetMusic().setVisible(false);
+                            pvpMenu.GetMainMenu().setVisible(false);
+                            pvpMenu.GetExit().setVisible(false);
                             mainMenu.setVisible(true);
                             pvpMenu.setVisible(false);
-                            refresh();
+                            Refresh();
                         }
                     });
-                    pvpMenu.getExit().setVisible(true);
-                    pvpMenu.getExit().addActionListener(new ActionListener() {
+                    pvpMenu.GetExit().setVisible(true);
+                    pvpMenu.GetExit().addActionListener(new ActionListener() {
 
                         @Override
                         public void actionPerformed(ActionEvent arg0) {
                             exit();
                         }
                     });
-                    refresh();
+                    Refresh();
                 } else {
                     settIsClicked = 0;
-                    pvpMenu.getSettings().setIcon(AllImages.settings);
-                    pvpMenu.getMusic().setVisible(false);
-                    pvpMenu.getMainMenu().setVisible(false);
-                    pvpMenu.getExit().setVisible(false);
-                    refresh();
+                    pvpMenu.GetSettings().setIcon(AllImages.settings);
+                    pvpMenu.GetMusic().setVisible(false);
+                    pvpMenu.GetMainMenu().setVisible(false);
+                    pvpMenu.GetExit().setVisible(false);
+                    Refresh();
                 }
             }
         });
 
-        pvpMenu.getThreeButton().addActionListener(new ActionListener() {
+        pvpMenu.GetThreeButton().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 settIsClicked = 0;
-                pvpMenu.getSettings().setIcon(AllImages.settings);
-                pvpMenu.getMusic().setVisible(false);
-                pvpMenu.getMainMenu().setVisible(false);
-                pvpMenu.getExit().setVisible(false);
+                pvpMenu.GetSettings().setIcon(AllImages.settings);
+                pvpMenu.GetMusic().setVisible(false);
+                pvpMenu.GetMainMenu().setVisible(false);
+                pvpMenu.GetExit().setVisible(false);
                 bgforfield = "res/bg/bg3.jpg";
                 gameField = new GamePanel(bgforfield, 3, 0, 1);
-                gameField.getSettings().addActionListener(new ActionListener() {
+                gameField.GetSettings().addActionListener(new ActionListener() {
 
                     @Override
                     public void actionPerformed(ActionEvent arg0) {
                         if (settIsClicked == 0) {
                             settIsClicked = 1;
-                            gameField.getSettings().setIcon(AllImages.close);
-                            gameField.getMusic().setVisible(true);
+                            gameField.GetSettings().setIcon(AllImages.close);
+                            gameField.GetMusic().setVisible(true);
                             if (musicPlay == true)
-                                gameField.getMusic().setIcon(AllImages.music);
+                                gameField.GetMusic().setIcon(AllImages.music);
                             else
-                                gameField.getMusic().setIcon(AllImages.nomusic);
-                            gameField.getMusic().addActionListener(new ActionListener() {
+                                gameField.GetMusic().setIcon(AllImages.nomusic);
+                            gameField.GetMusic().addActionListener(new ActionListener() {
                                 @Override
                                 public void actionPerformed(ActionEvent e) {
-                                    if (musicPlay == true)
-                                    {
+                                    if (musicPlay == true) {
                                         musicPlay = false;
-                                        music.getmusic().stop();
-                                        gameField.getMusic().setIcon(AllImages.nomusic);
-                                        refresh();
-                                    }
-                                    else
-                                    {
+                                        music.GetMusic().stop();
+                                        gameField.GetMusic().setIcon(AllImages.nomusic);
+                                        Refresh();
+                                    } else {
                                         musicPlay = true;
-                                        music.getmusic().start();
-                                        music.getmusic().loop(10);
-                                        gameField.getMusic().setIcon(AllImages.music);
-                                        refresh();
+                                        music.GetMusic().start();
+                                        music.GetMusic().loop(10);
+                                        gameField.GetMusic().setIcon(AllImages.music);
+                                        Refresh();
                                     }
                                 }
                             });
-                            gameField.getMainMenu().setVisible(true);
-                            gameField.getMainMenu().addActionListener(new ActionListener() {
+                            gameField.GetMainMenu().setVisible(true);
+                            gameField.GetMainMenu().addActionListener(new ActionListener() {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
                                     mainMenu.setVisible(true);
                                     gameField.setVisible(false);
-                                    refresh();
+                                    Refresh();
                                 }
                             });
-                            gameField.getMainMenu().addActionListener(new ActionListener() {
+                            gameField.GetMainMenu().addActionListener(new ActionListener() {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
                                     mainMenu.setVisible(true);
                                     gameField.setVisible(false);
-                                    refresh();
+                                    Refresh();
                                 }
                             });
-                            gameField.getExit().setVisible(true);
-                            gameField.getExit().addActionListener(new ActionListener() {
+                            gameField.GetExit().setVisible(true);
+                            gameField.GetExit().addActionListener(new ActionListener() {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
                                     exit();
                                 }
                             });
-                            refresh();
+                            Refresh();
                         } else {
                             settIsClicked = 0;
-                            gameField.getSettings().setIcon(AllImages.settings);
-                            gameField.getMusic().setVisible(false);
-                            gameField.getMainMenu().setVisible(false);
-                            gameField.getExit().setVisible(false);
-                            refresh();
+                            gameField.GetSettings().setIcon(AllImages.settings);
+                            gameField.GetMusic().setVisible(false);
+                            gameField.GetMainMenu().setVisible(false);
+                            gameField.GetExit().setVisible(false);
+                            Refresh();
                         }
                     }
                 });
@@ -271,79 +262,76 @@ public class GameFrame extends JFrame {
                 pvpMenu.setVisible(false);
                 mainMenu.setVisible(false);
                 pvpgame = new PvPGameProcess(3);
-                refresh();
+                Refresh();
             }
         });
 
-        pvpMenu.getFiveButton().addActionListener(new ActionListener() {
+        pvpMenu.GetFiveButton().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 settIsClicked = 0;
-                pvpMenu.getSettings().setIcon(AllImages.settings);
-                pvpMenu.getMusic().setVisible(false);
-                pvpMenu.getMainMenu().setVisible(false);
-                pvpMenu.getExit().setVisible(false);
+                pvpMenu.GetSettings().setIcon(AllImages.settings);
+                pvpMenu.GetMusic().setVisible(false);
+                pvpMenu.GetMainMenu().setVisible(false);
+                pvpMenu.GetExit().setVisible(false);
                 bgforfield = "res/bg/bg5.jpg";
                 gameField = new GamePanel(bgforfield, 5, 0, 1);
-                gameField.getSettings().addActionListener(new ActionListener() {
+                gameField.GetSettings().addActionListener(new ActionListener() {
 
                     @Override
                     public void actionPerformed(ActionEvent arg0) {
                         if (settIsClicked == 0) {
                             settIsClicked = 1;
-                            gameField.getSettings().setIcon(AllImages.close);
-                            gameField.getMusic().setVisible(true);
+                            gameField.GetSettings().setIcon(AllImages.close);
+                            gameField.GetMusic().setVisible(true);
                             if (musicPlay == true)
-                                gameField.getMusic().setIcon(AllImages.music);
+                                gameField.GetMusic().setIcon(AllImages.music);
                             else
-                                gameField.getMusic().setIcon(AllImages.nomusic);
-                            gameField.getMusic().addActionListener(new ActionListener() {
+                                gameField.GetMusic().setIcon(AllImages.nomusic);
+                            gameField.GetMusic().addActionListener(new ActionListener() {
                                 @Override
                                 public void actionPerformed(ActionEvent e) {
-                                    if (musicPlay == true)
-                                    {
+                                    if (musicPlay == true) {
                                         musicPlay = false;
-                                        music.getmusic().stop();
-                                        gameField.getMusic().setIcon(AllImages.nomusic);
-                                        refresh();
-                                    }
-                                    else
-                                    {
+                                        music.GetMusic().stop();
+                                        gameField.GetMusic().setIcon(AllImages.nomusic);
+                                        Refresh();
+                                    } else {
                                         musicPlay = true;
-                                        music.getmusic().start();
-                                        music.getmusic().loop(10);
-                                        gameField.getMusic().setIcon(AllImages.music);
-                                        refresh();
+                                        music.GetMusic().start();
+                                        music.GetMusic().loop(10);
+                                        gameField.GetMusic().setIcon(AllImages.music);
+                                        Refresh();
                                     }
                                 }
                             });
-                            gameField.getMainMenu().setVisible(true);
-                            gameField.getMainMenu().addActionListener(new ActionListener() {
+                            gameField.GetMainMenu().setVisible(true);
+                            gameField.GetMainMenu().addActionListener(new ActionListener() {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
                                     mainMenu.setVisible(true);
                                     gameField.setVisible(false);
-                                    refresh();
+                                    Refresh();
                                 }
                             });
-                            gameField.getExit().setVisible(true);
-                            gameField.getExit().addActionListener(new ActionListener() {
+                            gameField.GetExit().setVisible(true);
+                            gameField.GetExit().addActionListener(new ActionListener() {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
                                     exit();
                                 }
                             });
-                            refresh();}
-                        else {
+                            Refresh();
+                        } else {
                             settIsClicked = 0;
-                            gameField.getSettings().setIcon(AllImages.settings);
-                            gameField.getMusic().setVisible(false);
-                            gameField.getMainMenu().setVisible(false);
-                            gameField.getExit().setVisible(false);
-                            refresh();
+                            gameField.GetSettings().setIcon(AllImages.settings);
+                            gameField.GetMusic().setVisible(false);
+                            gameField.GetMainMenu().setVisible(false);
+                            gameField.GetExit().setVisible(false);
+                            Refresh();
                         }
                     }
                 });
@@ -352,80 +340,76 @@ public class GameFrame extends JFrame {
                 pvpMenu.setVisible(false);
                 mainMenu.setVisible(false);
                 pvpgame = new PvPGameProcess(5);
-                refresh();
+                Refresh();
             }
         });
 
-        pvpMenu.getSevenButton().addActionListener(new ActionListener() {
+        pvpMenu.GetSevenButton().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 settIsClicked = 0;
-                pvpMenu.getSettings().setIcon(AllImages.settings);
-                pvpMenu.getMusic().setVisible(false);
-                pvpMenu.getMainMenu().setVisible(false);
-                pvpMenu.getExit().setVisible(false);
+                pvpMenu.GetSettings().setIcon(AllImages.settings);
+                pvpMenu.GetMusic().setVisible(false);
+                pvpMenu.GetMainMenu().setVisible(false);
+                pvpMenu.GetExit().setVisible(false);
                 bgforfield = "res/bg/bg7.jpg";
                 gameField = new GamePanel(bgforfield, 7, 0, 1);
-                gameField.getSettings().addActionListener(new ActionListener() {
+                gameField.GetSettings().addActionListener(new ActionListener() {
 
                     @Override
                     public void actionPerformed(ActionEvent arg0) {
-                        if (settIsClicked == 0)
-                        {
-                            settIsClicked =1;
-                            gameField.getSettings().setIcon(AllImages.close);
-                            gameField.getMusic().setVisible(true);
+                        if (settIsClicked == 0) {
+                            settIsClicked = 1;
+                            gameField.GetSettings().setIcon(AllImages.close);
+                            gameField.GetMusic().setVisible(true);
                             if (musicPlay == true)
-                                gameField.getMusic().setIcon(AllImages.music);
+                                gameField.GetMusic().setIcon(AllImages.music);
                             else
-                                gameField.getMusic().setIcon(AllImages.nomusic);
-                            gameField.getMusic().addActionListener(new ActionListener() {
+                                gameField.GetMusic().setIcon(AllImages.nomusic);
+                            gameField.GetMusic().addActionListener(new ActionListener() {
                                 @Override
                                 public void actionPerformed(ActionEvent e) {
-                                    if (musicPlay == true)
-                                    {
+                                    if (musicPlay == true) {
                                         musicPlay = false;
-                                        music.getmusic().stop();
-                                        gameField.getMusic().setIcon(AllImages.nomusic);
-                                        refresh();
-                                    }
-                                    else
-                                    {
+                                        music.GetMusic().stop();
+                                        gameField.GetMusic().setIcon(AllImages.nomusic);
+                                        Refresh();
+                                    } else {
                                         musicPlay = true;
-                                        music.getmusic().start();
-                                        music.getmusic().loop(10);
-                                        gameField.getMusic().setIcon(AllImages.music);
-                                        refresh();
+                                        music.GetMusic().start();
+                                        music.GetMusic().loop(10);
+                                        gameField.GetMusic().setIcon(AllImages.music);
+                                        Refresh();
                                     }
                                 }
                             });
-                            gameField.getMainMenu().setVisible(true);
-                            gameField.getMainMenu().addActionListener(new ActionListener() {
+                            gameField.GetMainMenu().setVisible(true);
+                            gameField.GetMainMenu().addActionListener(new ActionListener() {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
                                     mainMenu.setVisible(true);
                                     gameField.setVisible(false);
-                                    refresh();
+                                    Refresh();
                                 }
                             });
-                            gameField.getExit().setVisible(true);
-                            gameField.getExit().addActionListener(new ActionListener() {
+                            gameField.GetExit().setVisible(true);
+                            gameField.GetExit().addActionListener(new ActionListener() {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
                                     exit();
                                 }
                             });
-                            refresh();}
-                        else {
+                            Refresh();
+                        } else {
                             settIsClicked = 0;
-                            gameField.getSettings().setIcon(AllImages.settings);
-                            gameField.getMusic().setVisible(false);
-                            gameField.getMainMenu().setVisible(false);
-                            gameField.getExit().setVisible(false);
-                            refresh();
+                            gameField.GetSettings().setIcon(AllImages.settings);
+                            gameField.GetMusic().setVisible(false);
+                            gameField.GetMainMenu().setVisible(false);
+                            gameField.GetExit().setVisible(false);
+                            Refresh();
                         }
                     }
                 });
@@ -434,110 +418,108 @@ public class GameFrame extends JFrame {
                 pvpMenu.setVisible(false);
                 mainMenu.setVisible(false);
                 pvpgame = new PvPGameProcess(7);
-                refresh();
+                Refresh();
             }
         });
 
-        mainMenu.getPvMButton().addActionListener(new ActionListener() {
+        mainMenu.GetPvMButton().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 settIsClicked = 0;
-                mainMenu.getSettings().setIcon(AllImages.settings);
-                mainMenu.getMusic().setVisible(false);
-                mainMenu.getExit().setVisible(false);
+                mainMenu.GetSettings().setIcon(AllImages.settings);
+                mainMenu.GetMusic().setVisible(false);
+                mainMenu.GetExit().setVisible(false);
                 add(pvmMenu);
                 pvmMenu.setVisible(true);
                 mainMenu.setVisible(false);
-                refresh();
+                Refresh();
             }
         });
 
-        pvmMenu.getSettings().addActionListener(new ActionListener() {
+        pvmMenu.GetSettings().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent arg0) {
                 if (settIsClicked == 0) {
                     settIsClicked = 1;
-                    pvmMenu.getSettings().setIcon(AllImages.close);
-                    pvmMenu.getMusic().setVisible(true);
+                    pvmMenu.GetSettings().setIcon(AllImages.close);
+                    pvmMenu.GetMusic().setVisible(true);
                     if (musicPlay == true)
-                        pvmMenu.getMusic().setIcon(AllImages.music);
+                        pvmMenu.GetMusic().setIcon(AllImages.music);
                     else
-                        pvmMenu.getMusic().setIcon(AllImages.nomusic);
-                    pvmMenu.getMusic().addActionListener(new ActionListener() {
+                        pvmMenu.GetMusic().setIcon(AllImages.nomusic);
+                    pvmMenu.GetMusic().addActionListener(new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                            if (musicPlay == true)
-                            {
+                            if (musicPlay == true) {
                                 musicPlay = false;
-                                music.getmusic().stop();
-                                pvmMenu.getMusic().setIcon(AllImages.nomusic);
-                                refresh();
-                            }
-                            else
-                            {
+                                music.GetMusic().stop();
+                                pvmMenu.GetMusic().setIcon(AllImages.nomusic);
+                                Refresh();
+                            } else {
                                 musicPlay = true;
-                                music.getmusic().start();
-                                music.getmusic().loop(10);
-                                pvmMenu.getMusic().setIcon(AllImages.music);
-                                refresh();
+                                music.GetMusic().start();
+                                music.GetMusic().loop(10);
+                                pvmMenu.GetMusic().setIcon(AllImages.music);
+                                Refresh();
                             }
                         }
                     });
-                    pvmMenu.getMainMenu().setVisible(true);
-                    pvmMenu.getMainMenu().addActionListener(new ActionListener() {
+                    pvmMenu.GetMainMenu().setVisible(true);
+                    pvmMenu.GetMainMenu().addActionListener(new ActionListener() {
 
                         @Override
                         public void actionPerformed(ActionEvent arg0) {
                             settIsClicked = 0;
-                            pvmMenu.getSettings().setIcon(AllImages.settings);
-                            pvmMenu.getMusic().setVisible(false);
-                            pvmMenu.getMainMenu().setVisible(false);
-                            pvmMenu.getExit().setVisible(false);
+                            pvmMenu.GetSettings().setIcon(AllImages.settings);
+                            pvmMenu.GetMusic().setVisible(false);
+                            pvmMenu.GetMainMenu().setVisible(false);
+                            pvmMenu.GetExit().setVisible(false);
                             mainMenu.setVisible(true);
                             pvmMenu.setVisible(false);
-                            refresh();
+                            Refresh();
                         }
                     });
-                    pvmMenu.getExit().setVisible(true);
-                    pvmMenu.getExit().addActionListener(new ActionListener() {
+                    pvmMenu.GetExit().setVisible(true);
+                    pvmMenu.GetExit().addActionListener(new ActionListener() {
 
                         @Override
                         public void actionPerformed(ActionEvent arg0) {
                             exit();
                         }
                     });
-                    refresh();
+                    Refresh();
                 } else {
                     settIsClicked = 0;
-                    pvmMenu.getSettings().setIcon(AllImages.settings);
-                    pvmMenu.getMusic().setVisible(false);
-                    pvmMenu.getMainMenu().setVisible(false);
-                    pvmMenu.getExit().setVisible(false);
-                    refresh();
+                    pvmMenu.GetSettings().setIcon(AllImages.settings);
+                    pvmMenu.GetMusic().setVisible(false);
+                    pvmMenu.GetMainMenu().setVisible(false);
+                    pvmMenu.GetExit().setVisible(false);
+                    Refresh();
                 }
             }
         });
 
-        pvmMenu.getPlayPvMButton().addActionListener(new ActionListener() {
+        pvmMenu.GetPlayPvMButton().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 settIsClicked = 0;
-                pvmMenu.getSettings().setIcon(AllImages.settings);
-                pvmMenu.getMusic().setVisible(false);
-                pvmMenu.getMainMenu().setVisible(false);
-                pvmMenu.getExit().setVisible(false);
-                if (pvmMenu.three.isSelected()){
+                pvmMenu.GetSettings().setIcon(AllImages.settings);
+                pvmMenu.GetMusic().setVisible(false);
+                pvmMenu.GetMainMenu().setVisible(false);
+                pvmMenu.GetExit().setVisible(false);
+                if (pvmMenu.three.isSelected()) {
                     fieldSize = 3;
-                    bgforfield = "res/bg/bg3.jpg";}
-                else if (pvmMenu.five.isSelected()){
+                    bgforfield = "res/bg/bg3.jpg";
+                } else if (pvmMenu.five.isSelected()) {
                     fieldSize = 5;
-                    bgforfield = "res/bg/bg5.jpg";}
-                else {
+                    bgforfield = "res/bg/bg5.jpg";
+                } else {
                     fieldSize = 7;
-                    bgforfield = "res/bg/bg7.jpg";}
+                    bgforfield = "res/bg/bg7.jpg";
+                }
                 if (pvmMenu.easy.isSelected())
                     difficulty = 1;
                 else if (pvmMenu.medium.isSelected())
@@ -545,85 +527,82 @@ public class GameFrame extends JFrame {
                 else
                     difficulty = 3;
                 gameField = new GamePanel(bgforfield, fieldSize, difficulty, 2);
-                gameField.getSettings().addActionListener(new ActionListener() {
+                gameField.GetSettings().addActionListener(new ActionListener() {
 
                     @Override
                     public void actionPerformed(ActionEvent arg0) {
                         if (settIsClicked == 0) {
                             settIsClicked = 1;
-                            gameField.getSettings().setIcon(AllImages.close);
-                            gameField.getMusic().setVisible(true);
+                            gameField.GetSettings().setIcon(AllImages.close);
+                            gameField.GetMusic().setVisible(true);
                             if (musicPlay == true)
-                                gameField.getMusic().setIcon(AllImages.music);
+                                gameField.GetMusic().setIcon(AllImages.music);
                             else
-                                gameField.getMusic().setIcon(AllImages.nomusic);
-                            gameField.getMusic().addActionListener(new ActionListener() {
+                                gameField.GetMusic().setIcon(AllImages.nomusic);
+                            gameField.GetMusic().addActionListener(new ActionListener() {
                                 @Override
                                 public void actionPerformed(ActionEvent e) {
-                                    if (musicPlay == true)
-                                    {
+                                    if (musicPlay == true) {
                                         musicPlay = false;
-                                        music.getmusic().stop();
-                                        gameField.getMusic().setIcon(AllImages.nomusic);
-                                        refresh();
-                                    }
-                                    else
-                                    {
+                                        music.GetMusic().stop();
+                                        gameField.GetMusic().setIcon(AllImages.nomusic);
+                                        Refresh();
+                                    } else {
                                         musicPlay = true;
-                                        music.getmusic().start();
-                                        music.getmusic().loop(10);
-                                        gameField.getMusic().setIcon(AllImages.music);
-                                        refresh();
+                                        music.GetMusic().start();
+                                        music.GetMusic().loop(10);
+                                        gameField.GetMusic().setIcon(AllImages.music);
+                                        Refresh();
                                     }
                                 }
                             });
-                            gameField.getMainMenu().setVisible(true);
-                            gameField.getMainMenu().addActionListener(new ActionListener() {
+                            gameField.GetMainMenu().setVisible(true);
+                            gameField.GetMainMenu().addActionListener(new ActionListener() {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
-                                    mainMenu.setVisible(true);
                                     gameField.setVisible(false);
-                                    PvMGameProcess.refresh();
-                                    refresh();
+                                    mainMenu.setVisible(true);
+                                    Refresh();
                                 }
                             });
-                            gameField.getExit().setVisible(true);
-                            gameField.getExit().addActionListener(new ActionListener() {
+                            gameField.GetExit().setVisible(true);
+                            gameField.GetExit().addActionListener(new ActionListener() {
 
                                 @Override
                                 public void actionPerformed(ActionEvent arg0) {
                                     exit();
                                 }
                             });
-                            refresh();
+                            Refresh();
                         } else {
                             settIsClicked = 0;
-                            gameField.getSettings().setIcon(AllImages.settings);
-                            gameField.getMusic().setVisible(false);
-                            gameField.getMainMenu().setVisible(false);
-                            gameField.getExit().setVisible(false);
-                            refresh();
+                            gameField.GetSettings().setIcon(AllImages.settings);
+                            gameField.GetMusic().setVisible(false);
+                            gameField.GetMainMenu().setVisible(false);
+                            gameField.GetExit().setVisible(false);
+                            Refresh();
                         }
                     }
                 });
                 pvmgame = new PvMGameProcess(fieldSize, difficulty);
+                PvMGameProcess.Refresh();
                 gameField.setVisible(true);
                 pvmMenu.setVisible(false);
                 add(gameField);
 
-                refresh();
+                Refresh();
             }
         });
     }
 
-    private void exit(){
-        music.getmusic().stop();
+    private void exit() {
+        music.GetMusic().stop();
         dispose();
-        refresh();
+        Refresh();
     }
 
-    private void refresh() {
+    private void Refresh() {
         validate();
         repaint();
     }

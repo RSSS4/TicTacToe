@@ -27,11 +27,11 @@ public class GameField extends JPanel {
         setVisible(true);
     }
 
-    public static int getfieldSize() {
+    public static int GetFieldSize() {
         return fieldSize;
     }
 
-    public static XOButton[][] getButtons() {
+    public static XOButton[][] GetButtons() {
         return buttons;
     }
 }

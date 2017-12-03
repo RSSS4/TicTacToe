@@ -18,9 +18,9 @@ public class XOButton extends JButton {
     // 1 - pvp, 2 - pvm
     public XOButton(int whichGame) {
         if (whichGame == 1)
-            gamePvP();
+            GamePvP();
         else
-            gameWithAI();
+            GameWithAI();
 
         free = true;
 
@@ -28,83 +28,80 @@ public class XOButton extends JButton {
         setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));
     }
 
-    public void setWho(int who) {
+    public void SetWho(int who) {
         if (free) {
             free = false;
             this.who = who;
             if (who == 1)
-                setIcon(GameField.getfieldSize() == 3 ? AllImages.x3
-                        : (GameField.getfieldSize() == 5 ? AllImages.x5 : AllImages.x7));
+                setIcon(GameField.GetFieldSize() == 3 ? AllImages.x3
+                        : (GameField.GetFieldSize() == 5 ? AllImages.x5 : AllImages.x7));
             else
-                setIcon(GameField.getfieldSize() == 3 ? AllImages.o3
-                        : (GameField.getfieldSize() == 5 ? AllImages.o5 : AllImages.o7));
+                setIcon(GameField.GetFieldSize() == 3 ? AllImages.o3
+                        : (GameField.GetFieldSize() == 5 ? AllImages.o5 : AllImages.o7));
         }
     }
 
-    public void setTest(int who , boolean free) {
+    public void SetTest(int who, boolean free) {
         this.free = free;
         this.who = who;
     }
-    public void gamePvP() {
+
+    public void GamePvP() {
         this.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (free) {
-                    setWho(PvPGameProcess.turn());
+                    SetWho(PvPGameProcess.Turn());
                     free = false;
-                    PvPGameProcess.isWinner(X, Y);
+                    PvPGameProcess.IsWinner(X, Y);
                 }
             }
         });
     }
 
-    public void gameWithAI() {
+    public void GameWithAI() {
         this.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (PvMGameProcess.getTurn() == 0 && free) {
-                    int which = PvMGameProcess.getTurn();
-                    setWho(which == 0 ? 2 : 1);
-                    PvMGameProcess.isWinner(X, Y);
-                    PvMGameProcess.setComp(true);
+                if (PvMGameProcess.GetTurn() == 0 && free) {
+                    int which = PvMGameProcess.GetTurn();
+                    SetWho(which == 0 ? 2 : 1);
+                    PvMGameProcess.IsWinner(X, Y);
+                    PvMGameProcess.SetComp(true);
                     PvMGameProcess.Lvl();
-                    PvMGameProcess.setComp(false);
+                    PvMGameProcess.SetComp(false);
                 }
-                if (PvMGameProcess.getTurn() == 1 && free) {
-                    int which = PvMGameProcess.getTurn();
-                    setWho(which == 0 ? 2 : 1);
-                    PvMGameProcess.isWinner(X, Y);
-                    PvMGameProcess.setComp(true);
+                if (PvMGameProcess.GetTurn() == 1 && free) {
+                    int which = PvMGameProcess.GetTurn();
+                    SetWho(which == 0 ? 2 : 1);
+                    PvMGameProcess.IsWinner(X, Y);
+                    PvMGameProcess.SetComp(true);
                     PvMGameProcess.Lvl();
-                    PvMGameProcess.setComp(false);
+                    PvMGameProcess.SetComp(false);
                 }
             }
         });
     }
 
-    public void refresh() {
+    public void Refresh() {
         who = 0;
         setIcon(null);
         setEnabled(true);
         free = true;
     }
 
-    public void endGame() {
+    public void EndGame() {
         free = false;
     }
 
-    public int getWho() {
+    public int GetWho() {
         return who;
     }
 
-    public boolean isFree() {
+    public boolean IsFree() {
         return free;
-    }
-
-    public void setFree(boolean free) {
-        this.free = free;
     }
 
 }

@@ -7,7 +7,7 @@ import tictactoe.view.XOButton;
 
 import java.util.Random;
 
-public class PvMGameProcess{
+public class PvMGameProcess {
 
     private static ResultFrame result;
 
@@ -21,7 +21,7 @@ public class PvMGameProcess{
     private static boolean player;
     private static boolean comp;
 
-    private static boolean EndGame = false;
+    private static boolean endGame = false;
 
     private static Bot boteasy;
     private static Bot botmid;
@@ -31,21 +31,20 @@ public class PvMGameProcess{
         this.fieldSize = fieldSize;
         this.difficulty = difficulty;
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
-        turn = randFirstTurn();
+        turn = RandFirstTurn();
         boteasy = new EasyBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         botmid = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         bothard = new HardBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         System.out.println(turn + " turn");
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
-        if (comp){
+        if (comp) {
             Lvl();
-        }
-        else
+        } else
             ChangeColor.ChangePvMTextColor(false);
     }
 
-    public static void Lvl(){
+    public static void Lvl() {
         ChangeColor.ChangePvMTextColor(true);
         if (difficulty == 1)
             boteasy.HitBot();
@@ -56,46 +55,46 @@ public class PvMGameProcess{
         ChangeColor.ChangePvMTextColor(false);
     }
 
-    private static int randFirstTurn() {
+    private static int RandFirstTurn() {
         Random r = new Random();
         return r.nextInt(2);
     }
 
-    public static void isWinner(int X,int Y) {
-        XOButton[][] buttons = GameField.getButtons();
-        checkWinner.refreshData(buttons);
+    public static void IsWinner(int X, int Y) {
+        XOButton[][] buttons = GameField.GetButtons();
+        checkWinner.RefreshData(buttons);
         if (checkWinner.CheckWin(1, X, Y)) {
-            endGame();
+            EndGame();
             if (turn == 0)
                 result = new ResultFrame(ResultVariable.ResultVar.WIN);
             else
                 result = new ResultFrame(ResultVariable.ResultVar.LOSE);
         } else if (checkWinner.CheckWin(2, X, Y)) {
-            endGame();
+            EndGame();
             if (turn == 0)
                 result = new ResultFrame(ResultVariable.ResultVar.LOSE);
             else
                 result = new ResultFrame(ResultVariable.ResultVar.WIN);
         } else if (checkWinner.CheckDraw()) {
-            endGame();
+            EndGame();
             result = new ResultFrame(ResultVariable.ResultVar.DRAW);
         }
     }
 
-    public static void endGame() {
-        EndGame = true;
-        XOButton[][] buttons = GameField.getButtons();
+    public static void EndGame() {
+        endGame = true;
+        XOButton[][] buttons = GameField.GetButtons();
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
-                if (buttons[i][j].getWho() == 0)
-                    buttons[i][j].endGame();
+                if (buttons[i][j].GetWho() == 0)
+                    buttons[i][j].EndGame();
             }
         }
     }
 
-    public static void refresh() {
-        EndGame = false;
-        turn = randFirstTurn();
+    public static void Refresh() {
+        endGame = false;
+        turn = RandFirstTurn();
         System.out.println(turn + " turn");
         boteasy = new EasyBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         botmid = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
@@ -112,35 +111,16 @@ public class PvMGameProcess{
         }
     }
 
-    public static boolean isEndGame() {
-        return EndGame;
+    public static boolean IsEndGame() {
+        return endGame;
     }
 
-    public static int getTurn() {
+    public static int GetTurn() {
         return turn;
     }
 
-    public static boolean getPlayer() {
-        return player;
-    }
-
-    public static void setPlayer(boolean player) {
-        PvMGameProcess.player = player;
-    }
-
-    public static boolean getComp() {
-        return comp;
-    }
-
-    public static void setComp(boolean comp) {
+    public static void SetComp(boolean comp) {
         PvMGameProcess.comp = comp;
     }
 
-//    public static Bot getBot() {
-//        return bot;
-//    }
-
-    public static int getfieldSize() {
-        return fieldSize;
-    }
 }

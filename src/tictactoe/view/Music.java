@@ -9,16 +9,19 @@ public class Music {
     private File mfile;
     private Clip music;
 
-    public void playMusic() {
+    public void PlayMusic() {
 
-            try {
-                mfile = new File("res/music/music.wav");
-                music = AudioSystem.getClip();
-                music.open(AudioSystem.getAudioInputStream(mfile));
-                music.start();
-                music.loop(10);
-            } catch (Exception e) { }
+        try {
+            mfile = new File("res/music/music.wav");
+            music = AudioSystem.getClip();
+            music.open(AudioSystem.getAudioInputStream(mfile));
+            music.start();
+            music.loop(10);
+        } catch (Exception e) {
+        }
     }
 
-    public Clip getmusic () {return music;}
+    public Clip GetMusic() {
+        return music;
+    }
 }

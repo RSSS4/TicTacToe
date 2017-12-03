@@ -85,23 +85,23 @@ public class MainMenu extends JPanel {
         g.drawImage(bgimg, 0, 0, null);
     }
 
-    public JButton getSettings() {
+    public JButton GetSettings() {
         return settings;
     }
 
-    public JButton getPvPButton() {
+    public JButton GetPvPButton() {
         return pvp;
     }
 
-    public JButton getPvMButton() {
+    public JButton GetPvMButton() {
         return pvm;
     }
 
-    public JButton getMusic() {
+    public JButton GetMusic() {
         return music;
     }
 
-    public JButton getExit() {
+    public JButton GetExit() {
         return exit;
     }
 

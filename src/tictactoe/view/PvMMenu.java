@@ -160,24 +160,25 @@ public class PvMMenu extends JPanel {
         add(playPvM, c);
     }
 
-    public JButton getPlayPvMButton() {
+    public JButton GetPlayPvMButton() {
         return playPvM;
     }
 
-    public JButton getSettings() {
+    public JButton GetSettings() {
         return settings;
     }
 
-    public JButton getMusic() {
+    public JButton GetMusic() {
         return music;
     }
 
-    public JButton getMainMenu() {
+    public JButton GetMainMenu() {
         return mainM;
     }
 
-    public JButton getExit() {
-        return exit;}
+    public JButton GetExit() {
+        return exit;
+    }
 
     public void paintComponent(Graphics g) {
         g.drawImage(bgimg, 0, 0, null);

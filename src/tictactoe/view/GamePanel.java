@@ -8,7 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class GamePanel extends JPanel  {
+public class GamePanel extends JPanel {
 
     private Image bgforfield;
 
@@ -33,11 +33,11 @@ public class GamePanel extends JPanel  {
 
     private GridBagConstraints c;
 
-    public GamePanel(String bgforfield, int size, int difficulty,int whichGame) {
-        this(new ImageIcon(bgforfield).getImage(), size, difficulty,whichGame);
+    public GamePanel(String bgforfield, int size, int difficulty, int whichGame) {
+        this(new ImageIcon(bgforfield).getImage(), size, difficulty, whichGame);
     }
 
-    public GamePanel(Image bgforfield, int size, int difficulty,int whichGame) {
+    public GamePanel(Image bgforfield, int size, int difficulty, int whichGame) {
         this.bgforfield = bgforfield;
         this.fieldSize = size;
         this.difficulty = difficulty;
@@ -137,7 +137,7 @@ public class GamePanel extends JPanel  {
         exit.setVisible(false);
         add(exit, c);
 
-        field = new GameField(size,whichGame);
+        field = new GameField(size, whichGame);
         field.setSize(400, 400);
         field.setBackground(new Color(81, 99, 109));
         c.fill = GridBagConstraints.BOTH;
@@ -158,13 +158,13 @@ public class GamePanel extends JPanel  {
         restart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                XOButton[][] buttons = field.getButtons();
+                XOButton[][] buttons = field.GetButtons();
                 for (int i = 0; i < fieldSize; i++)
                     for (int j = 0; j < fieldSize; j++)
-                        buttons[i][j].refresh();
-                if (whichGame==1)
-                    PvPGameProcess.refresh();
-                else PvMGameProcess.refresh();
+                        buttons[i][j].Refresh();
+                if (whichGame == 1)
+                    PvPGameProcess.Refresh();
+                else PvMGameProcess.Refresh();
             }
         });
         c.fill = GridBagConstraints.NONE;
@@ -182,43 +182,36 @@ public class GamePanel extends JPanel  {
         g.drawImage(bgforfield, 0, 0, null);
     }
 
-    public GameField getField() {
-        return field;
-    }
-
-    public JButton getRestart() {
-        return restart;
-    }
-
-    public JButton getSettings() {
+    public JButton GetSettings() {
         return settings;
     }
 
-    public JButton getMusic() {
+    public JButton GetMusic() {
         return music;
     }
 
-    public JButton getMainMenu() {
+    public JButton GetMainMenu() {
         return mainM;
     }
 
-    public static JTextArea PlayerLeftText(){
-       return playerLeftText;
+    public static JTextArea PlayerLeftText() {
+        return playerLeftText;
     }
 
-    public static JTextArea PlayerRightText(){
+    public static JTextArea PlayerRightText() {
         return playerRightText;
     }
 
-    public static JTextArea ModText(){
+    public static JTextArea ModText() {
         return modtText;
     }
 
-    public static JTextArea PlayerText(){
+    public static JTextArea PlayerText() {
         return playerText;
     }
 
-    public JButton getExit() {
-        return exit;}
+    public JButton GetExit() {
+        return exit;
+    }
 
 }

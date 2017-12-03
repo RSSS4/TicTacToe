@@ -30,7 +30,7 @@ public class Result extends JPanel {
         add(ok, c);
     }
 
-    public JButton getOk() {
+    public JButton GetOk() {
         return ok;
     }
 

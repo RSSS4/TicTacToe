@@ -15,15 +15,15 @@ public abstract class Bot {
 
     protected void RandomMove(int who, int fieldSize) {
         while (true) {
-            buttons = GameField.getButtons();
+            buttons = GameField.GetButtons();
             i = RandValue(fieldSize);
             j = RandValue(fieldSize);
-            if (buttons[i][j].isFree() && !PvMGameProcess.isEndGame()) {
-                buttons[i][j].setWho(who);
-                PvMGameProcess.isWinner(i, j);
+            if (buttons[i][j].IsFree() && !PvMGameProcess.IsEndGame()) {
+                buttons[i][j].SetWho(who);
+                PvMGameProcess.IsWinner(i, j);
                 break;
             }
-            if (PvMGameProcess.isEndGame())
+            if (PvMGameProcess.IsEndGame())
                 break;
         }
     }
