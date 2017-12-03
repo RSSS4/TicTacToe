@@ -15,8 +15,6 @@ public class MediumBot extends Bot {
     private boolean nextprediction;
 
     private XOButton[][] buttons;
-    private static CheckWinner checkWinner;
-
     public MediumBot(int fieldSize, int difficulty, int who) {
         this.difficulty = difficulty;
         this.fieldSize = fieldSize;
@@ -36,7 +34,7 @@ public class MediumBot extends Bot {
                 enemywho = 2;
             } else enemywho = 1;
         }
-        if (!WinAttack()) {
+        if (!WinAttack(fieldSize, who)) {
             isFind = false;
             nextprediction = true;
             for (int i = 0; i < fieldSize; i++) {
@@ -94,23 +92,6 @@ public class MediumBot extends Bot {
         }
     }
 
-    private boolean WinAttack() {
-        for (int i = 0; i < fieldSize; i++) {
-            for (int j = 0; j < fieldSize; j++) {
-                checkWinner.RefreshData(buttons);
-                if (buttons[i][j].IsFree() && !PvMGameProcess.IsEndGame()) {
-                    buttons[i][j].SetTest(who, false);
-                    if (checkWinner.CheckWin(who, i, j)) {
-                        buttons[i][j].SetTest(0, true);
-                        buttons[i][j].SetWho(who);
-                        PvMGameProcess.IsWinner(i, j);
-                        return true;
-                    } else buttons[i][j].SetTest(0, true);
-                }
-            }
-        }
-        return false;
-    }
 
 
 }

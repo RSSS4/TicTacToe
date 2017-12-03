@@ -20,7 +20,6 @@ public class HardBot extends Bot {
     private boolean nextprediction3 = false;
 
     private XOButton[][] buttons;
-    private static CheckWinner checkWinner;
 
     public HardBot(int fieldSize, int difficulty, int who) {
         this.difficulty = difficulty;
@@ -42,7 +41,7 @@ public class HardBot extends Bot {
             } else enemywho = 1;
         }
         nextprediction = false;
-        if (!WinAttack()) {
+        if (!WinAttack(fieldSize, who)) {
             isFind = false;
             nextprediction = true;
             for (int i = 0; i < fieldSize; i++) {
@@ -218,23 +217,6 @@ public class HardBot extends Bot {
         }
     }
 
-    private boolean WinAttack() {
-        for (int i = 0; i < fieldSize; i++) {
-            for (int j = 0; j < fieldSize; j++) {
-                checkWinner.RefreshData(buttons);
-                if (buttons[i][j].IsFree() && !PvMGameProcess.IsEndGame()) {
-                    buttons[i][j].SetTest(who, false);
-                    if (checkWinner.CheckWin(who, i, j)) {
-                        buttons[i][j].SetTest(0, true);
-                        buttons[i][j].SetWho(who);
-                        PvMGameProcess.IsWinner(i, j);
-                        return true;
-                    } else buttons[i][j].SetTest(0, true);
-                }
-            }
-        }
-        return false;
-    }
 
     private boolean PredictionAttack() {
         for (int i = 0; i < fieldSize; i++) {

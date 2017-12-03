@@ -6,8 +6,11 @@ import tictactoe.view.XOButton;
 import java.util.Random;
 
 public abstract class Bot {
-    private int i;
-    private int j;
+    private int a;
+    private int b;
+
+    protected static CheckWinner checkWinner;
+
 
     private XOButton[][] buttons;
 
@@ -16,16 +19,34 @@ public abstract class Bot {
     protected void RandomMove(int who, int fieldSize) {
         while (true) {
             buttons = GameField.GetButtons();
-            i = RandValue(fieldSize);
-            j = RandValue(fieldSize);
-            if (buttons[i][j].IsFree() && !PvMGameProcess.IsEndGame()) {
-                buttons[i][j].SetWho(who);
-                PvMGameProcess.IsWinner(i, j);
+            a = RandValue(fieldSize);
+            b = RandValue(fieldSize);
+            if (buttons[a][b].IsFree() && !PvMGameProcess.IsEndGame()) {
+                buttons[a][b].SetWho(who);
+                PvMGameProcess.IsWinner(a, b);
                 break;
             }
             if (PvMGameProcess.IsEndGame())
                 break;
         }
+    }
+    protected boolean WinAttack(int fieldSize,int who ) {
+        for (int i = 0; i < fieldSize; i++) {
+            for (int j = 0; j < fieldSize; j++) {
+                buttons = GameField.GetButtons();
+                checkWinner.RefreshData(buttons);
+                if (buttons[i][j].IsFree() && !PvMGameProcess.IsEndGame()) {
+                    buttons[i][j].SetTest(who, false);
+                    if (checkWinner.CheckWin(who, i, j)) {
+                        buttons[i][j].SetTest(0, true);
+                        buttons[i][j].SetWho(who);
+                        PvMGameProcess.IsWinner(i, j);
+                        return true;
+                    } else buttons[i][j].SetTest(0, true);
+                }
+            }
+        }
+        return false;
     }
 
     private int RandValue(int fieldSize) {
