@@ -3,7 +3,6 @@ package tictactoe.model;
 import tictactoe.view.ChangeColor;
 import tictactoe.view.GameField;
 import tictactoe.view.ResultFrame;
-import tictactoe.view.XOButton;
 
 import java.util.Random;
 
@@ -32,7 +31,7 @@ public class PvMGameProcess {
         this.fieldSize = fieldSize;
         this.difficulty = difficulty;
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
-        turn = RandFirstTurn();
+        turn = randFirstTurn();
         boteasy = new EasyBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         botmid = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         bothard = new HardBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
@@ -41,65 +40,65 @@ public class PvMGameProcess {
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
         if (comp) {
-            Lvl();
+            lvl();
         } else
-            ChangeColor.ChangePvMTextColor(false);
+            ChangeColor.changePvMTextColor(false);
     }
 
-    public static void Lvl() {
-        ChangeColor.ChangePvMTextColor(true);
+    public static void lvl() {
+        ChangeColor.changePvMTextColor(true);
         if (difficulty == 1)
-            boteasy.HitBot();
+            boteasy.hitBot();
         else if (difficulty == 2) {
-            botmid.HitBot();
+            botmid.hitBot();
         } else if (difficulty == 3)
-            bothard.HitBot();
+            bothard.hitBot();
         else{
-            botultr.HitBot();
+            botultr.hitBot();
         }
-        ChangeColor.ChangePvMTextColor(false);
+        ChangeColor.changePvMTextColor(false);
     }
 
-    private static int RandFirstTurn() {
+    private static int randFirstTurn() {
         Random r = new Random();
         return r.nextInt(2);
     }
 
-    public static void IsWinner(int X, int Y) {
-        XOButton[][] buttons = GameField.GetButtons();
-        checkWinner.RefreshData(buttons);
-        if (checkWinner.CheckWin(1, X, Y)) {
-            EndGame();
+    public static void isWinner(int X, int Y) {
+        Buttons[][] buttons = GameField.getButtons();
+        checkWinner.refreshData(buttons);
+        if (checkWinner.checkWin(1, X, Y)) {
+            endGame();
             if (turn == 0)
                 result = new ResultFrame(ResultVariable.ResultVar.WIN);
             else
                 result = new ResultFrame(ResultVariable.ResultVar.LOSE);
-        } else if (checkWinner.CheckWin(2, X, Y)) {
-            EndGame();
+        } else if (checkWinner.checkWin(2, X, Y)) {
+            endGame();
             if (turn == 0)
                 result = new ResultFrame(ResultVariable.ResultVar.LOSE);
             else
                 result = new ResultFrame(ResultVariable.ResultVar.WIN);
-        } else if (checkWinner.CheckDraw()) {
-            EndGame();
+        } else if (checkWinner.checkDraw()) {
+            endGame();
             result = new ResultFrame(ResultVariable.ResultVar.DRAW);
         }
     }
 
-    public static void EndGame() {
+    public static void endGame() {
         endGame = true;
-        XOButton[][] buttons = GameField.GetButtons();
+        Buttons[][] buttons = GameField.getButtons();
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
-                if (buttons[i][j].GetWho() == 0)
-                    buttons[i][j].EndGame();
+                if (buttons[i][j].getWho() == 0)
+                    buttons[i][j].endGame();
             }
         }
     }
 
-    public static void Refresh() {
+    public static void refresh() {
         endGame = false;
-        turn = RandFirstTurn();
+        turn = randFirstTurn();
         System.out.println(turn + " turn");
         boteasy = new EasyBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         botmid = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
@@ -109,25 +108,25 @@ public class PvMGameProcess {
         comp = turn == 0 ? true : false;
         if (comp) {
             if (difficulty == 1)
-                boteasy.HitBot();
+                boteasy.hitBot();
             else if (difficulty == 2) {
-                botmid.HitBot();
+                botmid.hitBot();
             } else if (difficulty == 3)
-                bothard.HitBot();
+                bothard.hitBot();
             else
-                botultr.HitBot();
+                botultr.hitBot();
         }
     }
 
-    public static boolean IsEndGame() {
+    public static boolean isEndGame() {
         return endGame;
     }
 
-    public static int GetTurn() {
+    public static int getTurn() {
         return turn;
     }
 
-    public static void SetComp(boolean comp) {
+    public static void setComp(boolean comp) {
         PvMGameProcess.comp = comp;
     }
 

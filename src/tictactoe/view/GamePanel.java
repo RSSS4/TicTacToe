@@ -2,6 +2,7 @@ package tictactoe.view;
 
 import tictactoe.model.PvMGameProcess;
 import tictactoe.model.PvPGameProcess;
+import tictactoe.model.Buttons;
 
 import javax.swing.*;
 
@@ -158,13 +159,13 @@ public class GamePanel extends JPanel {
         restart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                XOButton[][] buttons = field.GetButtons();
+                Buttons[][] buttons = field.getButtons();
                 for (int i = 0; i < fieldSize; i++)
                     for (int j = 0; j < fieldSize; j++)
-                        buttons[i][j].Refresh();
+                        buttons[i][j].refresh();
                 if (whichGame == 1)
-                    PvPGameProcess.Refresh();
-                else PvMGameProcess.Refresh();
+                    PvPGameProcess.refresh();
+                else PvMGameProcess.refresh();
             }
         });
         c.fill = GridBagConstraints.NONE;
@@ -182,35 +183,35 @@ public class GamePanel extends JPanel {
         g.drawImage(bgforfield, 0, 0, null);
     }
 
-    public JButton GetSettings() {
+    public JButton getSettings() {
         return settings;
     }
 
-    public JButton GetMusic() {
+    public JButton getMusic() {
         return music;
     }
 
-    public JButton GetMainMenu() {
+    public JButton getMainMenu() {
         return mainM;
     }
 
-    public static JTextArea PlayerLeftText() {
+    public static JTextArea playerLeftText() {
         return playerLeftText;
     }
 
-    public static JTextArea PlayerRightText() {
+    public static JTextArea playerRightText() {
         return playerRightText;
     }
 
-    public static JTextArea ModText() {
+    public static JTextArea modText() {
         return modtText;
     }
 
-    public static JTextArea PlayerText() {
+    public static JTextArea playerText() {
         return playerText;
     }
 
-    public JButton GetExit() {
+    public JButton getExit() {
         return exit;
     }
 

@@ -21,44 +21,44 @@ public class PvPGameProcess {
     public PvPGameProcess(int fieldSize) {
         this.fieldSize = fieldSize;
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
-        ChangeColor.ChangePvPTextColor(turn);
+        ChangeColor.changePvPTextColor(turn);
     }
 
-    public static int Turn() {
+    public static int turn() {
         turn = !turn;
-        ChangeColor.ChangePvPTextColor(turn);
+        ChangeColor.changePvPTextColor(turn);
         if (turn) return second;
         return first;
     }
 
-    public static void IsWinner(int X, int Y) {
-        XOButton[][] buttons = GameField.GetButtons();
-        checkWinner.RefreshData(buttons);
-        if (checkWinner.CheckWin(first, X, Y)) {
-            EndGame();
+    public static void isWinner(int X, int Y) {
+        Buttons[][] buttons = GameField.getButtons();
+        checkWinner.refreshData(buttons);
+        if (checkWinner.checkWin(first, X, Y)) {
+            endGame();
             result = new ResultFrame(ResultVariable.ResultVar.FIRSTWIN);
-        } else if (checkWinner.CheckWin(second, X, Y)) {
-            EndGame();
+        } else if (checkWinner.checkWin(second, X, Y)) {
+            endGame();
             result = new ResultFrame(ResultVariable.ResultVar.SECONDWIN);
-        } else if (checkWinner.CheckDraw()) {
-            EndGame();
+        } else if (checkWinner.checkDraw()) {
+            endGame();
             result = new ResultFrame(ResultVariable.ResultVar.DRAW);
         }
     }
 
-    public static void EndGame() {
-        XOButton[][] buttons = GameField.GetButtons();
+    public static void endGame() {
+        Buttons[][] buttons = GameField.getButtons();
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
-                if (buttons[i][j].GetWho() == 0)
-                    buttons[i][j].EndGame();
+                if (buttons[i][j].getWho() == 0)
+                    buttons[i][j].endGame();
             }
         }
     }
 
-    public static void Refresh() {
+    public static void refresh() {
         turn = true;
-        ChangeColor.ChangePvPTextColor(turn);
+        ChangeColor.changePvPTextColor(turn);
     }
 
 }

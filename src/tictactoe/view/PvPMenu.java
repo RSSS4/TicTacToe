@@ -110,31 +110,31 @@ public class PvPMenu extends JPanel {
         g.drawImage(bgimg, 0, 0, null);
     }
 
-    public JButton GetSettings() {
+    public JButton getSettings() {
         return settings;
     }
 
-    public JButton GetMusic() {
+    public JButton getMusic() {
         return music;
     }
 
-    public JButton GetMainMenu() {
+    public JButton getMainMenu() {
         return mainM;
     }
 
-    public JButton GetExit() {
+    public JButton getExit() {
         return exit;
     }
 
-    public JButton GetThreeButton() {
+    public JButton getThreeButton() {
         return three;
     }
 
-    public JButton GetFiveButton() {
+    public JButton getFiveButton() {
         return five;
     }
 
-    public JButton GetSevenButton() {
+    public JButton getSevenButton() {
         return seven;
     }
 }

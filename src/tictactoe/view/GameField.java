@@ -1,12 +1,14 @@
 package tictactoe.view;
 
+import tictactoe.model.*;
+
 import java.awt.*;
 import javax.swing.*;
 
 public class GameField extends JPanel {
 
     private static int fieldSize;
-    private static XOButton buttons[][];
+    private static Buttons buttons[][];
 
     public GameField(int fieldSize, int whichGame) {
         this.fieldSize = fieldSize;
@@ -14,12 +16,14 @@ public class GameField extends JPanel {
         setLayout(new GridLayout(fieldSize, fieldSize));
         setSize(400, 400);
 
-        buttons = new XOButton[fieldSize][fieldSize];
+        buttons = new Buttons[fieldSize][fieldSize];
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
-                buttons[i][j] = new XOButton(whichGame);
+                buttons[i][j] = new Buttons(whichGame);
                 buttons[i][j].X = i;
                 buttons[i][j].Y = j;
+                buttons[i][j].setBackground(new Color(127, 131, 135));
+                buttons[i][j].setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));
                 add(buttons[i][j]);
             }
         }
@@ -27,11 +31,11 @@ public class GameField extends JPanel {
         setVisible(true);
     }
 
-    public static int GetFieldSize() {
+    public static int getFieldSize() {
         return fieldSize;
     }
 
-    public static XOButton[][] GetButtons() {
+    public static Buttons[][] getButtons() {
         return buttons;
     }
 }

@@ -9,7 +9,7 @@ public class Music {
     private File mfile;
     private Clip music;
 
-    public void PlayMusic() {
+    public void playMusic() {
 
         try {
             mfile = new File("res/music/music.wav");
@@ -21,7 +21,7 @@ public class Music {
         }
     }
 
-    public Clip GetMusic() {
+    public Clip getMusic() {
         return music;
     }
 }

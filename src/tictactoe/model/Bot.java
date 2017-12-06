@@ -1,7 +1,6 @@
 package tictactoe.model;
 
 import tictactoe.view.GameField;
-import tictactoe.view.XOButton;
 
 import java.util.Random;
 
@@ -12,44 +11,44 @@ public abstract class Bot {
     protected CheckWinner checkWinner;
 
 
-    private XOButton[][] buttons;
+    private Buttons[][] buttons;
 
-    abstract public void HitBot();
+    abstract public void hitBot();
 
-    protected void RandomMove(int who, int fieldSize) {
+    protected void randomMove(int who, int fieldSize) {
         while (true) {
-            buttons = GameField.GetButtons();
-            a = RandValue(fieldSize);
-            b = RandValue(fieldSize);
-            if (buttons[a][b].IsFree() && !PvMGameProcess.IsEndGame()) {
-                buttons[a][b].SetWho(who);
-                PvMGameProcess.IsWinner(a, b);
+            buttons = GameField.getButtons();
+            a = randValue(fieldSize);
+            b = randValue(fieldSize);
+            if (buttons[a][b].isFree() && !PvMGameProcess.isEndGame()) {
+                buttons[a][b].setWho(who);
+                PvMGameProcess.isWinner(a, b);
                 break;
             }
-            if (PvMGameProcess.IsEndGame())
+            if (PvMGameProcess.isEndGame())
                 break;
         }
     }
-    protected boolean WinAttack(int fieldSize,int who ) {
+    protected boolean winAttack(int fieldSize,int who ) {
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
-                buttons = GameField.GetButtons();
-                checkWinner.RefreshData(buttons);
-                if (buttons[i][j].IsFree() && !PvMGameProcess.IsEndGame()) {
-                    buttons[i][j].SetTest(who, false);
-                    if (checkWinner.CheckWin(who, i, j)) {
-                        buttons[i][j].SetTest(0, true);
-                        buttons[i][j].SetWho(who);
-                        PvMGameProcess.IsWinner(i, j);
+                buttons = GameField.getButtons();
+                checkWinner.refreshData(buttons);
+                if (buttons[i][j].isFree() && !PvMGameProcess.isEndGame()) {
+                    buttons[i][j].setTest(who, false);
+                    if (checkWinner.checkWin(who, i, j)) {
+                        buttons[i][j].setTest(0, true);
+                        buttons[i][j].setWho(who);
+                        PvMGameProcess.isWinner(i, j);
                         return true;
-                    } else buttons[i][j].SetTest(0, true);
+                    } else buttons[i][j].setTest(0, true);
                 }
             }
         }
         return false;
     }
 
-    private int RandValue(int fieldSize) {
+    private int randValue(int fieldSize) {
         Random rand = new Random();
         return rand.nextInt(fieldSize);
     }

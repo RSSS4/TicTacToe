@@ -1,7 +1,5 @@
 package tictactoe.model;
 
-import tictactoe.view.XOButton;
-
 public class CheckWinner {
 
     private int countwin = 0;
@@ -9,21 +7,21 @@ public class CheckWinner {
     private int fieldSize;
     private int pointstowin;
 
-    private XOButton[][] buttons;
+    private Buttons[][] buttons;
 
     public CheckWinner(int fieldSize, int pointstowin) {
         this.fieldSize = fieldSize;
         this.pointstowin = pointstowin;
     }
 
-    public void RefreshData(XOButton[][] buttons) {
+    public void refreshData(Buttons[][] buttons) {
         this.buttons = buttons;
     }
 
-    private boolean CheckLine(int startRaw, int startCol, int dx, int dy, int who, int key) {
+    private boolean checkLine(int startRaw, int startCol, int dx, int dy, int who, int key) {
         for (int i = 0; i < fieldSize; i++) {
-            if (CheckOutOfField(startRaw - i * key * dx, startCol - i * key * dy)) {
-                if (buttons[startRaw - i * key * dx][startCol - i * key * dy].GetWho() == who) {
+            if (checkOutOfField(startRaw - i * key * dx, startCol - i * key * dy)) {
+                if (buttons[startRaw - i * key * dx][startCol - i * key * dy].getWho() == who) {
                     countwin++;
                     if (countwin == pointstowin)
                         return true;
@@ -36,42 +34,42 @@ public class CheckWinner {
         if (key == -1) {
             countwin--; //because we starting at start position twice
             key = 1;
-            if (CheckLine(startRaw, startCol, dx, dy, who, key))
+            if (checkLine(startRaw, startCol, dx, dy, who, key))
                 return true;
         }
         return false;
     }
 
-    public boolean CheckWin(int who, int raw, int col) {                        //get curr value of button
+    public boolean checkWin(int who, int raw, int col) {                        //get curr value of button
         countwin = 0;
         int key = -1;
-        if (CheckLine(raw, col, 0, 1, who, key)) {                           //Find similars in rows(horizontal)
+        if (checkLine(raw, col, 0, 1, who, key)) {                           //Find similars in rows(horizontal)
             return true;
         }
         countwin = 0;
-        if (CheckLine(raw, col, 1, 0, who, key)) {                               //Find similars in cols(vertical)
+        if (checkLine(raw, col, 1, 0, who, key)) {                               //Find similars in cols(vertical)
             return true;
         }
         countwin = 0;
-        if (CheckLine(raw, col, 1, 1, who, key)) {                             //Find similars in cols(vertical)
+        if (checkLine(raw, col, 1, 1, who, key)) {                             //Find similars in cols(vertical)
             return true;
         }
         countwin = 0;
-        if (CheckLine(raw, col, -1, 1, who, key)) {                      //Find similars in cols(vertical)
+        if (checkLine(raw, col, -1, 1, who, key)) {                      //Find similars in cols(vertical)
             return true;
         }
         return false;
     }
 
-    public boolean CheckDraw() {                                      //Check if is it a draw
+    public boolean checkDraw() {                                      //Check if is it a draw
         for (int i = 0; i < fieldSize; i++)
             for (int j = 0; j < fieldSize; j++)
-                if (buttons[i][j].GetWho() == 0)
+                if (buttons[i][j].getWho() == 0)
                     return false;
         return true;
     }
 
-    public boolean CheckOutOfField(int i, int j) {         //Check if index is out of array
+    public boolean checkOutOfField(int i, int j) {         //Check if index is out of array
         if (i < fieldSize && i >= 0)
             if (j < fieldSize && j >= 0)
                 return true;

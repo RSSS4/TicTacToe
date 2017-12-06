@@ -5,11 +5,27 @@ public class UltrScore {
     private int col;
     private int score;
 
-    public int GetRaw (){return raw;}
-    public int GetCol (){return col;}
-    public int GetScore (){return score;}
+    public int getRaw() {
+        return raw;
+    }
 
-    public void SetRaw(int raw){this.raw = raw;}
-    public void SetCol(int col){this.col = col;}
-    public void SetScore(int score){this.score = score;}
+    public int getCol() {
+        return col;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setRaw(int raw) {
+        this.raw = raw;
+    }
+
+    public void setCol(int col) {
+        this.col = col;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
 }

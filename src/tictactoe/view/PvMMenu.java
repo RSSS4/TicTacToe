@@ -172,23 +172,23 @@ public class PvMMenu extends JPanel {
         add(playPvM, c);
     }
 
-    public JButton GetPlayPvMButton() {
+    public JButton getPlayPvMButton() {
         return playPvM;
     }
 
-    public JButton GetSettings() {
+    public JButton getSettings() {
         return settings;
     }
 
-    public JButton GetMusic() {
+    public JButton getMusic() {
         return music;
     }
 
-    public JButton GetMainMenu() {
+    public JButton getMainMenu() {
         return mainM;
     }
 
-    public JButton GetExit() {
+    public JButton getExit() {
         return exit;
     }
 

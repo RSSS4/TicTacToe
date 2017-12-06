@@ -1,7 +1,6 @@
 package tictactoe.model;
 
 import tictactoe.view.GameField;
-import tictactoe.view.XOButton;
 
 public class MediumBot extends Bot {
     private int difficulty;
@@ -14,18 +13,18 @@ public class MediumBot extends Bot {
     private boolean isFind2;
     private boolean nextprediction;
 
-    private XOButton[][] buttons;
+    private Buttons[][] buttons;
     public MediumBot(int fieldSize, int difficulty, int who) {
         this.difficulty = difficulty;
         this.fieldSize = fieldSize;
         this.who = who;
-        buttons = GameField.GetButtons();
+        buttons = GameField.getButtons();
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
     }
 
     @Override
-    public void HitBot() {
-        if (PvMGameProcess.GetTurn() == 0) {
+    public void hitBot() {
+        if (PvMGameProcess.getTurn() == 0) {
             if (who == 0) {
                 enemywho = 1;
             } else enemywho = 2;
@@ -34,23 +33,23 @@ public class MediumBot extends Bot {
                 enemywho = 2;
             } else enemywho = 1;
         }
-        if (!WinAttack(fieldSize, who)) {
+        if (!winAttack(fieldSize, who)) {
             isFind = false;
             nextprediction = true;
             for (int i = 0; i < fieldSize; i++) {
                 if (isFind) break;
                 for (int j = 0; j < fieldSize; j++) {
-                    checkWinner.RefreshData(buttons);
-                    if (buttons[i][j].IsFree() && !PvMGameProcess.IsEndGame()) {
-                        buttons[i][j].SetTest(enemywho, false);
-                        if (checkWinner.CheckWin(enemywho, i, j)) {
-                            buttons[i][j].SetTest(0, true);
-                            buttons[i][j].SetWho(who);
+                    checkWinner.refreshData(buttons);
+                    if (buttons[i][j].isFree() && !PvMGameProcess.isEndGame()) {
+                        buttons[i][j].setTest(enemywho, false);
+                        if (checkWinner.checkWin(enemywho, i, j)) {
+                            buttons[i][j].setTest(0, true);
+                            buttons[i][j].setWho(who);
                             isFind = true;
                             nextprediction = false;
-                            PvMGameProcess.IsWinner(i, j);
+                            PvMGameProcess.isWinner(i, j);
                             break;
-                        } else buttons[i][j].SetTest(0, true);
+                        } else buttons[i][j].setTest(0, true);
                     }
                 }
             }
@@ -61,33 +60,33 @@ public class MediumBot extends Bot {
                 if (isFind) break;
                 for (int j = 0; j < fieldSize; j++) {
                     isFind2 = false;
-                    checkWinner.RefreshData(buttons);
-                    if (buttons[i][j].IsFree() && !PvMGameProcess.IsEndGame()) {
-                        buttons[i][j].SetTest(enemywho, false);
+                    checkWinner.refreshData(buttons);
+                    if (buttons[i][j].isFree() && !PvMGameProcess.isEndGame()) {
+                        buttons[i][j].setTest(enemywho, false);
                         isFind2 = true;
                         for (int k = 0; k < fieldSize; k++) {
                             if (isFind) break;
                             for (int l = 0; l < fieldSize; l++) {
-                                if (buttons[k][l].IsFree() && !PvMGameProcess.IsEndGame()) {
-                                    buttons[k][l].SetTest(enemywho, false);
-                                    if (checkWinner.CheckWin(enemywho, k, l)) {
-                                        buttons[i][j].SetTest(0, true);
-                                        buttons[i][j].SetWho(who);
+                                if (buttons[k][l].isFree() && !PvMGameProcess.isEndGame()) {
+                                    buttons[k][l].setTest(enemywho, false);
+                                    if (checkWinner.checkWin(enemywho, k, l)) {
+                                        buttons[i][j].setTest(0, true);
+                                        buttons[i][j].setWho(who);
                                         isFind = true;
-                                        buttons[k][l].SetTest(0, true);
-                                        PvMGameProcess.IsWinner(i, j);
+                                        buttons[k][l].setTest(0, true);
+                                        PvMGameProcess.isWinner(i, j);
                                         break;
-                                    } else buttons[k][l].SetTest(0, true);
+                                    } else buttons[k][l].setTest(0, true);
                                 }
                             }
                         }
                     }
                     if (isFind) break;
-                    if (isFind2) buttons[i][j].SetTest(0, true);
+                    if (isFind2) buttons[i][j].setTest(0, true);
                 }
             }
             if (!isFind) {
-                RandomMove(who, fieldSize);
+                randomMove(who, fieldSize);
             }
         }
     }
