@@ -524,8 +524,10 @@ public class GameFrame extends JFrame {
                     difficulty = 1;
                 else if (pvmMenu.medium.isSelected())
                     difficulty = 2;
-                else
+                else if (pvmMenu.hard.isSelected())
                     difficulty = 3;
+                else
+                    difficulty = 4;
                 gameField = new GamePanel(bgforfield, fieldSize, difficulty, 2);
                 gameField.GetSettings().addActionListener(new ActionListener() {
 

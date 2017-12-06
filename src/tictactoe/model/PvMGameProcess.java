@@ -26,6 +26,7 @@ public class PvMGameProcess {
     private static Bot boteasy;
     private static Bot botmid;
     private static Bot bothard;
+    private static Bot botultr;
 
     public PvMGameProcess(int fieldSize, int difficulty) {
         this.fieldSize = fieldSize;
@@ -35,6 +36,7 @@ public class PvMGameProcess {
         boteasy = new EasyBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         botmid = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         bothard = new HardBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
+        botultr = new UltrBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         System.out.println(turn + " turn");
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
@@ -50,8 +52,11 @@ public class PvMGameProcess {
             boteasy.HitBot();
         else if (difficulty == 2) {
             botmid.HitBot();
-        } else
+        } else if (difficulty == 3)
             bothard.HitBot();
+        else{
+            botultr.HitBot();
+        }
         ChangeColor.ChangePvMTextColor(false);
     }
 
@@ -99,6 +104,7 @@ public class PvMGameProcess {
         boteasy = new EasyBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         botmid = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         bothard = new HardBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
+        botultr = new UltrBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
         if (comp) {
@@ -106,8 +112,10 @@ public class PvMGameProcess {
                 boteasy.HitBot();
             else if (difficulty == 2) {
                 botmid.HitBot();
-            } else
+            } else if (difficulty == 3)
                 bothard.HitBot();
+            else
+                botultr.HitBot();
         }
     }
 
