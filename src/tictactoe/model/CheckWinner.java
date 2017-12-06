@@ -20,10 +20,10 @@ public class CheckWinner {
         this.buttons = buttons;
     }
 
-    private boolean CheckLine(int startX, int startY, int dx, int dy, int who, int key) {
+    private boolean CheckLine(int startRaw, int startCol, int dx, int dy, int who, int key) {
         for (int i = 0; i < fieldSize; i++) {
-            if (CheckOutOfField(startX - i * key * dx, startY - i * key * dy)) {
-                if (buttons[startX - i * key * dx][startY - i * key * dy].GetWho() == who) {
+            if (CheckOutOfField(startRaw - i * key * dx, startCol - i * key * dy)) {
+                if (buttons[startRaw - i * key * dx][startCol - i * key * dy].GetWho() == who) {
                     countwin++;
                     if (countwin == pointstowin)
                         return true;
@@ -36,28 +36,28 @@ public class CheckWinner {
         if (key == -1) {
             countwin--; //because we starting at start position twice
             key = 1;
-            if (CheckLine(startX, startY, dx, dy, who, key))
+            if (CheckLine(startRaw, startCol, dx, dy, who, key))
                 return true;
         }
         return false;
     }
 
-    public boolean CheckWin(int who, int X, int Y) {                        //get curr value of button
+    public boolean CheckWin(int who, int raw, int col) {                        //get curr value of button
         countwin = 0;
         int key = -1;
-        if (CheckLine(X, Y, 0, 1, who, key)) {                           //Find similars in rows(horizontal)
+        if (CheckLine(raw, col, 0, 1, who, key)) {                           //Find similars in rows(horizontal)
             return true;
         }
         countwin = 0;
-        if (CheckLine(X, Y, 1, 0, who, key)) {                               //Find similars in cols(vertical)
+        if (CheckLine(raw, col, 1, 0, who, key)) {                               //Find similars in cols(vertical)
             return true;
         }
         countwin = 0;
-        if (CheckLine(X, Y, 1, 1, who, key)) {                             //Find similars in cols(vertical)
+        if (CheckLine(raw, col, 1, 1, who, key)) {                             //Find similars in cols(vertical)
             return true;
         }
         countwin = 0;
-        if (CheckLine(X, Y, -1, 1, who, key)) {                      //Find similars in cols(vertical)
+        if (CheckLine(raw, col, -1, 1, who, key)) {                      //Find similars in cols(vertical)
             return true;
         }
         return false;

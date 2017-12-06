@@ -9,7 +9,7 @@ public abstract class Bot {
     private int a;
     private int b;
 
-    protected static CheckWinner checkWinner;
+    protected CheckWinner checkWinner;
 
 
     private XOButton[][] buttons;
