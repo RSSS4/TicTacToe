@@ -11,15 +11,12 @@ public class UltrBot extends Bot {
     private int difficulty;
     private int fieldSize;
     private int score;
-    private int pos;
-    int num = 0;
 
     private int enemywho; // human
     private int who; //ai
 
     private XOButton[][] buttons;
 
-    private int[][] availSpots;
     private int[][] bestmove;
     private ArrayList availablePoints;
 
@@ -55,7 +52,6 @@ public class UltrBot extends Bot {
     }
 
     private int minimax(int player, int x, int y, XOButton[][] newbuttons){
-        num++;
         checkWinner.RefreshData(newbuttons);
         List<Point> pointsAvailable = getAvailableStates(newbuttons);   //get all free positions
         if (checkWinner.CheckWin(enemywho, x, y)){
@@ -72,17 +68,17 @@ public class UltrBot extends Bot {
         for (int i = 0; i < pointsAvailable.size(); i++) {
             Point point = pointsAvailable.get(i);           //get free point at i
             UltrScore score1 = new UltrScore();             //make new score element
-            score1.raw = point.x;
-            score1.col = point.y;                       //set curr position
-            newbuttons[score1.raw][score1.col].SetTest(player, false);      //set test value for curr position
+            score1.SetRaw(point.GetX());
+            score1.SetCol(point.GetY());                     //set curr position
+            newbuttons[score1.GetRaw()][score1.GetCol()].SetTest(player, false);      //set test value for curr position
             if(player ==  who){
-                score = minimax(enemywho, score1.raw, score1.col,newbuttons);           //find the best position for curr player(AI)
-                score1.score = score;                           //save score at curr position
+                score = minimax(enemywho, score1.GetRaw(), score1.GetCol(),newbuttons);           //find the best position for curr player(AI)
+                score1.SetScore(score);                         //save score at curr position
             }else{
-                score = minimax(who,  score1.raw, score1.col,newbuttons);           //find the best position for enemy(human)
-                score1.score = score;
+                score = minimax(who,  score1.GetRaw(), score1.GetCol(),newbuttons);           //find the best position for enemy(human)
+                score1.SetScore(score);
             }
-            newbuttons[score1.raw][score1.col].SetTest(0, true);        //remove test value
+            newbuttons[score1.GetRaw()][score1.GetCol()].SetTest(0, true);        //remove test value
             scoreList.add(score1);                                      //add score with curr position to list
         }
 
@@ -90,18 +86,18 @@ public class UltrBot extends Bot {
         int MinScore = 10000;
         if (player == who) {
             for (int i = 0; i < scoreList.size(); i++) {                //find max score for curr combination
-                if (scoreList.get(i).score > MaxScore) {
-                    MaxScore = scoreList.get(i).score;
-                    bestmove[0][0] = scoreList.get(i).raw;                  //get x,y of best position to hit
-                    bestmove[0][1] = scoreList.get(i).col;
+                if (scoreList.get(i).GetScore() > MaxScore) {
+                    MaxScore = scoreList.get(i).GetScore();
+                    bestmove[0][0] = scoreList.get(i).GetRaw();                  //get x,y of best position to hit
+                    bestmove[0][1] = scoreList.get(i).GetCol();
                 }
             }
         } else {                                                     //find min score for curr combination(the best way for enemy)
             for (int i = 0; i < scoreList.size(); i++) {
-                if (scoreList.get(i).score < MinScore) {
-                    MinScore = scoreList.get(i).score;
-                    bestmove[0][0] = scoreList.get(i).raw;
-                    bestmove[0][1] = scoreList.get(i).col;
+                if (scoreList.get(i).GetScore() < MinScore) {
+                    MinScore = scoreList.get(i).GetScore();
+                    bestmove[0][0] = scoreList.get(i).GetRaw();
+                    bestmove[0][1] = scoreList.get(i).GetCol();
                 }
             }
         }
@@ -111,8 +107,7 @@ public class UltrBot extends Bot {
     public void HitBot(){
         List<Point> pointsAvailable = getAvailableStates(buttons);
         if (pointsAvailable.isEmpty()) return;
-        minimax(who,pointsAvailable.get(0).x, pointsAvailable.get(0).y, buttons);
-        System.out.println(num);
+        minimax(who,pointsAvailable.get(0).GetX(), pointsAvailable.get(0).GetY(), buttons);
         buttons[bestmove[0][0]][bestmove[0][1]].SetWho(who);
         PvMGameProcess.IsWinner(bestmove[0][0],  bestmove[0][1]);
 
