@@ -18,10 +18,10 @@ public class CheckWinner {
         this.buttons = buttons;
     }
 
-    private boolean checkLine(int startRaw, int startCol, int dx, int dy, int who, int key) {
+    private boolean checkLine(int startRaw, int startCol, int dRaw, int dCol, int who, int key) {
         for (int i = 0; i < fieldSize; i++) {
-            if (checkOutOfField(startRaw - i * key * dx, startCol - i * key * dy)) {
-                if (buttons[startRaw - i * key * dx][startCol - i * key * dy].getWho() == who) {
+            if (checkOutOfField(startRaw - i * key * dRaw, startCol - i * key * dCol)) {
+                if (buttons[startRaw - i * key * dRaw][startCol - i * key * dCol].getWho() == who) {
                     countwin++;
                     if (countwin == pointstowin)
                         return true;
@@ -34,7 +34,7 @@ public class CheckWinner {
         if (key == -1) {
             countwin--; //because we starting at start position twice
             key = 1;
-            if (checkLine(startRaw, startCol, dx, dy, who, key))
+            if (checkLine(startRaw, startCol, dRaw, dCol, who, key))
                 return true;
         }
         return false;
