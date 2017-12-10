@@ -39,9 +39,7 @@ public class PvMGameProcess {
         System.out.println(turn + " turn");
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
-        if (comp) {
-            lvl();
-        } else
+        if (!comp)
             ChangeColor.changePvMTextColor(false);
     }
 
