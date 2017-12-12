@@ -48,40 +48,22 @@ public class Buttons extends JButton{
     }
 
     public void gamePvP() {
-        this.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (free) {
-                    setWho(PvPGameProcess.turn());
-                    free = false;
-                    PvPGameProcess.isWinner(X, Y);
-                }
+        this.addActionListener( (e) -> {
+            if (free) {
+                setWho(PvPGameProcess.turn());
+                free = false;
+                PvPGameProcess.isWinner(X, Y);
             }
         });
     }
 
     public void gameWithAI() {
-        this.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (PvMGameProcess.getTurn() == 0 && free) {
-                    int which = PvMGameProcess.getTurn();
-                    setWho(which == 0 ? 2 : 1);
-                    PvMGameProcess.isWinner(X, Y);
-                    PvMGameProcess.setComp(true);
-                    PvMGameProcess.lvl();
-                    PvMGameProcess.setComp(false);
-                }
-                if (PvMGameProcess.getTurn() == 1 && free) {
-                    int which = PvMGameProcess.getTurn();
-                    setWho(which == 0 ? 2 : 1);
-                    PvMGameProcess.isWinner(X, Y);
-                    PvMGameProcess.setComp(true);
-                    PvMGameProcess.lvl();
-                    PvMGameProcess.setComp(false);
-                }
+        this.addActionListener( (e) -> {
+            if (PvMGameProcess.getTurn() == 0 && free) {
+                aiGameProcess ();
+            }
+            if (PvMGameProcess.getTurn() == 1 && free) {
+                aiGameProcess ();
             }
         });
     }
@@ -91,6 +73,16 @@ public class Buttons extends JButton{
         setIcon(null);
         setEnabled(true);
         free = true;
+    }
+
+    public void aiGameProcess ()
+    {
+        int which = PvMGameProcess.getTurn();
+        setWho(which == 0 ? 2 : 1);
+        PvMGameProcess.isWinner(X, Y);
+        PvMGameProcess.setComp(true);
+        PvMGameProcess.lvl();
+        PvMGameProcess.setComp(false);
     }
 
     public void endGame() {
@@ -104,7 +96,5 @@ public class Buttons extends JButton{
     public boolean isFree() {
         return free;
     }
-
-
 
 }
