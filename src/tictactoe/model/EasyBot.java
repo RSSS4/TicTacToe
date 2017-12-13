@@ -3,7 +3,6 @@ package tictactoe.model;
 import tictactoe.view.GameField;
 
 public class EasyBot extends Bot {
-    private int difficulty;
     private int fieldSize;
 
     private int enemywho;
@@ -12,10 +11,9 @@ public class EasyBot extends Bot {
     private boolean isFind = false;
 
     private Buttons[][] buttons;
-    private static CheckWinner checkWinner;
+    private CheckWinner checkWinner;
 
-    public EasyBot(int fieldSize, int difficulty, int who) {
-        this.difficulty = difficulty;
+    public EasyBot(int fieldSize, int who) {
         this.fieldSize = fieldSize;
         this.who = who;
         buttons = GameField.getButtons();
