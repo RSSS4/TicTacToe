@@ -32,10 +32,10 @@ public class EasyBot extends Bot {
             } else enemywho = 1;
         }
         isFind = false;
+        checkWinner.refreshData(buttons);
         for (int k = 0; k < fieldSize; k++) {
             if (isFind) break;
             for (int s = 0; s < fieldSize; s++) {
-                checkWinner.refreshData(buttons);
                 if (buttons[k][s].isFree() && !PvMGameProcess.isEndGame()) {
                     buttons[k][s].setTest(enemywho, false);
                     if (checkWinner.checkWin(enemywho, k, s)) {
