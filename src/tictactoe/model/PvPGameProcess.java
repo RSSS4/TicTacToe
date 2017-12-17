@@ -15,18 +15,19 @@ public class PvPGameProcess {
     private static final int second = 2;
 
     private static CheckWinner checkWinner;
-
+    private static ChangeColor color;
     private static int fieldSize;
 
     public PvPGameProcess(int fieldSize) {
         this.fieldSize = fieldSize;
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
-        ChangeColor.changePvPTextColor(turn);
+        color = new ChangeColor();
+        color.changePvPTextColor(turn);
     }
 
     public static int turn() {
         turn = !turn;
-        ChangeColor.changePvPTextColor(turn);
+        color.changePvPTextColor(turn);
         if (turn) return second;
         return first;
     }
@@ -58,7 +59,7 @@ public class PvPGameProcess {
 
     public static void refresh() {
         turn = true;
-        ChangeColor.changePvPTextColor(turn);
+        color.changePvPTextColor(turn);
     }
 
 }

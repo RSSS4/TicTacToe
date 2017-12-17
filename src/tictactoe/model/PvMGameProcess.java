@@ -22,6 +22,7 @@ public class PvMGameProcess {
 
     private static boolean endGame = false;
 
+    private static ChangeColor color;
     private static Bot boteasy;
     private static Bot botmid;
     private static Bot bothard;
@@ -33,28 +34,30 @@ public class PvMGameProcess {
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
         turn = randFirstTurn();
         boteasy = new EasyBot(fieldSize, turn == 0 ? 1 : 2);
-        botmid = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
-        bothard = new HardBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
+        botmid = new MediumBot(fieldSize, turn == 0 ? 1 : 2);
+        bothard = new HardBot(fieldSize, turn == 0 ? 1 : 2);
         botultr = new UltrBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         System.out.println(turn + " turn");
+        color = new ChangeColor();
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
         if (!comp)
-            ChangeColor.changePvMTextColor(false);
+            color.changePvMTextColor(false);
+
     }
 
     public static void lvl() {
-        ChangeColor.changePvMTextColor(true);
+        color.changePvMTextColor(true);
         if (difficulty == 1)
             boteasy.hitBot();
         else if (difficulty == 2) {
             botmid.hitBot();
         } else if (difficulty == 3)
             bothard.hitBot();
-        else{
+        else {
             botultr.hitBot();
         }
-        ChangeColor.changePvMTextColor(false);
+        color.changePvMTextColor(false);
     }
 
     private static int randFirstTurn() {
@@ -99,8 +102,8 @@ public class PvMGameProcess {
         turn = randFirstTurn();
         System.out.println(turn + " turn");
         boteasy = new EasyBot(fieldSize, turn == 0 ? 1 : 2);
-        botmid = new MediumBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
-        bothard = new HardBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
+        botmid = new MediumBot(fieldSize, turn == 0 ? 1 : 2);
+        bothard = new HardBot(fieldSize, turn == 0 ? 1 : 2);
         botultr = new UltrBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;

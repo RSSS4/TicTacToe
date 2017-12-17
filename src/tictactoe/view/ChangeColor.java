@@ -11,7 +11,7 @@ import javax.swing.*;
 public class ChangeColor {
 
 
-    public static void changePvPTextColor(boolean turn) {
+    public void changePvPTextColor(boolean turn) {
         if (turn) {
             GamePanel.playerLeftText().setForeground(new Color(139, 0, 0));
             GamePanel.playerRightText().setForeground(new Color(255, 255, 255));
@@ -21,7 +21,7 @@ public class ChangeColor {
         }
     }
 
-    public static void changePvMTextColor(boolean turn) {
+    public void changePvMTextColor(boolean turn) {
         if (turn) {
             GamePanel.playerText().setForeground(new Color(255, 255, 255));
             GamePanel.modText().setForeground(new Color(139, 0, 0));

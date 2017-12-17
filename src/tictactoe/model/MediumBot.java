@@ -3,7 +3,6 @@ package tictactoe.model;
 import tictactoe.view.GameField;
 
 public class MediumBot extends Bot {
-    private int difficulty;
     private int fieldSize;
 
     private int enemywho;
@@ -14,16 +13,11 @@ public class MediumBot extends Bot {
     private boolean nextprediction;
 
     private Buttons[][] buttons;
-    public MediumBot(int fieldSize, int difficulty, int who) {
-        this.difficulty = difficulty;
+    public MediumBot(int fieldSize, int who) {
         this.fieldSize = fieldSize;
         this.who = who;
         buttons = GameField.getButtons();
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
-    }
-
-    @Override
-    public void hitBot() {
         if (PvMGameProcess.getTurn() == 0) {
             if (who == 0) {
                 enemywho = 1;
@@ -33,6 +27,10 @@ public class MediumBot extends Bot {
                 enemywho = 2;
             } else enemywho = 1;
         }
+    }
+
+    @Override
+    public void hitBot() {
         if (!winAttack(fieldSize, who)) {
             isFind = false;
             nextprediction = true;
