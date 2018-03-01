@@ -4,6 +4,13 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'application'
 
+buildscript {
+    repositories { mavenCentral() }
+    dependencies { classpath 'org.junit.platform:junit-platform-gradle-plugin:1.0.1' }
+}
+
+apply plugin: 'org.junit.platform.gradle.plugin'
+
 sourceCompatibility = 1.8
 
 repositories {
@@ -13,5 +20,10 @@ repositories {
 mainClassName = 'Main'
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile(
+            'org.junit.jupiter:junit-jupiter-api:5.0.1'
+    )
+    testRuntime(
+            'org.junit.jupiter:junit-jupiter-engine:5.0.1'
+    )
 }
