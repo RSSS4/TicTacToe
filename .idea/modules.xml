@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tictactoe.iml" filepath="$PROJECT_DIR$/.idea/modules/tictactoe.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tictactoe_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tictactoe_main.iml" group="tictactoe" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tictactoe_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tictactoe_test.iml" group="tictactoe" />

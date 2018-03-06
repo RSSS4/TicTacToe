@@ -3,6 +3,7 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: "jacoco"
 
 buildscript {
     repositories { mavenCentral() }
@@ -26,4 +27,15 @@ dependencies {
     testRuntime(
             'org.junit.jupiter:junit-jupiter-engine:5.0.1'
     )
+}
+jacocoTestReport {
+    reports {
+        xml.enabled  true
+        csv.enabled  true
+        html.destination file("${buildDir}/jacocoHtml")
+    }
+}
+jacoco {
+    toolVersion = "0.8.0"
+    reportsDir = file("$buildDir/customJacocoReportDir")
 }
