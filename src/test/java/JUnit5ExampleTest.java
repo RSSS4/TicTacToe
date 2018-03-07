@@ -6,7 +6,7 @@ import model.CheckWinner;
 class JUnit5ExampleTest {
 
     @Test
-    void TestcheckOutOfField() {
+    void TestcheckOutOfField() {                                             //Some
         CheckWinner checkWinner = new CheckWinner(5,5);
         assertEquals(true, checkWinner.checkOutOfField(4,4));
         assertEquals(false, checkWinner.checkOutOfField(5,4));
