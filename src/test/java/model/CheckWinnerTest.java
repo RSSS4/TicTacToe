@@ -1,25 +1,28 @@
 package model;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-class CheckWinnerTest {
+import static org.junit.Assert.assertEquals;
+//import static org.junit.jupiter.api.Assertions.*;
+
+ public class CheckWinnerTest {
 
     @Test
-    void refreshData() {
+    public void refreshData() {
     }
 
     @Test
-    void checkWin() {
+     public void checkWin() {
     }
 
     @Test
-    void checkDraw() {
+    public void checkDraw() {
     }
 
     @Test
-    void checkOutOfField() {
+    public void checkOutOfField() {
         CheckWinner checkWinner = new CheckWinner(5,5);
         assertEquals(true, checkWinner.checkOutOfField(4,4));
         assertEquals(false, checkWinner.checkOutOfField(5,4));

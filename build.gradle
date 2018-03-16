@@ -7,10 +7,10 @@ apply plugin: "jacoco"
 
 buildscript {
     repositories { mavenCentral() }
-    dependencies { classpath 'org.junit.platform:junit-platform-gradle-plugin:1.0.1' }
+//   ?= dependencies { classpath 'org.junit.platform:junit-platform-gradle-plugin:1.0.1' }
 }
 
-apply plugin: 'org.junit.platform.gradle.plugin'
+//apply plugin: 'org.junit.platform.gradle.plugin'
 
 sourceCompatibility = 1.8
 
@@ -22,10 +22,10 @@ mainClassName = 'Main'
 
 dependencies {
     testCompile(
-            'org.junit.jupiter:junit-jupiter-api:5.0.1'
+            'junit:junit:4.12'
     )
     testRuntime(
-            'org.junit.jupiter:junit-jupiter-engine:5.0.1'
+            'junit:junit:4.12'
     )
 }
 jacoco {

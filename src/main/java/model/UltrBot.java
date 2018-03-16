@@ -116,6 +116,4 @@ public class UltrBot extends Bot {
         PvMGameProcess.isWinner(bestmove[0][0], bestmove[0][1]);
 
     }
-
-
 }

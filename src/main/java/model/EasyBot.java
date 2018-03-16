@@ -51,9 +51,5 @@ public class EasyBot extends Bot {
         if (!isFind) {
             randomMove(who, fieldSize);
         }
-
-
     }
-
-
 }
