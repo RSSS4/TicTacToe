@@ -5,6 +5,9 @@ apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: "jacoco"
 
+
+apply plugin: 'maven-publish'
+
 buildscript {
     repositories { mavenCentral() }
 //   ?= dependencies { classpath 'org.junit.platform:junit-platform-gradle-plugin:1.0.1' }
@@ -13,6 +16,7 @@ buildscript {
 //apply plugin: 'org.junit.platform.gradle.plugin'
 
 sourceCompatibility = 1.8
+
 
 repositories {
     mavenCentral()
@@ -37,5 +41,41 @@ jacocoTestReport {
         xml.enabled  true
         csv.enabled  true
         html.destination file("${buildDir}/jacocoHtml")
+    }
+}
+
+
+buildscript {
+    repositories {
+        jcenter()
+
+    }
+    dependencies {
+        //Check for the latest version here: http://plugins.gradle.org/plugin/com.jfrog.artifactory
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4+"
+    }
+}
+
+allprojects {
+    apply plugin: "com.jfrog.artifactory"
+}
+
+artifactory {
+    contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
+    publish {
+        repository {
+            repoKey = 'gradle-release-local'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true
+        }
+    }
+    resolve {
+        repository {
+            repoKey = 'gradle-dev'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true
+        }
     }
 }
