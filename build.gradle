@@ -6,7 +6,7 @@ apply plugin: 'application'
 apply plugin: "jacoco"
 
 
-apply plugin: 'maven-publish'
+/*apply plugin: 'maven-publish'*/
 
 buildscript {
     repositories { mavenCentral() }
@@ -45,6 +45,7 @@ jacocoTestReport {
 }
 
 
+/*
 buildscript {
     repositories {
         jcenter()
@@ -64,7 +65,7 @@ artifactory {
     contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
     publish {
         repository {
-            repoKey = 'TicTacToe'
+            repoKey = 'gradle-release-local'
             username = "${artifactory_user}"
             password = "${artifactory_password}"
             maven = true
@@ -72,10 +73,11 @@ artifactory {
     }
     resolve {
         repository {
-            repoKey = 'TicTacToe'
+            repoKey = 'gradle-dev'
             username = "${artifactory_user}"
             password = "${artifactory_password}"
             maven = true
         }
     }
 }
+*/
