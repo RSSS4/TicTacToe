@@ -11,8 +11,8 @@ public class GameFrame extends JFrame {
 
     private String bgimg = "res/bg/bg.jpg";
     private String bgforfield;
-    private String bgforpvp = "res/bg/bgforpvp.jpg";
     private String bgforpvm = "res/bg/bgforpvm.jpg";
+    private String bgforpvp = "res/bg/bgforpvp.jpg";
 
     private int fieldSize;
     private int difficulty;
