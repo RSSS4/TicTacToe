@@ -1,19 +1,24 @@
 group 'tictactoe'
-version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: "jacoco"
+apply plugin: "com.zoltu.git-versioning"
 
 
 /*apply plugin: 'maven-publish'*/
 
 buildscript {
-    repositories { mavenCentral() }
-//   ?= dependencies { classpath 'org.junit.platform:junit-platform-gradle-plugin:1.0.1' }
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        mavenCentral() }
+    dependencies {
+        classpath "gradle.plugin.com.zoltu.gradle.plugin:git-versioning:3.0.3"
+    }
 }
 
-//apply plugin: 'org.junit.platform.gradle.plugin'
 
 sourceCompatibility = 1.8
 
