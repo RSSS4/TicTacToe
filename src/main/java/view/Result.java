@@ -2,8 +2,9 @@ package view;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.Serializable;
 
-public class Result extends JPanel {
+public class Result extends JPanel implements Serializable{
 
     private Image bgimg;
     private JButton ok;
