@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/tictactoe.iml" afterPath="$PROJECT_DIR$/.idea/modules/tictactoe.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/tictactoe_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/tictactoe_main.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/tictactoe_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/tictactoe_test.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/Result.java" afterPath="$PROJECT_DIR$/src/main/java/view/Result.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -133,8 +127,8 @@
       <file leaf-file-name="Result.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/Result.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="272">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -920,7 +914,7 @@
       <updated>1520399433142</updated>
       <workItem from="1522136412490" duration="3880000" />
       <workItem from="1522775403138" duration="3979000" />
-      <workItem from="1523267263215" duration="853000" />
+      <workItem from="1523267263215" duration="1466000" />
     </task>
     <task id="LOCAL-00001" summary="Some demo">
       <created>1520400457337</created>
@@ -1007,7 +1001,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8712000" />
+    <option name="totallyTimeSpent" value="9325000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
@@ -1455,8 +1449,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/Result.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="272">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
