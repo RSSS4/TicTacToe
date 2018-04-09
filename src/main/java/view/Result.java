@@ -2,11 +2,9 @@ package view;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.Serializable;
 
-public class Result extends JPanel implements Serializable{
 
-    private static final long serialVersionUID = 1905122041950251207L;
+public class Result extends JPanel{
     private Image bgimg;
     private JButton ok;
 

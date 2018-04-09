@@ -10,7 +10,6 @@ public class EasyBot extends Bot {
     public EasyBot(int fieldSize, int who) {
         this.fieldSize = fieldSize;
         this.who = who;
-        checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
 
     }
 

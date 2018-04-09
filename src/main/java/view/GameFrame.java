@@ -594,7 +594,6 @@ public class GameFrame extends JFrame {
                 pvmMenu.setVisible(false);
                 add(gameField);
 
-                refresh();
             }
         });
     }
@@ -605,8 +604,9 @@ public class GameFrame extends JFrame {
         refresh();
     }
 
-    private void refresh() {
+    public void refresh() {
         validate();
         repaint();
     }
+
 }
