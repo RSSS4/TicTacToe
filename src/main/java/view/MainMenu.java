@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class MainMenu extends JPanel {
 
-    private Image bgimg;
+    private transient Image bgimg;
     private JButton pvm;
     private JButton pvp;
     private JButton settings;

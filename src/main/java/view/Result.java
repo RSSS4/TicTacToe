@@ -5,7 +5,7 @@ import java.awt.*;
 
 
 public class Result extends JPanel{
-    private Image bgimg;
+    private transient Image bgimg;
     private JButton ok;
 
     public Result(String bgimg) {

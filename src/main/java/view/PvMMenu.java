@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class PvMMenu extends JPanel {
 
-    private Image bgimg;
+    private transient Image bgimg;
     public JRadioButton three;
     public JRadioButton five;
     public JRadioButton seven;

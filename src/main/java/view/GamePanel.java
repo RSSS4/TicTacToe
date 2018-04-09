@@ -11,7 +11,7 @@ import java.awt.event.*;
 
 public class GamePanel extends JPanel {
 
-    private Image bgforfield;
+    private transient Image bgforfield;
 
     private GameField field;
 
