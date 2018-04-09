@@ -17,7 +17,7 @@ public class GameFrame extends JFrame {
     private int fieldSize;
     private int difficulty;
     private int settIsClicked = 0;
-    private static boolean musicPlay = true;
+    private boolean musicPlay = true;
 
     private MainMenu mainMenu;
     private PvPMenu pvpMenu;
