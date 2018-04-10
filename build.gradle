@@ -6,12 +6,13 @@ apply plugin: "jacoco"
 apply plugin: "com.zoltu.git-versioning"
 apply plugin: 'info.solidsoft.pitest'
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+mainClassName = "Main"
+
 
 buildscript {
     repositories {
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
         maven {
             url "https://plugins.gradle.org/m2/"
         }
@@ -40,6 +41,8 @@ dependencies {
             'junit:junit:4.12'
     )
 }
+
+
 jacoco {
     toolVersion = "0.8.0"
     reportsDir = file("$buildDir/customJacocoReportDir")
@@ -53,7 +56,8 @@ jacocoTestReport {
 }
 
 pitest {
-    targetClasses = ['applicationfolder.*']
+    targetClasses = ['model.*']
+    targetClasses = ['view.*']
     outputFormats = ['XML', 'HTML']
     timestampedReports = false
 }

@@ -2,13 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.2.tar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.2.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/libs/tictactoe-1.2.2.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Bot.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Buttons.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/CheckWinner.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/EasyBot.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/HardBot.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/MediumBot.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/PvMGameProcess.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/PvPGameProcess.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/UltrBot.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/model/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/view/ChangeColor.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/view/GameField.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/view/GameFrame.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/view/GamePanel.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/view/MainMenu.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/view/Music.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/view/PvMMenu.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/view/PvPMenu.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/view/Result.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/view/ResultFrame.java.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/reports/pitest/view/index.html" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/annotation-processors.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/tictactoe.iml" afterPath="$PROJECT_DIR$/.idea/modules/tictactoe.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/tictactoe_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/tictactoe_main.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/tictactoe_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/tictactoe_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/tictactoe" afterPath="$PROJECT_DIR$/build/scripts/tictactoe" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/tictactoe.bat" afterPath="$PROJECT_DIR$/build/scripts/tictactoe.bat" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.CheckWinnerTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.CheckWinnerTest.xml" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Bot.java" afterPath="$PROJECT_DIR$/src/main/java/model/Bot.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Buttons.java" afterPath="$PROJECT_DIR$/src/main/java/model/Buttons.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/CheckWinner.java" afterPath="$PROJECT_DIR$/src/main/java/model/CheckWinner.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/EasyBot.java" afterPath="$PROJECT_DIR$/src/main/java/model/EasyBot.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/HardBot.java" afterPath="$PROJECT_DIR$/src/main/java/model/HardBot.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/MediumBot.java" afterPath="$PROJECT_DIR$/src/main/java/model/MediumBot.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Point.java" afterPath="$PROJECT_DIR$/src/main/java/model/Point.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/PvMGameProcess.java" afterPath="$PROJECT_DIR$/src/main/java/model/PvMGameProcess.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/PvPGameProcess.java" afterPath="$PROJECT_DIR$/src/main/java/model/PvPGameProcess.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/ResultVariable.java" afterPath="$PROJECT_DIR$/src/main/java/model/ResultVariable.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/UltrBot.java" afterPath="$PROJECT_DIR$/src/main/java/model/UltrBot.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/UltrScore.java" afterPath="$PROJECT_DIR$/src/main/java/model/UltrScore.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -86,91 +142,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Bot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Bot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="87" column="27" lean-forward="false" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EasyBot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/EasyBot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HardBot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/HardBot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="79" lean-forward="false" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MediumBot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/MediumBot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Buttons.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Buttons.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="99" column="40" lean-forward="false" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameField.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/GameField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PvMMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/PvMMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="200" column="49" lean-forward="false" selection-start-line="200" selection-start-column="49" selection-end-line="200" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/GameFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="526" column="35" lean-forward="false" selection-start-line="526" selection-start-column="35" selection-end-line="526" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="528">
+              <caret line="60" column="35" lean-forward="false" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -433,8 +409,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6093574190142" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="673042829" />
+        <entry key="$PROJECT_DIR$" value="6093577088580" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1752651296" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="3886012978" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="975608090" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="3984558680" />
@@ -598,6 +574,7 @@
         <option value="$PROJECT_DIR$/src/main/java/view/GameField.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/PvMMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/GameFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tictactoe/model/Bot.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
@@ -608,7 +585,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="32" />
     <option name="y" value="2" />
     <option name="width" value="1322" />
@@ -630,7 +607,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -655,22 +631,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicTacToe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicTacToe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
@@ -712,9 +672,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -730,6 +691,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TicTacToe\TicTacToe\src\main\java\tictactoe" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -743,7 +707,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TicTacToe [run]">
+  <component name="RunManager" selected="Gradle.TicTacToe [build]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -782,7 +746,7 @@
       </ExternalSystemSettings>
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
-    <configuration name="TicTacToe [artifactoryPublish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TicTacToe [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -793,7 +757,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="artifactoryPublish" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -915,19 +879,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [artifactoryPublish]" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [artifactoryDeploy]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [publish]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [publishToMavenLocal]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [run]" />
+      <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [artifactoryDeploy]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [publish]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [publishToMavenLocal]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [run]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [run]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [publishToMavenLocal]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [publish]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [artifactoryDeploy]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [artifactoryPublish]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [run]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [publishToMavenLocal]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [publish]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [artifactoryDeploy]" />
       </list>
     </recent_temporary>
   </component>
@@ -947,7 +911,8 @@
       <workItem from="1522136412490" duration="3880000" />
       <workItem from="1522775403138" duration="3979000" />
       <workItem from="1523267263215" duration="2980000" />
-      <workItem from="1523392954405" duration="1183000" />
+      <workItem from="1523392954405" duration="4082000" />
+      <workItem from="1523398550028" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="Some demo">
       <created>1520400457337</created>
@@ -1034,10 +999,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12995000" />
+    <option name="totallyTimeSpent" value="15903000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1048,12 +1013,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32027027" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27432433" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21891892" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13375" sideWeight="0.4835787" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1066,10 +1030,11 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2094522" sideWeight="0.5164213" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30675676" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1107,86 +1072,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Bot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/HardBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/UltrBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2373">
-          <caret line="117" column="5" lean-forward="false" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/CheckWinner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/EasyBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/MediumBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/CheckWinnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/UltrBot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2457">
@@ -1198,7 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,7 +1100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
           <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1224,7 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1232,7 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,7 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1265,7 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1276,13 +1155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1308,7 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1352,7 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,7 +1229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1368,7 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1376,7 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,7 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1392,7 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1407,7 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1415,9 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1425,7 +1285,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1433,7 +1292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1445">
           <caret line="87" column="27" lean-forward="false" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1441,7 +1299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="53" column="79" lean-forward="false" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1449,7 +1306,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1457,7 +1313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="99" column="40" lean-forward="false" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1465,7 +1320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1473,7 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="200" column="49" lean-forward="false" selection-start-line="200" selection-start-column="49" selection-end-line="200" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1481,14 +1334,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="526" column="35" lean-forward="false" selection-start-line="526" selection-start-column="35" selection-end-line="526" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/model/PvMGameProcess.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/model/PvPGameProcess.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/model/ResultVariable.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/model/HardBot.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/model/UltrBot.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/model/Point.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/model/EasyBot.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/model/UltrScore.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/model/CheckWinner.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/model/Bot.java" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="528">
+          <caret line="60" column="35" lean-forward="false" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
           <folding />
         </state>
       </provider>
