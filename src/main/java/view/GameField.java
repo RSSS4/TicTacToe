@@ -20,8 +20,8 @@ public class GameField extends JPanel {
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
                 buttons[i][j] = new Buttons(whichGame);
-                buttons[i][j].X = i;
-                buttons[i][j].Y = j;
+                buttons[i][j].setX(i);
+                buttons[i][j].setY(j);
                 buttons[i][j].setBackground(new Color(127, 131, 135));
                 buttons[i][j].setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));
                 add(buttons[i][j]);

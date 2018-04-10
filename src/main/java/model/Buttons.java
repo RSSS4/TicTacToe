@@ -15,7 +15,7 @@ public class Buttons extends JButton{
     // first - 1, second - 2
     private int who;
     private boolean free;
-    public int X, Y;
+    private int X, Y;
 
     // 1 - pvp, 2 - pvm
     public Buttons(int whichGame) {
@@ -96,5 +96,8 @@ public class Buttons extends JButton{
     public boolean isFree() {
         return free;
     }
+
+    public void setX(int X){this.X = X;}
+    public void setY(int Y){this.Y = Y;}
 
 }
