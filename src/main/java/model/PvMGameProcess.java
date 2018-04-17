@@ -29,8 +29,7 @@ public class PvMGameProcess {
     private static Bot botultr;
 
     public PvMGameProcess(int fieldSize, int difficulty) {
-        this.fieldSize = fieldSize;
-        this.difficulty = difficulty;
+        getData(fieldSize, difficulty);
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
         turn = randFirstTurn();
         boteasy = new EasyBot(fieldSize, turn == 0 ? 1 : 2);
@@ -45,7 +44,10 @@ public class PvMGameProcess {
             color.changePvMTextColor(false);
 
     }
-
+private void getData(int fieldSize, int difficulty){
+    this.fieldSize = fieldSize;
+    this.difficulty = difficulty;
+}
     public static void lvl() {
         color.changePvMTextColor(true);
         if (difficulty == 1)
