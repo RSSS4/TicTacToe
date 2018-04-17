@@ -19,12 +19,14 @@ public class PvPGameProcess {
     private static int fieldSize;
 
     public PvPGameProcess(int fieldSize) {
-        this.fieldSize = fieldSize;
-        checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
-        color = new ChangeColor();
-        color.changePvPTextColor(turn);
+        setData(fieldSize);
     }
-
+    private void setData(int fieldSize){
+    this.fieldSize = fieldSize;
+    checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
+    color = new ChangeColor();
+    color.changePvPTextColor(turn);
+}
     public static int turn() {
         turn = !turn;
         color.changePvPTextColor(turn);
