@@ -11,6 +11,10 @@ public class GameField extends JPanel {
     private static Buttons buttons[][];
 
     public GameField(int fieldSize, int whichGame) {
+        setData(fieldSize, whichGame);
+    }
+
+    private void setData(int fieldSize, int whichGame){
         this.fieldSize = fieldSize;
 
         setLayout(new GridLayout(fieldSize, fieldSize));

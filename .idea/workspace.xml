@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PvPGameProcess.java" afterPath="$PROJECT_DIR$/src/main/java/model/PvPGameProcess.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/GameField.java" afterPath="$PROJECT_DIR$/src/main/java/view/GameField.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -101,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PvPGameProcess.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PvPGameProcess.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/PvPGameProcess.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
@@ -109,6 +109,19 @@
               <folding>
                 <element signature="e#439#440#0" expanded="true" />
                 <element signature="e#473#474#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameField.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/GameField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+              <folding>
+                <element signature="e#241#242#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -533,13 +546,13 @@
         <option value="$PROJECT_DIR$/src/main/java/view/PvPMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Buttons.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/GameField.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/PvMMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/GameFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/tictactoe/model/Bot.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/model/PvMGameProcess.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/PvPGameProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/GameField.java" />
       </list>
     </option>
   </component>
@@ -604,6 +617,14 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicTacToe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
@@ -956,7 +977,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523985458953</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="test">
+      <created>1523985632850</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1523985632850</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1296,13 +1324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/GameField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/PvMMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
@@ -1358,6 +1379,17 @@
           <folding>
             <element signature="e#439#440#0" expanded="true" />
             <element signature="e#473#474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/GameField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
           </folding>
         </state>
       </provider>
