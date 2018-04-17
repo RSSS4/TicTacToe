@@ -3,9 +3,9 @@ package view;
 import javax.swing.*;
 import java.awt.*;
 
-public class Result extends JPanel {
 
-    private Image bgimg;
+public class Result extends JPanel{
+    private transient Image bgimg;
     private JButton ok;
 
     public Result(String bgimg) {

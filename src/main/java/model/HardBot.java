@@ -6,14 +6,10 @@ public class HardBot extends Bot {
 
     private int fieldSize;
 
-    private int enemywho;
     private int who;
 
-    private boolean isFind;
-    private boolean isFind2;
     private boolean isFind3;
     private boolean isFind4;
-    private boolean nextprediction = false;
     private boolean nextprediction2 = false;
     private boolean nextprediction3 = false;
 
@@ -37,29 +33,8 @@ public class HardBot extends Bot {
 
     @Override
     public void hitBot() {
-        nextprediction = false;
         if (!winAttack(fieldSize, who)) {
-            isFind = false;
-            nextprediction = true;
-            for (int i = 0; i < fieldSize; i++) {
-                if (isFind) break;
-                for (int j = 0; j < fieldSize; j++) {
-                    checkWinner.refreshData(buttons);
-                    if (buttons[i][j].isFree() && !PvMGameProcess.isEndGame()) {
-                        buttons[i][j].setTest(enemywho, false);
-                        if (checkWinner.checkWin(enemywho, i, j)) {
-                            buttons[i][j].setTest(0, true);
-                            buttons[i][j].setWho(who);
-                            isFind = true;
-                            nextprediction = false;
-                            PvMGameProcess.isWinner(i, j);
-                            break;
-                        } else buttons[i][j].setTest(0, true);
-                    }
-                }
-            }
-        }
-        if (nextprediction) {
+        if (!defAttack(fieldSize, who)) {
             nextprediction2 = false;
             if (!predictionAttack()) {
                 nextprediction2 = true;
@@ -95,6 +70,7 @@ public class HardBot extends Bot {
                     }
                 }
             }
+        }
         }
         if (nextprediction2) {
             nextprediction3 = false;

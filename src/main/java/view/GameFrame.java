@@ -17,7 +17,7 @@ public class GameFrame extends JFrame {
     private int fieldSize;
     private int difficulty;
     private int settIsClicked = 0;
-    private static boolean musicPlay = true;
+    private boolean musicPlay = true;
 
     private MainMenu mainMenu;
     private PvPMenu pvpMenu;
@@ -511,21 +511,21 @@ public class GameFrame extends JFrame {
                 pvmMenu.getMusic().setVisible(false);
                 pvmMenu.getMainMenu().setVisible(false);
                 pvmMenu.getExit().setVisible(false);
-                if (pvmMenu.three.isSelected()) {
+                if (pvmMenu.getThree().isSelected()) {
                     fieldSize = 3;
                     bgforfield = "res/bg/bg3.jpg";
-                } else if (pvmMenu.five.isSelected()) {
+                } else if (pvmMenu.getFive().isSelected()) {
                     fieldSize = 5;
                     bgforfield = "res/bg/bg5.jpg";
                 } else {
                     fieldSize = 7;
                     bgforfield = "res/bg/bg7.jpg";
                 }
-                if (pvmMenu.easy.isSelected())
+                if (pvmMenu.getEasy().isSelected())
                     difficulty = 1;
-                else if (pvmMenu.medium.isSelected())
+                else if (pvmMenu.getMedium().isSelected())
                     difficulty = 2;
-                else if (pvmMenu.hard.isSelected())
+                else if (pvmMenu.getHard().isSelected())
                     difficulty = 3;
                 else
                     difficulty = 4;
@@ -594,7 +594,6 @@ public class GameFrame extends JFrame {
                 pvmMenu.setVisible(false);
                 add(gameField);
 
-                refresh();
             }
         });
     }
@@ -605,8 +604,9 @@ public class GameFrame extends JFrame {
         refresh();
     }
 
-    private void refresh() {
+    public void refresh() {
         validate();
         repaint();
     }
+
 }

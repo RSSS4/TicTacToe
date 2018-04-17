@@ -5,14 +5,14 @@ import java.awt.*;
 
 public class PvMMenu extends JPanel {
 
-    private Image bgimg;
-    public JRadioButton three;
-    public JRadioButton five;
-    public JRadioButton seven;
-    public JRadioButton easy;
-    public JRadioButton medium;
-    public JRadioButton hard;
-    public JRadioButton ultra;
+    private transient Image bgimg;
+    private JRadioButton three;
+    private JRadioButton five;
+    private JRadioButton seven;
+    private JRadioButton easy;
+    private JRadioButton medium;
+    private JRadioButton hard;
+    private JRadioButton ultra;
     private JButton playPvM;
     private JButton settings;
     private JButton music;
@@ -191,6 +191,15 @@ public class PvMMenu extends JPanel {
     public JButton getExit() {
         return exit;
     }
+
+    public JRadioButton getThree(){return three;}
+    public JRadioButton getFive(){return five;}
+    public JRadioButton getSeven(){return seven;}
+    public JRadioButton getEasy(){return easy;}
+    public JRadioButton getMedium(){return medium;}
+    public JRadioButton getHard(){return hard;}
+    public JRadioButton getUltra(){return ultra;}
+
 
     public void paintComponent(Graphics g) {
         g.drawImage(bgimg, 0, 0, null);

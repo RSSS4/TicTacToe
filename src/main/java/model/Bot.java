@@ -5,24 +5,30 @@ import view.GameField;
 import java.util.Random;
 
 public abstract class Bot {
-    private int a;
-    private int b;
+    private int x;
+    private int y;
 
     protected CheckWinner checkWinner;
 
+    protected boolean isFind;
+    protected boolean isFind2;
 
-    private Buttons[][] buttons;
+    protected int enemywho;
+
+
+
+    private Buttons[][] buttons = GameField.getButtons();
 
     abstract public void hitBot();
 
     protected void randomMove(int who, int fieldSize) {
         while (true) {
             buttons = GameField.getButtons();
-            a = randValue(fieldSize);
-            b = randValue(fieldSize);
-            if (buttons[a][b].isFree() && !PvMGameProcess.isEndGame()) {
-                buttons[a][b].setWho(who);
-                PvMGameProcess.isWinner(a, b);
+            x = randValue(fieldSize);
+            y = randValue(fieldSize);
+            if (buttons[x][y].isFree() && !PvMGameProcess.isEndGame()) {
+                buttons[x][y].setWho(who);
+                PvMGameProcess.isWinner(x, y);
                 break;
             }
             if (PvMGameProcess.isEndGame())
@@ -30,6 +36,7 @@ public abstract class Bot {
         }
     }
     protected boolean winAttack(int fieldSize,int who ) {
+        getEnemywho(who);
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
                 buttons = GameField.getButtons();
@@ -48,9 +55,45 @@ public abstract class Bot {
         return false;
     }
 
+    protected boolean defAttack(int fieldSize, int who){
+            isFind = false;
+            getEnemywho(who);
+            for (int i = 0; i < fieldSize; i++) {
+                if (isFind) break;
+                for (int j = 0; j < fieldSize; j++) {
+                    checkWinner.refreshData(buttons);
+                    if (buttons[i][j].isFree() && !PvMGameProcess.isEndGame()) {
+                        buttons[i][j].setTest(enemywho, false);
+                        if (checkWinner.checkWin(enemywho, i, j)) {
+                            buttons[i][j].setTest(0, true);
+                            buttons[i][j].setWho(who);
+                            isFind = true;
+                            PvMGameProcess.isWinner(i, j);
+                            return true;
+                        } else buttons[i][j].setTest(0, true);
+                    }
+                }
+            }
+        return false;
+
+    }
+
     private int randValue(int fieldSize) {
         Random rand = new Random();
         return rand.nextInt(fieldSize);
+    }
+
+    private void getEnemywho(int who){
+        if (PvMGameProcess.getTurn() == 0) {
+            if (who == 0) {
+                enemywho = 1;
+            } else enemywho = 2;
+        } else {
+            if (who == 0) {
+                enemywho = 2;
+            } else enemywho = 1;
+        }
+
     }
 }
 
