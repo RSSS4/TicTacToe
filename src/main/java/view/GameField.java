@@ -8,7 +8,7 @@ import javax.swing.*;
 public class GameField extends JPanel {
 
     private static int fieldSize;
-    private static Buttons buttons[][];
+    private static Buttons[][] buttons;
 
     public GameField(int fieldSize, int whichGame) {
         setData(fieldSize, whichGame);

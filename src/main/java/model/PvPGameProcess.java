@@ -11,8 +11,8 @@ public class PvPGameProcess {
     //first - false, second - true
     private static boolean turn = true;
 
-    private static final int first = 1;
-    private static final int second = 2;
+    private static final int FIRST = 1;
+    private static final int SECOND = 2;
 
     private static CheckWinner checkWinner;
     private static ChangeColor color;
@@ -30,17 +30,17 @@ public class PvPGameProcess {
     public static int turn() {
         turn = !turn;
         color.changePvPTextColor(turn);
-        if (turn) return second;
-        return first;
+        if (turn) return SECOND;
+        return FIRST;
     }
 
     public static void isWinner(int X, int Y) {
         Buttons[][] buttons = GameField.getButtons();
         checkWinner.refreshData(buttons);
-        if (checkWinner.checkWin(first, X, Y)) {
+        if (checkWinner.checkWin(FIRST, X, Y)) {
             endGame();
             result = new ResultFrame(ResultVariable.ResultVar.FIRSTWIN);
-        } else if (checkWinner.checkWin(second, X, Y)) {
+        } else if (checkWinner.checkWin(SECOND, X, Y)) {
             endGame();
             result = new ResultFrame(ResultVariable.ResultVar.SECONDWIN);
         } else if (checkWinner.checkDraw()) {

@@ -10,7 +10,6 @@ import java.util.List;
 public class UltrBot extends Bot {
     private int difficulty;
     private int fieldSize;
-    private int score;
     private int maxDepth;
 
     private int enemywho; // human
@@ -19,7 +18,6 @@ public class UltrBot extends Bot {
     private Buttons[][] buttons;
 
     private int[][] bestmove;
-    private ArrayList availablePoints;
 
     public UltrBot(int fieldSize, int difficulty, int who) {
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
@@ -42,6 +40,7 @@ public class UltrBot extends Bot {
     }
 
     public List<Point> getAvailableStates(Buttons[][] newbuttons) {
+        ArrayList availablePoints;
         availablePoints = new ArrayList<>();
         for (int i = 0; i < fieldSize; ++i) {
             for (int j = 0; j < fieldSize; ++j) {
@@ -54,6 +53,7 @@ public class UltrBot extends Bot {
     }
 
     private int minimax(int player, int x, int y, Buttons[][] newbuttons, int depth) {
+        int score;
         checkWinner.refreshData(newbuttons);
         List<Point> pointsAvailable = getAvailableStates(newbuttons);   //get all free positions
         if (checkWinner.checkWin(enemywho, x, y)) {
@@ -85,26 +85,26 @@ public class UltrBot extends Bot {
             scoreList.add(score1);                                      //add score with curr position to list
         }
 
-        int MaxScore = -10000;                                  //start values
-        int MinScore = 10000;
+        int maxScore = -10000;                                  //start values
+        int minScore = 10000;
         if (player == who) {
             for (int i = 0; i < scoreList.size(); i++) {                //find max score for curr combination
-                if (scoreList.get(i).getScore() > MaxScore) {
-                    MaxScore = scoreList.get(i).getScore();
+                if (scoreList.get(i).getScore() > maxScore) {
+                    maxScore = scoreList.get(i).getScore();
                     bestmove[0][0] = scoreList.get(i).getRaw();                  //get x,y of best position to hit
                     bestmove[0][1] = scoreList.get(i).getCol();
                 }
             }
         } else {                                                     //find min score for curr combination(the best way for enemy)
             for (int i = 0; i < scoreList.size(); i++) {
-                if (scoreList.get(i).getScore() < MinScore) {
-                    MinScore = scoreList.get(i).getScore();
+                if (scoreList.get(i).getScore() < minScore) {
+                    minScore = scoreList.get(i).getScore();
                     bestmove[0][0] = scoreList.get(i).getRaw();
                     bestmove[0][1] = scoreList.get(i).getCol();
                 }
             }
         }
-        return player == who ? MaxScore : MinScore;                     //return curr score
+        return player == who ? maxScore : minScore;                     //return curr score
     }
 
     public void hitBot() {
