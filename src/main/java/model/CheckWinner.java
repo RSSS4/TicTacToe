@@ -75,5 +75,8 @@ public class CheckWinner {
                 return true;
         return false;
     }
+    public Buttons[][] getButtons() {
+        return buttons;
+    }
 
 }
