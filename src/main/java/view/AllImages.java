@@ -43,4 +43,5 @@ public class AllImages {
     public static final ImageIcon exit = new ImageIcon("res/buttons/exit.png");
 
     public static final ImageIcon ok = new ImageIcon("res/buttons/ok.png");
+    
 }
