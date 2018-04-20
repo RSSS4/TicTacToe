@@ -2,47 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$3.class" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$1$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$1.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$2.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$2.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$3$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$3$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$3$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$3.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1$2.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1$3.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$7.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1$1.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1$2.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1$2.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$1.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$2.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$2.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$3.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$3.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$7.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$8.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$8$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$9$1.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$8$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$8$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$8.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$9.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$9$1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$9$1$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$9$1$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame.class" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" afterPath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/GameFrame.java" afterPath="$PROJECT_DIR$/src/main/java/view/GameFrame.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -173,8 +134,8 @@
       <file leaf-file-name="GameFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/GameFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="401" column="0" lean-forward="false" selection-start-line="401" selection-start-column="0" selection-end-line="401" selection-end-column="0" />
+            <state relative-caret-position="489">
+              <caret line="469" column="0" lean-forward="true" selection-start-line="469" selection-start-column="0" selection-end-line="469" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1116,7 +1077,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524205412085</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add Junit">
+      <created>1524205559931</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1524205559931</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1528,8 +1496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/GameFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="401" column="0" lean-forward="false" selection-start-line="401" selection-start-column="0" selection-end-line="401" selection-end-column="0" />
+        <state relative-caret-position="489">
+          <caret line="469" column="0" lean-forward="true" selection-start-line="469" selection-start-column="0" selection-end-line="469" selection-end-column="0" />
           <folding />
         </state>
       </provider>
