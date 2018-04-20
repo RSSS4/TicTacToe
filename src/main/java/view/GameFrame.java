@@ -28,7 +28,7 @@ public class GameFrame extends JFrame {
     private PvPGameProcess pvpgame;
     private PvMGameProcess pvmgame;
 
-    private Buttons buttons[][];
+    private Buttons[][] buttons;
 
     public GameFrame() {
         setUndecorated(true);
@@ -62,31 +62,22 @@ public class GameFrame extends JFrame {
                     mainMenu.getMusic().setIcon(AllImages.music);
                 else
                     mainMenu.getMusic().setIcon(AllImages.nomusic);
-                mainMenu.getMusic().addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        if (musicPlay) {
-                            musicPlay = false;
-                            music.getMusic().stop();
-                            mainMenu.getMusic().setIcon(AllImages.nomusic);
-                            refresh();
-                        } else {
-                            musicPlay = true;
-                            music.getMusic().start();
-                            music.getMusic().loop(10);
-                            mainMenu.getMusic().setIcon(AllImages.music);
-                            refresh();
-                        }
+                mainMenu.getMusic().addActionListener(e -> {
+                    if (musicPlay) {
+                        musicPlay = false;
+                        music.getMusic().stop();
+                        mainMenu.getMusic().setIcon(AllImages.nomusic);
+                        refresh();
+                    } else {
+                        musicPlay = true;
+                        music.getMusic().start();
+                        music.getMusic().loop(10);
+                        mainMenu.getMusic().setIcon(AllImages.music);
+                        refresh();
                     }
                 });
                 mainMenu.getExit().setVisible(true);
-                mainMenu.getExit().addActionListener(new ActionListener() {
-
-                    @Override
-                    public void actionPerformed(ActionEvent arg0) {
-                        exit();
-                    }
-                });
+                mainMenu.getExit().addActionListener(arg0114 -> exit());
                 refresh();
             } else {
                 settIsClicked = 0;
