@@ -2,8 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$3.class" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/GameFrame.java" afterPath="$PROJECT_DIR$/src/main/java/view/GameFrame.java" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$1$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$1$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$1.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$2.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$2.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$3$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$3$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$3$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$3.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1$2.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1$3.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1$4.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$4.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$7.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1$1.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1$2.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5$1$2.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$5.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$1.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$2.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$2.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$3.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1$3.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6$1.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$6.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$7.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$8.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$8$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$9$1.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$8$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$8$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$8.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$9.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$9$1$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$9$1$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$9$1$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame.class" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" afterPath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -131,24 +170,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/GameFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="401" column="0" lean-forward="false" selection-start-line="391" selection-start-column="66" selection-end-line="401" selection-end-column="0" />
-              <folding>
-                <element signature="e#2728#2729#0" expanded="true" />
-                <element signature="e#2782#2783#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="690">
+              <caret line="401" column="0" lean-forward="false" selection-start-line="401" selection-start-column="0" selection-end-line="401" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="210">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1073,7 +1109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524166998355</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add Junit">
+      <created>1524205412085</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1524205412085</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1132,8 +1175,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32027027" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30690828" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30690828" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1475,21 +1518,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/GameFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="401" column="0" lean-forward="false" selection-start-line="391" selection-start-column="66" selection-end-line="401" selection-end-column="0" />
-          <folding>
-            <element signature="e#2728#2729#0" expanded="true" />
-            <element signature="e#2782#2783#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/GameFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="690">
+          <caret line="401" column="0" lean-forward="false" selection-start-line="401" selection-start-column="0" selection-end-line="401" selection-end-column="0" />
           <folding />
         </state>
       </provider>
