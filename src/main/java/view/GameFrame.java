@@ -58,14 +58,14 @@ public class GameFrame extends JFrame {
                 settIsClicked = 1;
                 mainMenu.getSettings().setIcon(AllImages.close);
                 mainMenu.getMusic().setVisible(true);
-                if (musicPlay == true)
+                if (musicPlay)
                     mainMenu.getMusic().setIcon(AllImages.music);
                 else
                     mainMenu.getMusic().setIcon(AllImages.nomusic);
                 mainMenu.getMusic().addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        if (musicPlay == true) {
+                        if (musicPlay) {
                             musicPlay = false;
                             music.getMusic().stop();
                             mainMenu.getMusic().setIcon(AllImages.nomusic);
@@ -113,12 +113,12 @@ public class GameFrame extends JFrame {
                 settIsClicked = 1;
                 pvpMenu.getSettings().setIcon(AllImages.close);
                 pvpMenu.getMusic().setVisible(true);
-                if (musicPlay == true)
+                if (musicPlay)
                     pvpMenu.getMusic().setIcon(AllImages.music);
                 else
                     pvpMenu.getMusic().setIcon(AllImages.nomusic);
                 pvpMenu.getMusic().addActionListener(e -> {
-                    if (musicPlay == true) {
+                    if (musicPlay) {
                         musicPlay = false;
                         music.getMusic().stop();
                         pvpMenu.getMusic().setIcon(AllImages.nomusic);
@@ -168,12 +168,12 @@ public class GameFrame extends JFrame {
                     settIsClicked = 1;
                     gameField.getSettings().setIcon(AllImages.close);
                     gameField.getMusic().setVisible(true);
-                    if (musicPlay == true)
+                    if (musicPlay)
                         gameField.getMusic().setIcon(AllImages.music);
                     else
                         gameField.getMusic().setIcon(AllImages.nomusic);
                     gameField.getMusic().addActionListener(e1 -> {
-                        if (musicPlay == true) {
+                        if (musicPlay) {
                             musicPlay = false;
                             music.getMusic().stop();
                             gameField.getMusic().setIcon(AllImages.nomusic);
