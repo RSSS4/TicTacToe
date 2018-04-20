@@ -28,7 +28,7 @@ public class GameFrame extends JFrame {
     private PvPGameProcess pvpgame;
     private PvMGameProcess pvmgame;
 
-    private Buttons[][] buttons;
+    private Buttons buttons[][];
 
     public GameFrame() {
         setUndecorated(true);
@@ -58,26 +58,35 @@ public class GameFrame extends JFrame {
                 settIsClicked = 1;
                 mainMenu.getSettings().setIcon(AllImages.close);
                 mainMenu.getMusic().setVisible(true);
-                if (musicPlay)
+                if (musicPlay == true)
                     mainMenu.getMusic().setIcon(AllImages.music);
                 else
                     mainMenu.getMusic().setIcon(AllImages.nomusic);
-                mainMenu.getMusic().addActionListener(e -> {
-                    if (musicPlay) {
-                        musicPlay = false;
-                        music.getMusic().stop();
-                        mainMenu.getMusic().setIcon(AllImages.nomusic);
-                        refresh();
-                    } else {
-                        musicPlay = true;
-                        music.getMusic().start();
-                        music.getMusic().loop(10);
-                        mainMenu.getMusic().setIcon(AllImages.music);
-                        refresh();
+                mainMenu.getMusic().addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        if (musicPlay == true) {
+                            musicPlay = false;
+                            music.getMusic().stop();
+                            mainMenu.getMusic().setIcon(AllImages.nomusic);
+                            refresh();
+                        } else {
+                            musicPlay = true;
+                            music.getMusic().start();
+                            music.getMusic().loop(10);
+                            mainMenu.getMusic().setIcon(AllImages.music);
+                            refresh();
+                        }
                     }
                 });
                 mainMenu.getExit().setVisible(true);
-                mainMenu.getExit().addActionListener(arg0114 -> exit());
+                mainMenu.getExit().addActionListener(new ActionListener() {
+
+                    @Override
+                    public void actionPerformed(ActionEvent arg0) {
+                        exit();
+                    }
+                });
                 refresh();
             } else {
                 settIsClicked = 0;
@@ -104,12 +113,12 @@ public class GameFrame extends JFrame {
                 settIsClicked = 1;
                 pvpMenu.getSettings().setIcon(AllImages.close);
                 pvpMenu.getMusic().setVisible(true);
-                if (musicPlay)
+                if (musicPlay == true)
                     pvpMenu.getMusic().setIcon(AllImages.music);
                 else
                     pvpMenu.getMusic().setIcon(AllImages.nomusic);
                 pvpMenu.getMusic().addActionListener(e -> {
-                    if (musicPlay) {
+                    if (musicPlay == true) {
                         musicPlay = false;
                         music.getMusic().stop();
                         pvpMenu.getMusic().setIcon(AllImages.nomusic);
@@ -159,12 +168,12 @@ public class GameFrame extends JFrame {
                     settIsClicked = 1;
                     gameField.getSettings().setIcon(AllImages.close);
                     gameField.getMusic().setVisible(true);
-                    if (musicPlay)
+                    if (musicPlay == true)
                         gameField.getMusic().setIcon(AllImages.music);
                     else
                         gameField.getMusic().setIcon(AllImages.nomusic);
                     gameField.getMusic().addActionListener(e1 -> {
-                        if (musicPlay) {
+                        if (musicPlay == true) {
                             musicPlay = false;
                             music.getMusic().stop();
                             gameField.getMusic().setIcon(AllImages.nomusic);
