@@ -7,15 +7,15 @@ import model.PvPGameProcess;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 
 public class Buttons extends JButton{
 
     // first - 1, second - 2
     private int who;
     private boolean free;
-    private int X, Y;
+    private int X;
+    private int Y;
 
     // 1 - pvp, 2 - pvm
     public Buttons(int whichGame) {
@@ -48,7 +48,7 @@ public class Buttons extends JButton{
     }
 
     public void gamePvP() {
-        this.addActionListener( (e) -> {
+        this.addActionListener( e -> {
             if (free) {
                 setWho(PvPGameProcess.turn());
                 free = false;
@@ -58,7 +58,7 @@ public class Buttons extends JButton{
     }
 
     public void gameWithAI() {
-        this.addActionListener( (e) -> {
+        this.addActionListener( e -> {
             if (PvMGameProcess.getTurn() == 0 && free) {
                 aiGameProcess ();
             }

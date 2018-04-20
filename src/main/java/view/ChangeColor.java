@@ -1,8 +1,8 @@
 package view;
 
-import view.GameField;
+
 import view.GamePanel;
-import view.ResultFrame;
+
 
 import java.awt.Color;
 

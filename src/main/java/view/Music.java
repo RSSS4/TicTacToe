@@ -6,22 +6,22 @@ import javax.sound.sampled.Clip;
 
 public class Music {
 
-    private File mfile;
-    private Clip music;
+    private Clip musicPlay;
 
     public void playMusic() {
 
         try {
-            mfile = new File("res/music/music.wav");
-            music = AudioSystem.getClip();
-            music.open(AudioSystem.getAudioInputStream(mfile));
-            music.start();
-            music.loop(10);
+            File mfile = new File("res/music/music.wav");
+            musicPlay = AudioSystem.getClip();
+            musicPlay.open(AudioSystem.getAudioInputStream(mfile));
+            musicPlay.start();
+            musicPlay.loop(10);
         } catch (Exception e) {
+            System.out.print(e);
         }
     }
 
     public Clip getMusic() {
-        return music;
+        return musicPlay;
     }
 }

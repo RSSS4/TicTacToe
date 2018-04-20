@@ -156,9 +156,7 @@ public class GamePanel extends JPanel {
         restart.setIcon(AllImages.restart);
         restart.setPreferredSize(new Dimension(restart.getIcon().getIconWidth(), restart.getIcon().getIconHeight()));
         restart.setBorderPainted(false);
-        restart.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        restart.addActionListener( e -> {
                 Buttons[][] buttons = field.getButtons();
                 for (int i = 0; i < fieldSize; i++)
                     for (int j = 0; j < fieldSize; j++)
@@ -166,7 +164,6 @@ public class GamePanel extends JPanel {
                 if (whichGame == 1)
                     PvPGameProcess.refresh();
                 else PvMGameProcess.refresh();
-            }
         });
         c.fill = GridBagConstraints.NONE;
         c.gridwidth = 4;

@@ -5,8 +5,6 @@ import view.GameField;
 import java.util.Random;
 
 public abstract class Bot {
-    private int x;
-    private int y;
 
     protected CheckWinner checkWinner;
 
@@ -19,9 +17,11 @@ public abstract class Bot {
 
     private Buttons[][] buttons = GameField.getButtons();
 
-    abstract public void hitBot();
+    public abstract void hitBot();
 
     protected void randomMove(int who, int fieldSize) {
+        int x;
+        int y;
         while (true) {
             buttons = GameField.getButtons();
             x = randValue(fieldSize);

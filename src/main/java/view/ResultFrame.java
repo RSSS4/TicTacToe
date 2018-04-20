@@ -49,11 +49,8 @@ public class ResultFrame extends JFrame {
                 add(resultPanel);
         }
 
-        resultPanel.GetOk().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent arg0) {
+        resultPanel.getOk().addActionListener( e ->  {
                 dispose();
-            }
         });
 
     }

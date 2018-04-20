@@ -102,7 +102,7 @@ private void setData(int fieldSize, int difficulty){
     public static void refresh() {
         endGame = false;
         turn = randFirstTurn();
-        System.out.println(turn + " turn");
+        //System.out.println(turn + " turn");
         boteasy = new EasyBot(fieldSize, turn == 0 ? 1 : 2);
         botmid = new MediumBot(fieldSize, turn == 0 ? 1 : 2);
         bothard = new HardBot(fieldSize, turn == 0 ? 1 : 2);
