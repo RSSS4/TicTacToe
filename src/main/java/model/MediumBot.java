@@ -13,8 +13,8 @@ public class MediumBot extends Bot {
 
     @Override
     public void hitBot() {
-        if (!winAttack(fieldSize, who)) {
-            if (!defAttack(fieldSize, who)) {
+        if (!winAttack(who)) {
+            if (!defAttack(who)) {
                 isFind = false;
                 for (int i = 0; i < fieldSize; i++) {
                     if (isFind) break;

@@ -18,8 +18,8 @@ public class HardBot extends Bot {
 
     @Override
     public void hitBot() {
-        if (!winAttack(fieldSize, who)) {
-        if (!defAttack(fieldSize, who)) {
+        if (!winAttack( who)) {
+        if (!defAttack( who)) {
             nextprediction2 = false;
             if (!predictionAttack()) {
                 nextprediction2 = true;

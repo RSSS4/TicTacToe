@@ -1,6 +1,6 @@
 package model;
 
-import view.GameField;
+
 
 
 import java.util.ArrayList;
@@ -16,8 +16,9 @@ public class UltrBot extends Bot {
     private int[][] bestmove;
 
     public UltrBot(int who) {
-        checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
-        maxDepth = fieldSize == 3 ? 10 : (fieldSize == 5 ? 5 : 3);
+        getPoitToWin(fieldSize);
+        checkWinner = new CheckWinner(fieldSize, pointToWin);
+        maxDepth = fieldSize == 3 ? 10 : 5;
         getEnemywho(who);
         this.who = who;
 

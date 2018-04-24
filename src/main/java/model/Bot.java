@@ -13,6 +13,8 @@ public abstract class Bot {
 
     protected int enemywho;
 
+    protected int pointToWin = 0;
+
 
 
     protected Buttons[][] buttons = GameField.getButtons();
@@ -23,21 +25,23 @@ public abstract class Bot {
     protected void randomMove(int who, int fieldSize) {
         int x;
         int y;
-        while (true) {
+        boolean offFromloop = true;
+        while (offFromloop) {
             x = randValue(fieldSize);
             y = randValue(fieldSize);
             if (buttons[x][y].isFree() && !PvMGameProcess.isEndGame()) {
                 buttons[x][y].setWho(who);
                 PvMGameProcess.isWinner(x, y);
-                break;
+                offFromloop = false;
             }
             if (PvMGameProcess.isEndGame())
-                break;
+                offFromloop = false;
         }
     }
-    protected boolean winAttack(int fieldSize,int who ) {
+    protected boolean winAttack(int who) {
         getEnemywho(who);
-        checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
+        getPoitToWin(fieldSize);
+        checkWinner = new CheckWinner(fieldSize,pointToWin);
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
                 checkWinner.refreshData(buttons);
@@ -56,11 +60,10 @@ public abstract class Bot {
     }
 
 
-    protected boolean defAttack(int fieldSize, int who){
-        checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
-            isFind = false;
+    protected boolean defAttack(int who){
+        getPoitToWin(fieldSize);
+        checkWinner = new CheckWinner(fieldSize, pointToWin);
             for (int i = 0; i < fieldSize; i++) {
-                if (isFind) break;
                 for (int j = 0; j < fieldSize; j++) {
                     checkWinner.refreshData(buttons);
                     if (buttons[i][j].isFree() && !PvMGameProcess.isEndGame()) {
@@ -76,7 +79,6 @@ public abstract class Bot {
                 }
             }
         return false;
-
     }
 
     private int randValue(int fieldSize) {
@@ -95,6 +97,14 @@ public abstract class Bot {
             } else enemywho = 1;
         }
 
+    }
+    protected void getPoitToWin(int fieldSize){
+        if(fieldSize == 3){
+            pointToWin = 3;
+        }else if(fieldSize == 5){
+            pointToWin = 4;
+        }else
+            pointToWin = 5;
     }
 }
 

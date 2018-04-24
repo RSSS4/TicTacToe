@@ -13,7 +13,7 @@ public class EasyBot extends Bot {
 
     @Override
     public void hitBot() {
-        if (!defAttack(fieldSize, who)) {
+        if (!defAttack(who)) {
             randomMove(who, fieldSize);
         }
     }
