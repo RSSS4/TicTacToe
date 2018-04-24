@@ -15,7 +15,8 @@ public abstract class Bot {
 
 
 
-    private Buttons[][] buttons = GameField.getButtons();
+    protected Buttons[][] buttons = GameField.getButtons();
+    protected int fieldSize = GameField.getFieldSize();
 
     public abstract void hitBot();
 
@@ -23,7 +24,6 @@ public abstract class Bot {
         int x;
         int y;
         while (true) {
-            buttons = GameField.getButtons();
             x = randValue(fieldSize);
             y = randValue(fieldSize);
             if (buttons[x][y].isFree() && !PvMGameProcess.isEndGame()) {
@@ -37,9 +37,9 @@ public abstract class Bot {
     }
     protected boolean winAttack(int fieldSize,int who ) {
         getEnemywho(who);
+        checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
-                buttons = GameField.getButtons();
                 checkWinner.refreshData(buttons);
                 if (buttons[i][j].isFree() && !PvMGameProcess.isEndGame()) {
                     buttons[i][j].setTest(who, false);
@@ -55,9 +55,10 @@ public abstract class Bot {
         return false;
     }
 
+
     protected boolean defAttack(int fieldSize, int who){
+        checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
             isFind = false;
-            getEnemywho(who);
             for (int i = 0; i < fieldSize; i++) {
                 if (isFind) break;
                 for (int j = 0; j < fieldSize; j++) {
@@ -83,7 +84,7 @@ public abstract class Bot {
         return rand.nextInt(fieldSize);
     }
 
-    private void getEnemywho(int who){
+    protected void getEnemywho(int who){
         if (PvMGameProcess.getTurn() == 0) {
             if (who == 0) {
                 enemywho = 1;

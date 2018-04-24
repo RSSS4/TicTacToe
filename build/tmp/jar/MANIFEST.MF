@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Version: 1.2.24
+Implementation-Sha: 4bd2b9e
+Specification-Version: 1.2
+

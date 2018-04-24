@@ -4,8 +4,6 @@ import view.GameField;
 
 public class HardBot extends Bot {
 
-    private int fieldSize;
-
     private int who;
 
     private boolean isFind3;
@@ -13,22 +11,9 @@ public class HardBot extends Bot {
     private boolean nextprediction2 = false;
     private boolean nextprediction3 = false;
 
-    private Buttons[][] buttons;
 
-    public HardBot(int fieldSize, int who) {
-        this.fieldSize = fieldSize;
+    public HardBot(int who) {
         this.who = who;
-        buttons = GameField.getButtons();
-        checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
-        if (PvMGameProcess.getTurn() == 0) {
-            if (who == 0) {
-                enemywho = 1;
-            } else enemywho = 2;
-        } else {
-            if (who == 0) {
-                enemywho = 2;
-            } else enemywho = 1;
-        }
     }
 
     @Override

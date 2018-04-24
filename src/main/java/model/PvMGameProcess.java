@@ -37,10 +37,10 @@ private void setData(int fieldSize, int difficulty){
     this.difficulty = difficulty;
     checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
     turn = randFirstTurn();
-    boteasy = new EasyBot(fieldSize, turn == 0 ? 1 : 2);
-    botmid = new MediumBot(fieldSize, turn == 0 ? 1 : 2);
-    bothard = new HardBot(fieldSize, turn == 0 ? 1 : 2);
-    botultr = new UltrBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
+    boteasy = new EasyBot(turn == 0 ? 1 : 2);
+    botmid = new MediumBot(turn == 0 ? 1 : 2);
+    bothard = new HardBot(turn == 0 ? 1 : 2);
+    botultr = new UltrBot(turn == 0 ? 1 : 2);
     System.out.println(turn + " turn");
     color = new ChangeColor();
     player = turn == 0 ? false : true;
@@ -102,11 +102,10 @@ private void setData(int fieldSize, int difficulty){
     public static void refresh() {
         endGame = false;
         turn = randFirstTurn();
-        //System.out.println(turn + " turn");
-        boteasy = new EasyBot(fieldSize, turn == 0 ? 1 : 2);
-        botmid = new MediumBot(fieldSize, turn == 0 ? 1 : 2);
-        bothard = new HardBot(fieldSize, turn == 0 ? 1 : 2);
-        botultr = new UltrBot(fieldSize, difficulty, turn == 0 ? 1 : 2);
+        boteasy = new EasyBot(turn == 0 ? 1 : 2);
+        botmid = new MediumBot(turn == 0 ? 1 : 2);
+        bothard = new HardBot(turn == 0 ? 1 : 2);
+        botultr = new UltrBot(turn == 0 ? 1 : 2);
         player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
         if (comp) {

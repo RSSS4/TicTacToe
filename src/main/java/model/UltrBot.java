@@ -8,34 +8,19 @@ import java.util.List;
 
 
 public class UltrBot extends Bot {
-    private int difficulty;
-    private int fieldSize;
     private int maxDepth;
 
-    private int enemywho; // human
     private int who; //ai
 
-    private Buttons[][] buttons;
 
     private int[][] bestmove;
 
-    public UltrBot(int fieldSize, int difficulty, int who) {
+    public UltrBot(int who) {
         checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
         maxDepth = fieldSize == 3 ? 10 : (fieldSize == 5 ? 5 : 3);
-
-        this.difficulty = difficulty;
-        this.fieldSize = fieldSize;
+        getEnemywho(who);
         this.who = who;
-        buttons = GameField.getButtons();
-        if (PvMGameProcess.getTurn() == 0) {
-            if (who == 0) {
-                enemywho = 1;
-            } else enemywho = 2;
-        } else {
-            if (who == 0) {
-                enemywho = 2;
-            } else enemywho = 1;
-        }
+
         bestmove = new int[2][2];
     }
 

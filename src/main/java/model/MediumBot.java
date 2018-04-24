@@ -3,27 +3,12 @@ package model;
 import view.GameField;
 
 public class MediumBot extends Bot {
-    private int fieldSize;
 
     private int who;
 
 
-
-    private Buttons[][] buttons;
-    public MediumBot(int fieldSize, int who) {
-        this.fieldSize = fieldSize;
+    public MediumBot(int who) {
         this.who = who;
-        buttons = GameField.getButtons();
-        checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
-        if (PvMGameProcess.getTurn() == 0) {
-            if (who == 0) {
-                enemywho = 1;
-            } else enemywho = 2;
-        } else {
-            if (who == 0) {
-                enemywho = 2;
-            } else enemywho = 1;
-        }
     }
 
     @Override
