@@ -64,4 +64,11 @@ public class PvPGameProcess {
         color.changePvPTextColor(turn);
     }
 
+    public static boolean getTurn() {
+        return turn;
+    }
+    public static void setTurn(boolean turn) {
+        PvPGameProcess.turn = turn;
+    }
+
 }
