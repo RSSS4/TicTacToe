@@ -67,16 +67,16 @@ private void setData(int fieldSize, int difficulty){
         return r.nextInt(2);
     }
 
-    public static void isWinner(int X, int Y) {
+    public static void isWinner(int coordX, int coordY) {
         Buttons[][] buttons = GameField.getButtons();
         checkWinner.refreshData(buttons);
-        if (checkWinner.checkWin(1, X, Y)) {
+        if (checkWinner.checkWin(1, coordX, coordY)) {
             endGame();
             if (turn == 0)
                 result = new ResultFrame(ResultVariable.ResultVar.WIN);
             else
                 result = new ResultFrame(ResultVariable.ResultVar.LOSE);
-        } else if (checkWinner.checkWin(2, X, Y)) {
+        } else if (checkWinner.checkWin(2, coordX, coordY)) {
             endGame();
             if (turn == 0)
                 result = new ResultFrame(ResultVariable.ResultVar.LOSE);

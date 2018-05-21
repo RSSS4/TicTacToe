@@ -1,6 +1,5 @@
 package model;
 
-import view.GameField;
 
 public class HardBot extends Bot {
 
@@ -18,8 +17,7 @@ public class HardBot extends Bot {
 
     @Override
     public void hitBot() {
-        if (!winAttack( who)) {
-        if (!defAttack( who)) {
+        if (!winAttack( who) && !defAttack( who)) {
             nextprediction2 = false;
             if (!predictionAttack()) {
                 nextprediction2 = true;
@@ -54,7 +52,6 @@ public class HardBot extends Bot {
                         if (isFind2) buttons[i][j].setTest(0, true);
                     }
                 }
-            }
         }
         }
         if (nextprediction2) {
@@ -110,8 +107,7 @@ public class HardBot extends Bot {
                 }
             }
         }
-        if (nextprediction3 && fieldSize == 7) {
-            if (!predictionAttack3()) {
+        if (nextprediction3 && fieldSize == 7 && !predictionAttack3()) {
                 isFind = false;
                 for (int i = 0; i < fieldSize; i++) {
                     if (isFind) break;
@@ -171,7 +167,6 @@ public class HardBot extends Bot {
                 if (!isFind) {
                     randomMove(who, fieldSize);
                 }
-            }
         }
     }
 
