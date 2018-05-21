@@ -3,8 +3,6 @@ package view;
 import model.ResultVariable;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class ResultFrame extends JFrame {
 
@@ -49,9 +47,9 @@ public class ResultFrame extends JFrame {
                 add(resultPanel);
         }
 
-        resultPanel.getOk().addActionListener( e ->  {
-                dispose();
-        });
+        resultPanel.getOk().addActionListener( e ->
+                dispose()
+        );
 
     }
 }
