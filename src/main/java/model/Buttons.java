@@ -100,4 +100,6 @@ public class Buttons extends JButton{
     public void setX(int X){this.X = X;}
     public void setY(int Y){this.Y = Y;}
 
+    public void setFree(boolean free){this.free=free;}
+
 }

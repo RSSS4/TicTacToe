@@ -17,6 +17,7 @@ public class PvPGameProcess {
     private static CheckWinner checkWinner;
     private static ChangeColor color;
     private static int fieldSize;
+    private static Buttons[][] buttons;
 
     public PvPGameProcess(int fieldSize) {
         setData(fieldSize);
@@ -26,6 +27,7 @@ public class PvPGameProcess {
     checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));
     color = new ChangeColor();
     color.changePvPTextColor(turn);
+    buttons = GameField.getButtons();
 }
     public static int turn() {
         turn = !turn;
@@ -35,7 +37,6 @@ public class PvPGameProcess {
     }
 
     public static void isWinner(int X, int Y) {
-        Buttons[][] buttons = GameField.getButtons();
         checkWinner.refreshData(buttons);
         if (checkWinner.checkWin(FIRST, X, Y)) {
             endGame();
@@ -50,7 +51,6 @@ public class PvPGameProcess {
     }
 
     public static void endGame() {
-        Buttons[][] buttons = GameField.getButtons();
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
                 if (buttons[i][j].getWho() == 0)
@@ -70,5 +70,12 @@ public class PvPGameProcess {
     public static void setTurn(boolean turn) {
         PvPGameProcess.turn = turn;
     }
+
+    public static void refreshData(Buttons[][] buttons) {
+        PvPGameProcess.buttons = buttons;
+    }
+
+    public static ResultFrame getResult(){return result;}
+
 
 }
