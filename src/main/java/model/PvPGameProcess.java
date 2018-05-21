@@ -34,13 +34,13 @@ public class PvPGameProcess {
         return FIRST;
     }
 
-    public static void isWinner(int coordX, int coordY) {
+    public static void isWinner(int X, int Y) {
         Buttons[][] buttons = GameField.getButtons();
         checkWinner.refreshData(buttons);
-        if (checkWinner.checkWin(FIRST, coordX, coordY)) {
+        if (checkWinner.checkWin(FIRST, X, Y)) {
             endGame();
             result = new ResultFrame(ResultVariable.ResultVar.FIRSTWIN);
-        } else if (checkWinner.checkWin(SECOND, coordX, coordY)) {
+        } else if (checkWinner.checkWin(SECOND, X, Y)) {
             endGame();
             result = new ResultFrame(ResultVariable.ResultVar.SECONDWIN);
         } else if (checkWinner.checkDraw()) {

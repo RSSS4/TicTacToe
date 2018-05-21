@@ -1,5 +1,6 @@
 package model;
 
+import view.GameField;
 
 public class MediumBot extends Bot {
 
@@ -12,7 +13,8 @@ public class MediumBot extends Bot {
 
     @Override
     public void hitBot() {
-        if (!winAttack(who) && !defAttack(who)) {
+        if (!winAttack(who)) {
+            if (!defAttack(who)) {
                 isFind = false;
                 for (int i = 0; i < fieldSize; i++) {
                     if (isFind) break;
@@ -46,6 +48,7 @@ public class MediumBot extends Bot {
                 if (!isFind) {
                     randomMove(who, fieldSize);
                 }
+            }
         }
     }
 
