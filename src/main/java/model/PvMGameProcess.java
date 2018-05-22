@@ -8,6 +8,7 @@ import java.util.Random;
 
 public class PvMGameProcess {
 
+    private static ResultFrame result;
 
     private static CheckWinner checkWinner;
     private static int difficulty;
@@ -66,7 +67,6 @@ private void setData(int fieldSize, int difficulty){
     }
 
     public static void isWinner(int coordX, int coordY) {
-        ResultFrame result;
         checkWinner.refreshData(buttons);
         if (checkWinner.checkWin(1, coordX, coordY)) {
             endGame();
