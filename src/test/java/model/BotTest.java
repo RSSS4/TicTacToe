@@ -33,7 +33,7 @@ public class BotTest {
 
     }
 
-    @Ignore
+    @Test
     public void defAttack() {
         PvMGameProcess pvMGameProcess = new PvMGameProcess(3,1);
         Buttons buttons[][] = new Buttons[5][5];

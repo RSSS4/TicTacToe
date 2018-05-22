@@ -101,22 +101,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ButtonsTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ButtonsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/model/ButtonsTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BotTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BotTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/model/BotTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#214#215#0" expanded="true" />
                 <element signature="e#254#255#0" expanded="true" />
               </folding>
@@ -940,7 +941,7 @@
       <workItem from="1526762372767" duration="1096000" />
       <workItem from="1526910513728" duration="6656000" />
       <workItem from="1526936741426" duration="402000" />
-      <workItem from="1526974695331" duration="16879000" />
+      <workItem from="1526974695331" duration="17175000" />
     </task>
     <task id="LOCAL-00001" summary="Some demo">
       <created>1520400457337</created>
@@ -1122,12 +1123,6 @@
     <history-entry file="BotTest_setEnemyWhoOn1WhenTurnIs1 - 2018.05.22 at 15h 20m 58s.xml">
       <configuration name="BotTest.setEnemyWhoOn1WhenTurnIs1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BotTest_setEnemyWhoOn2WhenTurnIs0 - 2018.05.22 at 15h 18m 34s.xml">
-      <configuration name="BotTest.setEnemyWhoOn2WhenTurnIs0" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ButtonsTest - 2018.05.22 at 14h 43m 27s.xml">
-      <configuration name="ButtonsTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ButtonsTest - 2018.05.22 at 15h 24m 31s.xml">
       <configuration name="ButtonsTest" configurationId="JUnit" />
     </history-entry>
@@ -1137,9 +1132,15 @@
     <history-entry file="model_in_tictactoe_test - 2018.05.22 at 15h 24m 59s.xml">
       <configuration name="model in tictactoe_test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="model_in_tictactoe_test - 2018.05.22 at 15h 28m 16s.xml">
+      <configuration name="model in tictactoe_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="model_in_tictactoe_test - 2018.05.22 at 15h 29m 02s.xml">
+      <configuration name="model in tictactoe_test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60141000" />
+    <option name="totallyTimeSpent" value="60437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1162,7 +1163,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32027027" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27702704" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43648648" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1520,22 +1521,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/BotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/ButtonsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/BotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
