@@ -27,6 +27,7 @@ public class PvMGameProcess {
     private static Bot botmid;
     private static Bot bothard;
     private static Bot botultr;
+    private static Buttons[][] buttons;
 
     public PvMGameProcess(int fieldSize, int difficulty) {
         setData(fieldSize, difficulty);
@@ -41,10 +42,10 @@ private void setData(int fieldSize, int difficulty){
     botmid = new MediumBot(turn == 0 ? 1 : 2);
     bothard = new HardBot(turn == 0 ? 1 : 2);
     botultr = new UltrBot(turn == 0 ? 1 : 2);
-    System.out.println(turn + " turn");
     color = new ChangeColor();
     player = turn == 0 ? false : true;
     comp = turn == 0 ? true : false;
+    buttons = GameField.getButtons();
     if (!comp)
         color.changePvMTextColor(false);
 }
@@ -68,7 +69,6 @@ private void setData(int fieldSize, int difficulty){
     }
 
     public static void isWinner(int X, int Y) {
-        Buttons[][] buttons = GameField.getButtons();
         checkWinner.refreshData(buttons);
         if (checkWinner.checkWin(1, X, Y)) {
             endGame();
@@ -90,7 +90,6 @@ private void setData(int fieldSize, int difficulty){
 
     public static void endGame() {
         endGame = true;
-        Buttons[][] buttons = GameField.getButtons();
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
                 if (buttons[i][j].getWho() == 0)
@@ -127,9 +126,13 @@ private void setData(int fieldSize, int difficulty){
     public static int getTurn() {
         return turn;
     }
+    public static void setTurn(int turn){PvMGameProcess.turn = turn;}
 
     public static void setComp(boolean comp) {
         PvMGameProcess.comp = comp;
+    }
+    public static void refreshData(Buttons[][] buttons) {
+        PvMGameProcess.buttons = buttons;
     }
 
 }

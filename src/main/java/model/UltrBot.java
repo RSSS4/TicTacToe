@@ -16,10 +16,10 @@ public class UltrBot extends Bot {
     private int[][] bestmove;
 
     public UltrBot(int who) {
-        getPoitToWin(fieldSize);
+        setPointToWin(fieldSize);
         checkWinner = new CheckWinner(fieldSize, pointToWin);
         maxDepth = fieldSize == 3 ? 10 : 5;
-        getEnemywho(who);
+        setEnemywho(who);
         this.who = who;
 
         bestmove = new int[2][2];

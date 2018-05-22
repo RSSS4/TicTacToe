@@ -8,7 +8,7 @@ public class EasyBot extends Bot {
 
     public EasyBot(int who) {
         this.who = who;
-        getEnemywho(who);
+        setEnemywho(who);
     }
 
     @Override

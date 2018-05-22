@@ -11,7 +11,7 @@ public abstract class Bot {
     protected boolean isFind;
     protected boolean isFind2;
 
-    protected int enemywho;
+    protected int enemywho = 1;
 
     protected int pointToWin = 0;
 
@@ -39,8 +39,8 @@ public abstract class Bot {
         }
     }
     protected boolean winAttack(int who) {
-        getEnemywho(who);
-        getPoitToWin(fieldSize);
+        setEnemywho(who);
+        setPointToWin(fieldSize);
         checkWinner = new CheckWinner(fieldSize,pointToWin);
         for (int i = 0; i < fieldSize; i++) {
             for (int j = 0; j < fieldSize; j++) {
@@ -61,7 +61,7 @@ public abstract class Bot {
 
 
     protected boolean defAttack(int who){
-        getPoitToWin(fieldSize);
+        setPointToWin(fieldSize);
         checkWinner = new CheckWinner(fieldSize, pointToWin);
             for (int i = 0; i < fieldSize; i++) {
                 for (int j = 0; j < fieldSize; j++) {
@@ -86,7 +86,7 @@ public abstract class Bot {
         return rand.nextInt(fieldSize);
     }
 
-    protected void getEnemywho(int who){
+    protected void setEnemywho(int who){
         if (PvMGameProcess.getTurn() == 0) {
             if (who == 0) {
                 enemywho = 1;
@@ -98,7 +98,7 @@ public abstract class Bot {
         }
 
     }
-    protected void getPoitToWin(int fieldSize){
+    protected void setPointToWin(int fieldSize){
         if(fieldSize == 3){
             pointToWin = 3;
         }else if(fieldSize == 5){
@@ -106,5 +106,14 @@ public abstract class Bot {
         }else
             pointToWin = 5;
     }
+
+    protected int getEnemywho(){return enemywho;}
+    protected void setTestEnemyWho(int enemywho){this.enemywho=enemywho;}
+    protected int getPointToWin(){return pointToWin;}
+    protected void refreshData(Buttons[][] buttons) {
+        this.buttons = buttons;
+    }
+    protected void setFieldSize(int fieldSize){this.fieldSize = fieldSize;}
+
 }
 
