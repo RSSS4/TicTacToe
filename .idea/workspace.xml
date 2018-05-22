@@ -2,58 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Buttons.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Buttons.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/CheckWinner.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/CheckWinner.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/HardBot.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/HardBot.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/MediumBot.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/MediumBot.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/PvMGameProcess.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/PvMGameProcess.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/PvPGameProcess.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/PvPGameProcess.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/AllImages.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/AllImages.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/ResultFrame$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/ResultFrame$1.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/ResultFrame.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/ResultFrame.class" />
-      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/index.html" afterPath="$PROJECT_DIR$/build/reports/pitest/index.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Bot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Bot.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Buttons.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Buttons.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/CheckWinner.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/CheckWinner.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/EasyBot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/EasyBot.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/HardBot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/HardBot.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/MediumBot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/MediumBot.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/PvMGameProcess.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/PvMGameProcess.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/PvPGameProcess.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/PvPGameProcess.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/UltrBot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/UltrBot.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/index.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/index.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" afterPath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/style.css" afterPath="$PROJECT_DIR$/build/reports/pitest/style.css" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.BotTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.BotTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ButtonsTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ButtonsTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.PointTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.PointTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.PvPGameProcessTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.PvPGameProcessTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.UltrScoreTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.UltrScoreTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/tictactoe" afterPath="$PROJECT_DIR$/build/scripts/tictactoe" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/tictactoe.bat" afterPath="$PROJECT_DIR$/build/scripts/tictactoe.bat" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.BotTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.BotTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.ButtonsTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.ButtonsTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.CheckWinnerTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.CheckWinnerTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.PointTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.PointTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.PvPGameProcessTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.PvPGameProcessTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.UltrScoreTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.UltrScoreTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PvMGameProcess.java" afterPath="$PROJECT_DIR$/src/main/java/model/PvMGameProcess.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/BotTest.java" afterPath="$PROJECT_DIR$/src/test/java/model/BotTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -120,12 +70,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PvMGameProcess.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/PvMGameProcess.java">
+      <file leaf-file-name="BotTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/model/BotTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="68" column="57" lean-forward="false" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
-              <folding />
+            <state relative-caret-position="1734">
+              <caret line="102" column="33" lean-forward="true" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#254#255#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -557,7 +511,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/Bot.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/model/PvPGameProcessTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/model/BotTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Buttons.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/CheckWinner.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/HardBot.java" />
@@ -567,6 +520,7 @@
         <option value="$PROJECT_DIR$/src/main/java/view/GameFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/ResultFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/PvMGameProcess.java" />
+        <option value="$PROJECT_DIR$/src/test/java/model/BotTest.java" />
       </list>
     </option>
   </component>
@@ -625,22 +579,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicTacToe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicTacToe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
@@ -1097,7 +1035,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527016773487</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="codeSmellsFix2">
+      <created>1527017078079</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1527017078079</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1212,9 +1157,9 @@
     <MESSAGE value="add Junit" />
     <MESSAGE value="try2" />
     <MESSAGE value="try3" />
-    <MESSAGE value="codeSmellsFix2" />
     <MESSAGE value="codeSmellsFix" />
-    <option name="LAST_COMMIT_MESSAGE" value="codeSmellsFix" />
+    <MESSAGE value="codeSmellsFix2" />
+    <option name="LAST_COMMIT_MESSAGE" value="codeSmellsFix2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1405,18 +1350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/BotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/ButtonsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1512,7 +1445,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/GamePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2363">
+        <state relative-caret-position="-646">
           <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
@@ -1523,6 +1456,18 @@
         <state relative-caret-position="272">
           <caret line="68" column="57" lean-forward="false" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/BotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="33" lean-forward="true" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
