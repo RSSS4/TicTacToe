@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class BotTest {
 
 
-    @Test
+    @Ignore
     public void winAttack() {
         EasyBot easyBot = new EasyBot(1);
         PvMGameProcess pvMGameProcess = new PvMGameProcess(3,1);

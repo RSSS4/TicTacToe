@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="" />
+    <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/tictactoe.iml" afterPath="$PROJECT_DIR$/.idea/modules/tictactoe.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/tictactoe_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/tictactoe_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/tictactoe_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/tictactoe_test.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/index.html" afterPath="$PROJECT_DIR$/build/reports/pitest/index.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Bot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Bot.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Buttons.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Buttons.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/CheckWinner.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/CheckWinner.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/EasyBot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/EasyBot.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/MediumBot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/MediumBot.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/PvMGameProcess.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/PvMGameProcess.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/PvPGameProcess.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/PvPGameProcess.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/UltrBot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/UltrBot.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/index.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/index.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" afterPath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/tictactoe" afterPath="$PROJECT_DIR$/build/scripts/tictactoe" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/tictactoe.bat" afterPath="$PROJECT_DIR$/build/scripts/tictactoe.bat" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/BotTest.java" afterPath="$PROJECT_DIR$/src/test/java/model/BotTest.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -83,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/model/PvPGameProcessTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-339">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,7 +121,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/model/UltrBot.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ButtonsTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/model/ButtonsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -102,8 +140,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="186">
+              <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -129,11 +167,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BotTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BotTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/model/BotTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="137">
+              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,7 +183,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/model/PvPGameProcess.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1105">
-              <caret line="75" column="5" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <caret line="75" column="5" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,17 +203,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/model/EasyBot.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PvMGameProcess.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/PvMGameProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-359">
-              <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -439,7 +467,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6107898112599" />
+        <entry key="$PROJECT_DIR$" value="6107912210441" />
         <entry key="$PROJECT_DIR$/build.gradle" value="229846793" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="3886012978" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="975608090" />
@@ -594,7 +622,6 @@
         <option value="$PROJECT_DIR$/src/main/java/view/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/PvMMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/tictactoe/model/Bot.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/view/GameField.java" />
         <option value="$PROJECT_DIR$/src/test/java/model/CheckWinnerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/model/PointTest.java" />
@@ -616,6 +643,7 @@
         <option value="$PROJECT_DIR$/src/main/java/model/UltrBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/PvMGameProcess.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Bot.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/model/BotTest.java" />
       </list>
     </option>
@@ -824,24 +852,6 @@
       </ExternalSystemSettings>
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
-    <configuration name="TicTacToe [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="run" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-    </configuration>
     <configuration name="BotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -854,6 +864,31 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.BotTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ButtonsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tictactoe_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.ButtonsTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -928,19 +963,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [run]" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [buildDependents]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [assemble]" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BotTest" />
+      <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [buildDependents]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [assemble]" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BotTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ButtonsTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BotTest" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [assemble]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [buildDependents]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [run]" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ButtonsTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BotTest" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [assemble]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [buildDependents]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -970,7 +1005,7 @@
       <workItem from="1526762372767" duration="1096000" />
       <workItem from="1526910513728" duration="6656000" />
       <workItem from="1526936741426" duration="402000" />
-      <workItem from="1526974695331" duration="13283000" />
+      <workItem from="1526974695331" duration="14430000" />
     </task>
     <task id="LOCAL-00001" summary="Some demo">
       <created>1520400457337</created>
@@ -1146,17 +1181,17 @@
     <history-entry file="BotTest - 2018.05.22 at 14h 21m 45s.xml">
       <configuration name="BotTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BotTest - 2018.05.22 at 14h 43m 08s.xml">
+      <configuration name="BotTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ButtonsTest - 2018.05.22 at 14h 00m 44s.xml">
+      <configuration name="ButtonsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ButtonsTest - 2018.05.22 at 14h 43m 27s.xml">
       <configuration name="ButtonsTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CheckWinnerTest - 2018.05.22 at 14h 00m 57s.xml">
       <configuration name="CheckWinnerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PointTest - 2018.05.22 at 14h 00m 09s.xml">
-      <configuration name="PointTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PvPGameProcessTest - 2018.05.22 at 14h 00m 31s.xml">
-      <configuration name="PvPGameProcessTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TicTacToe_[test] - 2018.05.22 at 14h 01m 28s.xml">
       <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
@@ -1169,7 +1204,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56545000" />
+    <option name="totallyTimeSpent" value="57692000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1192,11 +1227,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32027027" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.52162164" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53243244" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.168125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14125" sideWeight="0.4835787" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1209,7 +1245,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2094522" sideWeight="0.5164213" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30675676" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1489,7 +1524,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/model/EasyBot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1505,7 +1540,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/model/PvPGameProcess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
-          <caret line="75" column="5" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <caret line="75" column="5" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1518,36 +1553,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/PvPGameProcessTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-339">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/ButtonsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/UltrBot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1560,13 +1577,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/BotTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="137">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/ButtonsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
