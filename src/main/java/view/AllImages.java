@@ -4,6 +4,10 @@ import javax.swing.ImageIcon;
 
 public class AllImages {
 
+    private AllImages() {
+        throw new IllegalStateException("Utility class");
+    }
+
     public static final ImageIcon three = new ImageIcon("res/buttons/three.png");
 
     public static final ImageIcon five = new ImageIcon("res/buttons/five.png");

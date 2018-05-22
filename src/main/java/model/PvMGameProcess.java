@@ -8,7 +8,6 @@ import java.util.Random;
 
 public class PvMGameProcess {
 
-    private static ResultFrame result;
 
     private static CheckWinner checkWinner;
     private static int difficulty;
@@ -17,7 +16,6 @@ public class PvMGameProcess {
     private static int turn;
     private static int fieldSize;
 
-    private static boolean player;
     private static boolean comp;
 
     private static boolean endGame = false;
@@ -43,7 +41,6 @@ private void setData(int fieldSize, int difficulty){
     bothard = new HardBot(turn == 0 ? 1 : 2);
     botultr = new UltrBot(turn == 0 ? 1 : 2);
     color = new ChangeColor();
-    player = turn == 0 ? false : true;
     comp = turn == 0 ? true : false;
     buttons = GameField.getButtons();
     if (!comp)
@@ -68,15 +65,16 @@ private void setData(int fieldSize, int difficulty){
         return r.nextInt(2);
     }
 
-    public static void isWinner(int X, int Y) {
+    public static void isWinner(int coordX, int coordY) {
+        ResultFrame result;
         checkWinner.refreshData(buttons);
-        if (checkWinner.checkWin(1, X, Y)) {
+        if (checkWinner.checkWin(1, coordX, coordY)) {
             endGame();
             if (turn == 0)
                 result = new ResultFrame(ResultVariable.ResultVar.WIN);
             else
                 result = new ResultFrame(ResultVariable.ResultVar.LOSE);
-        } else if (checkWinner.checkWin(2, X, Y)) {
+        } else if (checkWinner.checkWin(2, coordX, coordY)) {
             endGame();
             if (turn == 0)
                 result = new ResultFrame(ResultVariable.ResultVar.LOSE);
@@ -105,7 +103,6 @@ private void setData(int fieldSize, int difficulty){
         botmid = new MediumBot(turn == 0 ? 1 : 2);
         bothard = new HardBot(turn == 0 ? 1 : 2);
         botultr = new UltrBot(turn == 0 ? 1 : 2);
-        player = turn == 0 ? false : true;
         comp = turn == 0 ? true : false;
         if (comp) {
             if (difficulty == 1)
