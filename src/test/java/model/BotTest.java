@@ -7,11 +7,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class BotTest {
+    protected EasyBot easyBot;
+    @Before
+    public void creat(){
+        easyBot = new EasyBot(1);
+    }
 
 
     @Ignore
     public void winAttack() {
-        EasyBot easyBot = new EasyBot(1);
         PvMGameProcess pvMGameProcess = new PvMGameProcess(3,1);
         Buttons buttons[][] = new Buttons[3][3];
         for (int i = 0; i < 3 ; i++) {
@@ -31,7 +35,6 @@ public class BotTest {
 
     @Ignore
     public void defAttack() {
-        EasyBot easyBot = new EasyBot(1);
         PvMGameProcess pvMGameProcess = new PvMGameProcess(3,1);
         Buttons buttons[][] = new Buttons[5][5];
         for (int i = 0; i < 5 ; i++) {
@@ -52,8 +55,7 @@ public class BotTest {
     }
 
     @Test
-    public void setEnemyWho() {
-        EasyBot easyBot = new EasyBot(1);
+    public void setEnemyWhoOn1WhenTurnIs0() {
         PvMGameProcess.setTurn(0);
         int expected = 1;
         easyBot.setEnemywho(0);
@@ -61,11 +63,44 @@ public class BotTest {
     }
 
     @Test
-    public void getPointToWin() {
-        EasyBot easyBot = new EasyBot(1);
+    public void setEnemyWhoOn2WhenTurnIs0() {
+        PvMGameProcess.setTurn(0);
+        int expected = 2;
+        easyBot.setEnemywho(1);
+        assertEquals(expected,easyBot.getEnemywho());
+    }
+
+    @Test
+    public void setEnemyWhoOn1WhenTurnIs1() {
+        PvMGameProcess.setTurn(1);
+        int expected = 1;
+        easyBot.setEnemywho(1);
+        assertEquals(expected,easyBot.getEnemywho());
+    }
+    @Test
+    public void setEnemyWhoOn2WhenTurnIs1() {
+        PvMGameProcess.setTurn(1);
+        int expected = 2;
+        easyBot.setEnemywho(0);
+        assertEquals(expected,easyBot.getEnemywho());
+    }
+
+    @Test
+    public void getPointToWinOnSize3x3() {
         int expected = 3;
         easyBot.setPointToWin(3);
         assertEquals(expected,easyBot.getPointToWin());
-
+    }
+    @Test
+    public void getPointToWinOnSize5x5() {
+        int expected = 4;
+        easyBot.setPointToWin(5);
+        assertEquals(expected,easyBot.getPointToWin());
+    }
+    @Test
+    public void getPointToWinOnSize7x7() {
+        int expected = 5;
+        easyBot.setPointToWin(7);
+        assertEquals(expected,easyBot.getPointToWin());
     }
 }

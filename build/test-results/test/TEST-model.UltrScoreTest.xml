@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.UltrScoreTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-22T11:43:05" hostname="DESKTOP-M0VGVUA" time="0.003">
+<testsuite name="model.UltrScoreTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-22T12:23:29" hostname="DESKTOP-M0VGVUA" time="0.002">
   <properties/>
   <testcase name="setScoreTest" classname="model.UltrScoreTest" time="0.001"/>
-  <testcase name="setColTest" classname="model.UltrScoreTest" time="0.001"/>
+  <testcase name="setColTest" classname="model.UltrScoreTest" time="0.0"/>
   <testcase name="setRawTest" classname="model.UltrScoreTest" time="0.0"/>
   <testcase name="getColTest" classname="model.UltrScoreTest" time="0.0"/>
   <testcase name="getRawTest" classname="model.UltrScoreTest" time="0.0"/>
