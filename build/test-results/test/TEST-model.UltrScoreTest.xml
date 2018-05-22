@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.UltrScoreTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-21T20:24:26" hostname="DESKTOP-INSQ1E8" time="0.005">
+<testsuite name="model.UltrScoreTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-22T10:59:15" hostname="DESKTOP-M0VGVUA" time="0.005">
   <properties/>
-  <testcase name="setScoreTest" classname="model.UltrScoreTest" time="0.002"/>
+  <testcase name="setScoreTest" classname="model.UltrScoreTest" time="0.004"/>
   <testcase name="setColTest" classname="model.UltrScoreTest" time="0.0"/>
   <testcase name="setRawTest" classname="model.UltrScoreTest" time="0.0"/>
   <testcase name="getColTest" classname="model.UltrScoreTest" time="0.0"/>

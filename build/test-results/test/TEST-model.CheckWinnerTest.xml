@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.CheckWinnerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-21T20:24:26" hostname="DESKTOP-INSQ1E8" time="0.187">
+<testsuite name="model.CheckWinnerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-22T10:59:14" hostname="DESKTOP-M0VGVUA" time="0.03">
   <properties/>
-  <testcase name="checkOutOfFieldTestShouldReturnTrue" classname="model.CheckWinnerTest" time="0.007"/>
-  <testcase name="checkDrawTestShouldReturnFalse" classname="model.CheckWinnerTest" time="0.146"/>
-  <testcase name="checkWinTestShouldReturnFalse" classname="model.CheckWinnerTest" time="0.007"/>
+  <testcase name="checkOutOfFieldTestShouldReturnTrue" classname="model.CheckWinnerTest" time="0.0"/>
+  <testcase name="checkDrawTestShouldReturnFalse" classname="model.CheckWinnerTest" time="0.006"/>
+  <testcase name="checkWinTestShouldReturnFalse" classname="model.CheckWinnerTest" time="0.006"/>
   <testcase name="checkDrawTestShouldReturnTrue" classname="model.CheckWinnerTest" time="0.005"/>
   <testcase name="refreshDataTestShouldReturnTrue" classname="model.CheckWinnerTest" time="0.008"/>
   <testcase name="checkWinTestShouldReturnTrue" classname="model.CheckWinnerTest" time="0.004"/>
