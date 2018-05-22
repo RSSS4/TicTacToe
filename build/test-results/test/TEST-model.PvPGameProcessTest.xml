@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.PvPGameProcessTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-05-22T19:18:31" hostname="DESKTOP-INSQ1E8" time="0.024">
+<testsuite name="model.PvPGameProcessTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-05-22T19:43:48" hostname="DESKTOP-INSQ1E8" time="0.076">
   <properties/>
-  <testcase name="Return_2_WhenTurnIsTrue" classname="model.PvPGameProcessTest" time="0.009"/>
-  <testcase name="CheckThatEndGameSetAllUnfilledButtonsOnFalse" classname="model.PvPGameProcessTest" time="0.004"/>
-  <testcase name="Return_1_WhenTurnIsFalse" classname="model.PvPGameProcessTest" time="0.001"/>
-  <testcase name="refreshShouldChangeTurnOnTrue" classname="model.PvPGameProcessTest" time="0.0"/>
+  <testcase name="Return_2_WhenTurnIsTrue" classname="model.PvPGameProcessTest" time="0.07"/>
+  <testcase name="CheckThatEndGameSetAllUnfilledButtonsOnFalse" classname="model.PvPGameProcessTest" time="0.005"/>
+  <testcase name="Return_1_WhenTurnIsFalse" classname="model.PvPGameProcessTest" time="0.0"/>
+  <testcase name="refreshShouldChangeTurnOnTrue" classname="model.PvPGameProcessTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

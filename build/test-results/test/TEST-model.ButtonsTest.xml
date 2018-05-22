@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.ButtonsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-22T19:18:31" hostname="DESKTOP-INSQ1E8" time="0.003">
+<testsuite name="model.ButtonsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-22T19:43:48" hostname="DESKTOP-INSQ1E8" time="0.014">
   <properties/>
-  <testcase name="endGame" classname="model.ButtonsTest" time="0.002"/>
+  <testcase name="endGame" classname="model.ButtonsTest" time="0.001"/>
   <testcase name="refreshFree" classname="model.ButtonsTest" time="0.0"/>
-  <testcase name="refreshWho" classname="model.ButtonsTest" time="0.0"/>
+  <testcase name="refreshWho" classname="model.ButtonsTest" time="0.013"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
