@@ -33,7 +33,7 @@ public class BotTest {
 
     }
 
-    @Ignore
+    @Test
     public void defAttack() {
         PvMGameProcess pvMGameProcess = new PvMGameProcess(3,1);
         Buttons buttons[][] = new Buttons[5][5];
@@ -54,7 +54,7 @@ public class BotTest {
 
     }
 
-    @Ignore
+    @Test
     public void setEnemyWhoOn1WhenTurnIs0() {
         PvMGameProcess.setTurn(0);
         int expected = 1;
@@ -62,7 +62,7 @@ public class BotTest {
         assertEquals(expected,easyBot.getEnemywho());
     }
 
-    @Ignore
+    @Test
     public void setEnemyWhoOn2WhenTurnIs0() {
         PvMGameProcess.setTurn(0);
         int expected = 2;
@@ -70,14 +70,14 @@ public class BotTest {
         assertEquals(expected,easyBot.getEnemywho());
     }
 
-    @Ignore
+    @Test
     public void setEnemyWhoOn1WhenTurnIs1() {
         PvMGameProcess.setTurn(1);
         int expected = 1;
         easyBot.setEnemywho(1);
         assertEquals(expected,easyBot.getEnemywho());
     }
-    @Ignore
+    @Test
     public void setEnemyWhoOn2WhenTurnIs1() {
         PvMGameProcess.setTurn(1);
         int expected = 2;
@@ -85,19 +85,19 @@ public class BotTest {
         assertEquals(expected,easyBot.getEnemywho());
     }
 
-    @Ignore
+    @Test
     public void getPointToWinOnSize3x3() {
         int expected = 3;
         easyBot.setPointToWin(3);
         assertEquals(expected,easyBot.getPointToWin());
     }
-    @Ignore
+    @Test
     public void getPointToWinOnSize5x5() {
         int expected = 4;
         easyBot.setPointToWin(5);
         assertEquals(expected,easyBot.getPointToWin());
     }
-    @Ignore
+    @Test
     public void getPointToWinOnSize7x7() {
         int expected = 5;
         easyBot.setPointToWin(7);
