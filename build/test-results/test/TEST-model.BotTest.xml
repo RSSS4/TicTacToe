@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.BotTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2018-05-29T17:02:20" hostname="DESKTOP-INSQ1E8" time="0.278">
+<testsuite name="model.BotTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2018-05-29T17:09:04" hostname="DESKTOP-INSQ1E8" time="0.233">
   <properties/>
-  <testcase name="getPointToWinOnSize3x3" classname="model.BotTest" time="0.036"/>
-  <testcase name="getPointToWinOnSize5x5" classname="model.BotTest" time="0.0"/>
-  <testcase name="getPointToWinOnSize7x7" classname="model.BotTest" time="0.0"/>
-  <testcase name="setEnemyWhoOn1WhenTurnIs0" classname="model.BotTest" time="0.0"/>
-  <testcase name="setEnemyWhoOn1WhenTurnIs1" classname="model.BotTest" time="0.001"/>
+  <testcase name="getPointToWinOnSize3x3" classname="model.BotTest" time="0.041"/>
+  <testcase name="getPointToWinOnSize5x5" classname="model.BotTest" time="0.002"/>
+  <testcase name="getPointToWinOnSize7x7" classname="model.BotTest" time="0.001"/>
+  <testcase name="setEnemyWhoOn1WhenTurnIs0" classname="model.BotTest" time="0.001"/>
+  <testcase name="setEnemyWhoOn1WhenTurnIs1" classname="model.BotTest" time="0.002"/>
   <testcase name="setEnemyWhoOn2WhenTurnIs0" classname="model.BotTest" time="0.001"/>
-  <testcase name="setEnemyWhoOn2WhenTurnIs1" classname="model.BotTest" time="0.0"/>
-  <testcase name="defAttack" classname="model.BotTest" time="0.237"/>
+  <testcase name="setEnemyWhoOn2WhenTurnIs1" classname="model.BotTest" time="0.001"/>
+  <testcase name="defAttack" classname="model.BotTest" time="0.173"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

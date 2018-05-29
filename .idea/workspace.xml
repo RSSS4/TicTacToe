@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" />
@@ -10,14 +9,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Buttons.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Buttons.class" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/CheckWinner.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/CheckWinner.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/HardBot.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/HardBot.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/MediumBot.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/MediumBot.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/PvMGameProcess.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/PvMGameProcess.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/PvPGameProcess.class" afterPath="$PROJECT_DIR$/build/classes/java/main/model/PvPGameProcess.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/ResultFrame$1.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/ResultFrame$1.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/ResultFrame.class" afterPath="$PROJECT_DIR$/build/classes/java/main/view/ResultFrame.class" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" />
       <change beforePath="$PROJECT_DIR$/build/reports/pitest/index.html" afterPath="$PROJECT_DIR$/build/reports/pitest/index.html" />
       <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Bot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Bot.java.html" />
@@ -33,7 +25,6 @@
       <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" />
       <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/index.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/index.html" />
       <change beforePath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" afterPath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/style.css" afterPath="$PROJECT_DIR$/build/reports/pitest/style.css" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.BotTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.BotTest.html" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ButtonsTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ButtonsTest.html" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" />
@@ -52,14 +43,7 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.UltrScoreTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.UltrScoreTest.xml" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
       <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/Buttons.class" afterPath="$PROJECT_DIR$/out/production/classes/model/Buttons.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/CheckWinner.class" afterPath="$PROJECT_DIR$/out/production/classes/model/CheckWinner.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/HardBot.class" afterPath="$PROJECT_DIR$/out/production/classes/model/HardBot.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/MediumBot.class" afterPath="$PROJECT_DIR$/out/production/classes/model/MediumBot.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/PvMGameProcess.class" afterPath="$PROJECT_DIR$/out/production/classes/model/PvMGameProcess.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/PvPGameProcess.class" afterPath="$PROJECT_DIR$/out/production/classes/model/PvPGameProcess.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/view/ResultFrame$1.class" afterPath="$PROJECT_DIR$/out/production/classes/view/ResultFrame$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/view/ResultFrame.class" afterPath="$PROJECT_DIR$/out/production/classes/view/ResultFrame.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/CheckWinner.java" afterPath="$PROJECT_DIR$/src/main/java/model/CheckWinner.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -121,14 +105,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ResultFrame.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/ResultFrame.java">
+      <file leaf-file-name="CheckWinner.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/CheckWinner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="400">
+              <caret line="78" column="1" lean-forward="false" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1527613271491" expanded="true" signature="1512:1513" ph="{...}" />
+                <element signature="e#2384#2385#0" expanded="true" />
+                <element signature="e#2498#2499#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -564,12 +548,12 @@
         <option value="$PROJECT_DIR$/src/test/java/model/BotTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/model/PvPGameProcessTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Buttons.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/CheckWinner.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/HardBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/MediumBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/PvMGameProcess.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/PvPGameProcess.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/ResultFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/CheckWinner.java" />
       </list>
     </option>
   </component>
@@ -702,7 +686,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UltrScoreTest">
+  <component name="RunManager" selected="Gradle.TicTacToe [test]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -723,55 +707,41 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="ButtonsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tictactoe_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.ButtonsTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+    <configuration name="TicTacToe [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
-    <configuration name="CheckWinnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tictactoe_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.CheckWinnerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+    <configuration name="TicTacToe [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
     <configuration name="PointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -909,19 +879,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ButtonsTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CheckWinnerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PointTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PvPGameProcessTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UltrScoreTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.PointTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PvPGameProcessTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UltrScoreTest" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [test]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UltrScoreTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PvPGameProcessTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PointTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CheckWinnerTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ButtonsTest" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [test]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UltrScoreTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PvPGameProcessTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PointTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1124,7 +1094,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527613309218</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="codeSmellsFix">
+      <created>1527613453269</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1527613453269</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1173,7 +1150,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1183,7 +1159,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32027027" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.110935025" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.110935025" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1459,14 +1435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/CheckWinner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="72" column="63" lean-forward="false" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/HardBot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1552,8 +1520,19 @@
         <state relative-caret-position="411">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1527613271491" expanded="true" signature="1512:1513" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/CheckWinner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="78" column="1" lean-forward="false" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+          <folding>
+            <element signature="e#2384#2385#0" expanded="true" />
+            <element signature="e#2498#2499#0" expanded="true" />
           </folding>
         </state>
       </provider>

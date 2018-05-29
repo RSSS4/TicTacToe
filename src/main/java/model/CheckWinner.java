@@ -70,9 +70,7 @@ public class CheckWinner {
     }
 
     public boolean checkOutOfField(int i, int j) {         //Check if index is out of array
-        if (i < fieldSize && i >= 0 && j < fieldSize && j >= 0)
-                return true;
-        return false;
+        return i < fieldSize && i >= 0 && j < fieldSize && j >= 0;
     }
     public Buttons[][] getButtons() {
         return buttons;
