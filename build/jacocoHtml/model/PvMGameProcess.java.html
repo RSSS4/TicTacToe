@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PvMGameProcess.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tictactoe</a> &gt; <a href="index.source.html" class="el_package">model</a> &gt; <span class="el_source">PvMGameProcess.java</span></div><h1>PvMGameProcess.java</h1><pre class="source lang-java linenums">package model;
+
+import view.ChangeColor;
+import view.GameField;
+import view.ResultFrame;
+
+import java.util.Random;
+
+public class PvMGameProcess {
+
+    private static ResultFrame result;
+
+    private static CheckWinner checkWinner;
+    private static int difficulty;
+
+    // 0 - comp, 1 - player
+    private static int turn;
+    private static int fieldSize;
+
+    private static boolean player;
+    private static boolean comp;
+
+<span class="fc" id="L23">    private static boolean endGame = false;</span>
+
+    private static ChangeColor color;
+    private static Bot boteasy;
+    private static Bot botmid;
+    private static Bot bothard;
+    private static Bot botultr;
+    private static Buttons[][] buttons;
+
+<span class="fc" id="L32">    public PvMGameProcess(int fieldSize, int difficulty) {</span>
+<span class="fc" id="L33">        setData(fieldSize, difficulty);</span>
+
+<span class="fc" id="L35">    }</span>
+private void setData(int fieldSize, int difficulty){
+<span class="fc" id="L37">    this.fieldSize = fieldSize;</span>
+<span class="fc" id="L38">    this.difficulty = difficulty;</span>
+<span class="pc bpc" id="L39" title="3 of 4 branches missed.">    checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));</span>
+<span class="fc" id="L40">    turn = randFirstTurn();</span>
+<span class="pc bpc" id="L41" title="1 of 2 branches missed.">    boteasy = new EasyBot(turn == 0 ? 1 : 2);</span>
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">    botmid = new MediumBot(turn == 0 ? 1 : 2);</span>
+<span class="pc bpc" id="L43" title="1 of 2 branches missed.">    bothard = new HardBot(turn == 0 ? 1 : 2);</span>
+<span class="pc bpc" id="L44" title="1 of 2 branches missed.">    botultr = new UltrBot(turn == 0 ? 1 : 2);</span>
+<span class="fc" id="L45">    color = new ChangeColor();</span>
+<span class="pc bpc" id="L46" title="1 of 2 branches missed.">    player = turn == 0 ? false : true;</span>
+<span class="pc bpc" id="L47" title="1 of 2 branches missed.">    comp = turn == 0 ? true : false;</span>
+<span class="fc" id="L48">    buttons = GameField.getButtons();</span>
+<span class="pc bpc" id="L49" title="1 of 2 branches missed.">    if (!comp)</span>
+<span class="fc" id="L50">        color.changePvMTextColor(false);</span>
+<span class="fc" id="L51">}</span>
+    public static void lvl() {
+<span class="nc" id="L53">        color.changePvMTextColor(true);</span>
+<span class="nc bnc" id="L54" title="All 2 branches missed.">        if (difficulty == 1)</span>
+<span class="nc" id="L55">            boteasy.hitBot();</span>
+<span class="nc bnc" id="L56" title="All 2 branches missed.">        else if (difficulty == 2) {</span>
+<span class="nc" id="L57">            botmid.hitBot();</span>
+<span class="nc bnc" id="L58" title="All 2 branches missed.">        } else if (difficulty == 3)</span>
+<span class="nc" id="L59">            bothard.hitBot();</span>
+        else {
+<span class="nc" id="L61">            botultr.hitBot();</span>
+        }
+<span class="nc" id="L63">        color.changePvMTextColor(false);</span>
+<span class="nc" id="L64">    }</span>
+
+    private static int randFirstTurn() {
+<span class="fc" id="L67">        Random r = new Random();</span>
+<span class="fc" id="L68">        return r.nextInt(2);</span>
+    }
+
+    public static void isWinner(int X, int Y) {
+<span class="fc" id="L72">        checkWinner.refreshData(buttons);</span>
+<span class="pc bpc" id="L73" title="1 of 2 branches missed.">        if (checkWinner.checkWin(1, X, Y)) {</span>
+<span class="nc" id="L74">            endGame();</span>
+<span class="nc bnc" id="L75" title="All 2 branches missed.">            if (turn == 0)</span>
+<span class="nc" id="L76">                result = new ResultFrame(ResultVariable.ResultVar.WIN);</span>
+            else
+<span class="nc" id="L78">                result = new ResultFrame(ResultVariable.ResultVar.LOSE);</span>
+<span class="pc bpc" id="L79" title="1 of 2 branches missed.">        } else if (checkWinner.checkWin(2, X, Y)) {</span>
+<span class="nc" id="L80">            endGame();</span>
+<span class="nc bnc" id="L81" title="All 2 branches missed.">            if (turn == 0)</span>
+<span class="nc" id="L82">                result = new ResultFrame(ResultVariable.ResultVar.LOSE);</span>
+            else
+<span class="nc" id="L84">                result = new ResultFrame(ResultVariable.ResultVar.WIN);</span>
+<span class="pc bpc" id="L85" title="1 of 2 branches missed.">        } else if (checkWinner.checkDraw()) {</span>
+<span class="nc" id="L86">            endGame();</span>
+<span class="nc" id="L87">            result = new ResultFrame(ResultVariable.ResultVar.DRAW);</span>
+        }
+<span class="fc" id="L89">    }</span>
+
+    public static void endGame() {
+<span class="nc" id="L92">        endGame = true;</span>
+<span class="nc bnc" id="L93" title="All 2 branches missed.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="nc bnc" id="L94" title="All 2 branches missed.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="nc bnc" id="L95" title="All 2 branches missed.">                if (buttons[i][j].getWho() == 0)</span>
+<span class="nc" id="L96">                    buttons[i][j].endGame();</span>
+            }
+        }
+<span class="nc" id="L99">    }</span>
+
+    public static void refresh() {
+<span class="nc" id="L102">        endGame = false;</span>
+<span class="nc" id="L103">        turn = randFirstTurn();</span>
+<span class="nc bnc" id="L104" title="All 2 branches missed.">        boteasy = new EasyBot(turn == 0 ? 1 : 2);</span>
+<span class="nc bnc" id="L105" title="All 2 branches missed.">        botmid = new MediumBot(turn == 0 ? 1 : 2);</span>
+<span class="nc bnc" id="L106" title="All 2 branches missed.">        bothard = new HardBot(turn == 0 ? 1 : 2);</span>
+<span class="nc bnc" id="L107" title="All 2 branches missed.">        botultr = new UltrBot(turn == 0 ? 1 : 2);</span>
+<span class="nc bnc" id="L108" title="All 2 branches missed.">        player = turn == 0 ? false : true;</span>
+<span class="nc bnc" id="L109" title="All 2 branches missed.">        comp = turn == 0 ? true : false;</span>
+<span class="nc bnc" id="L110" title="All 2 branches missed.">        if (comp) {</span>
+<span class="nc bnc" id="L111" title="All 2 branches missed.">            if (difficulty == 1)</span>
+<span class="nc" id="L112">                boteasy.hitBot();</span>
+<span class="nc bnc" id="L113" title="All 2 branches missed.">            else if (difficulty == 2) {</span>
+<span class="nc" id="L114">                botmid.hitBot();</span>
+<span class="nc bnc" id="L115" title="All 2 branches missed.">            } else if (difficulty == 3)</span>
+<span class="nc" id="L116">                bothard.hitBot();</span>
+            else
+<span class="nc" id="L118">                botultr.hitBot();</span>
+        }
+<span class="nc" id="L120">    }</span>
+
+    public static boolean isEndGame() {
+<span class="fc" id="L123">        return endGame;</span>
+    }
+
+    public static int getTurn() {
+<span class="fc" id="L127">        return turn;</span>
+    }
+<span class="fc" id="L129">    public static void setTurn(int turn){PvMGameProcess.turn = turn;}</span>
+
+    public static void setComp(boolean comp) {
+<span class="nc" id="L132">        PvMGameProcess.comp = comp;</span>
+<span class="nc" id="L133">    }</span>
+    public static void refreshData(Buttons[][] buttons) {
+<span class="fc" id="L135">        PvMGameProcess.buttons = buttons;</span>
+<span class="fc" id="L136">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>

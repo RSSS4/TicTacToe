@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GameFrame.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tictactoe</a> &gt; <a href="index.source.html" class="el_package">view</a> &gt; <span class="el_source">GameFrame.java</span></div><h1>GameFrame.java</h1><pre class="source lang-java linenums">package view;
+
+import model.PvMGameProcess;
+import model.PvPGameProcess;
+import model.Buttons;
+
+import javax.swing.*;
+import java.awt.event.*;
+
+public class GameFrame extends JFrame {
+
+<span class="nc" id="L12">    private String bgimg = &quot;res/bg/bg.jpg&quot;;</span>
+    private String bgforfield;
+<span class="nc" id="L14">    private String bgforpvm = &quot;res/bg/bgforpvm.jpg&quot;;</span>
+<span class="nc" id="L15">    private String bgforpvp = &quot;res/bg/bgforpvp.jpg&quot;;</span>
+
+    private int fieldSize;
+    private int difficulty;
+<span class="nc" id="L19">    private int settIsClicked = 0;</span>
+<span class="nc" id="L20">    private boolean musicPlay = true;</span>
+
+    private MainMenu mainMenu;
+    private PvPMenu pvpMenu;
+    private PvMMenu pvmMenu;
+    private GamePanel gameField;
+    private Music music;
+
+    private PvPGameProcess pvpgame;
+    private PvMGameProcess pvmgame;
+
+    private Buttons[][] buttons;
+
+<span class="nc" id="L33">    public GameFrame() {</span>
+<span class="nc" id="L34">        setUndecorated(true);</span>
+
+<span class="nc" id="L36">        mainMenu = new MainMenu(bgimg);</span>
+<span class="nc" id="L37">        pvpMenu = new PvPMenu(bgforpvp);</span>
+<span class="nc" id="L38">        pvmMenu = new PvMMenu(bgforpvm);</span>
+<span class="nc" id="L39">        music = new Music();</span>
+
+<span class="nc" id="L41">        add(mainMenu);</span>
+
+<span class="nc" id="L43">        music.playMusic();</span>
+
+<span class="nc" id="L45">        pack();</span>
+<span class="nc" id="L46">        setSize(600, 600);</span>
+<span class="nc" id="L47">        setLocationRelativeTo(null);</span>
+<span class="nc" id="L48">        setResizable(false);</span>
+<span class="nc" id="L49">        setVisible(true);</span>
+
+<span class="nc" id="L51">        mainMenu.setVisible(true);</span>
+<span class="nc" id="L52">        pvpMenu.setVisible(false);</span>
+<span class="nc" id="L53">        refresh();</span>
+
+
+<span class="nc" id="L56">        mainMenu.getSettings().addActionListener((ActionEvent arg0) -&gt; {</span>
+<span class="nc bnc" id="L57" title="All 2 branches missed.">            if (settIsClicked == 0) {</span>
+<span class="nc" id="L58">                settIsClicked = 1;</span>
+<span class="nc" id="L59">                mainMenu.getSettings().setIcon(AllImages.close);</span>
+<span class="nc" id="L60">                mainMenu.getMusic().setVisible(true);</span>
+<span class="nc bnc" id="L61" title="All 2 branches missed.">                if (musicPlay)</span>
+<span class="nc" id="L62">                    mainMenu.getMusic().setIcon(AllImages.music);</span>
+                else
+<span class="nc" id="L64">                    mainMenu.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L65">                mainMenu.getMusic().addActionListener(e -&gt; {</span>
+<span class="nc bnc" id="L66" title="All 2 branches missed.">                    if (musicPlay) {</span>
+<span class="nc" id="L67">                        musicPlay = false;</span>
+<span class="nc" id="L68">                        music.getMusic().stop();</span>
+<span class="nc" id="L69">                        mainMenu.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L70">                        refresh();</span>
+                    } else {
+<span class="nc" id="L72">                        musicPlay = true;</span>
+<span class="nc" id="L73">                        music.getMusic().start();</span>
+<span class="nc" id="L74">                        music.getMusic().loop(10);</span>
+<span class="nc" id="L75">                        mainMenu.getMusic().setIcon(AllImages.music);</span>
+<span class="nc" id="L76">                        refresh();</span>
+                    }
+<span class="nc" id="L78">                });</span>
+<span class="nc" id="L79">                mainMenu.getExit().setVisible(true);</span>
+<span class="nc" id="L80">                mainMenu.getExit().addActionListener(arg0114 -&gt; exit());</span>
+<span class="nc" id="L81">                refresh();</span>
+            } else {
+<span class="nc" id="L83">                settIsClicked = 0;</span>
+<span class="nc" id="L84">                mainMenu.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L85">                mainMenu.getMusic().setVisible(false);</span>
+<span class="nc" id="L86">                mainMenu.getExit().setVisible(false);</span>
+<span class="nc" id="L87">                refresh();</span>
+            }
+<span class="nc" id="L89">        });</span>
+
+<span class="nc" id="L91">        mainMenu.getPvPButton().addActionListener(arg0 -&gt; {</span>
+<span class="nc" id="L92">            settIsClicked = 0;</span>
+<span class="nc" id="L93">            mainMenu.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L94">            mainMenu.getMusic().setVisible(false);</span>
+<span class="nc" id="L95">            mainMenu.getExit().setVisible(false);</span>
+<span class="nc" id="L96">            add(pvpMenu);</span>
+<span class="nc" id="L97">            pvpMenu.setVisible(true);</span>
+<span class="nc" id="L98">            mainMenu.setVisible(false);</span>
+<span class="nc" id="L99">            refresh();</span>
+<span class="nc" id="L100">        });</span>
+
+<span class="nc" id="L102">        pvpMenu.getSettings().addActionListener(arg0 -&gt; {</span>
+<span class="nc bnc" id="L103" title="All 2 branches missed.">            if (settIsClicked == 0) {</span>
+<span class="nc" id="L104">                settIsClicked = 1;</span>
+<span class="nc" id="L105">                pvpMenu.getSettings().setIcon(AllImages.close);</span>
+<span class="nc" id="L106">                pvpMenu.getMusic().setVisible(true);</span>
+<span class="nc bnc" id="L107" title="All 2 branches missed.">                if (musicPlay)</span>
+<span class="nc" id="L108">                    pvpMenu.getMusic().setIcon(AllImages.music);</span>
+                else
+<span class="nc" id="L110">                    pvpMenu.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L111">                pvpMenu.getMusic().addActionListener(e -&gt; {</span>
+<span class="nc bnc" id="L112" title="All 2 branches missed.">                    if (musicPlay) {</span>
+<span class="nc" id="L113">                        musicPlay = false;</span>
+<span class="nc" id="L114">                        music.getMusic().stop();</span>
+<span class="nc" id="L115">                        pvpMenu.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L116">                        refresh();</span>
+                    } else {
+<span class="nc" id="L118">                        musicPlay = true;</span>
+<span class="nc" id="L119">                        music.getMusic().start();</span>
+<span class="nc" id="L120">                        music.getMusic().loop(10);</span>
+<span class="nc" id="L121">                        pvpMenu.getMusic().setIcon(AllImages.music);</span>
+<span class="nc" id="L122">                        refresh();</span>
+                    }
+<span class="nc" id="L124">                });</span>
+<span class="nc" id="L125">                pvpMenu.getMainMenu().setVisible(true);</span>
+<span class="nc" id="L126">                pvpMenu.getMainMenu().addActionListener(arg01 -&gt; {</span>
+<span class="nc" id="L127">                    settIsClicked = 0;</span>
+<span class="nc" id="L128">                    pvpMenu.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L129">                    pvpMenu.getMusic().setVisible(false);</span>
+<span class="nc" id="L130">                    pvpMenu.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L131">                    pvpMenu.getExit().setVisible(false);</span>
+<span class="nc" id="L132">                    mainMenu.setVisible(true);</span>
+<span class="nc" id="L133">                    pvpMenu.setVisible(false);</span>
+<span class="nc" id="L134">                    refresh();</span>
+<span class="nc" id="L135">                });</span>
+<span class="nc" id="L136">                pvpMenu.getExit().setVisible(true);</span>
+<span class="nc" id="L137">                pvpMenu.getExit().addActionListener(arg012 -&gt; exit());</span>
+<span class="nc" id="L138">                refresh();</span>
+            } else {
+<span class="nc" id="L140">                settIsClicked = 0;</span>
+<span class="nc" id="L141">                pvpMenu.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L142">                pvpMenu.getMusic().setVisible(false);</span>
+<span class="nc" id="L143">                pvpMenu.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L144">                pvpMenu.getExit().setVisible(false);</span>
+<span class="nc" id="L145">                refresh();</span>
+            }
+<span class="nc" id="L147">        });</span>
+
+<span class="nc" id="L149">        pvpMenu.getThreeButton().addActionListener(e -&gt; {</span>
+<span class="nc" id="L150">            settIsClicked = 0;</span>
+<span class="nc" id="L151">            pvpMenu.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L152">            pvpMenu.getMusic().setVisible(false);</span>
+<span class="nc" id="L153">            pvpMenu.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L154">            pvpMenu.getExit().setVisible(false);</span>
+<span class="nc" id="L155">            bgforfield = &quot;res/bg/bg3.jpg&quot;;</span>
+<span class="nc" id="L156">            gameField = new GamePanel(bgforfield, 3, 0, 1);</span>
+<span class="nc" id="L157">            gameField.getSettings().addActionListener(arg0 -&gt; {</span>
+<span class="nc bnc" id="L158" title="All 2 branches missed.">                if (settIsClicked == 0) {</span>
+<span class="nc" id="L159">                    settIsClicked = 1;</span>
+<span class="nc" id="L160">                    gameField.getSettings().setIcon(AllImages.close);</span>
+<span class="nc" id="L161">                    gameField.getMusic().setVisible(true);</span>
+<span class="nc bnc" id="L162" title="All 2 branches missed.">                    if (musicPlay)</span>
+<span class="nc" id="L163">                        gameField.getMusic().setIcon(AllImages.music);</span>
+                    else
+<span class="nc" id="L165">                        gameField.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L166">                    gameField.getMusic().addActionListener(e1 -&gt; {</span>
+<span class="nc bnc" id="L167" title="All 2 branches missed.">                        if (musicPlay) {</span>
+<span class="nc" id="L168">                            musicPlay = false;</span>
+<span class="nc" id="L169">                            music.getMusic().stop();</span>
+<span class="nc" id="L170">                            gameField.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L171">                            refresh();</span>
+                        } else {
+<span class="nc" id="L173">                            musicPlay = true;</span>
+<span class="nc" id="L174">                            music.getMusic().start();</span>
+<span class="nc" id="L175">                            music.getMusic().loop(10);</span>
+<span class="nc" id="L176">                            gameField.getMusic().setIcon(AllImages.music);</span>
+<span class="nc" id="L177">                            refresh();</span>
+                        }
+<span class="nc" id="L179">                    });</span>
+<span class="nc" id="L180">                    gameField.getMainMenu().setVisible(true);</span>
+<span class="nc" id="L181">                    gameField.getMainMenu().addActionListener(arg013 -&gt; {</span>
+<span class="nc" id="L182">                        mainMenu.setVisible(true);</span>
+<span class="nc" id="L183">                        gameField.setVisible(false);</span>
+<span class="nc" id="L184">                        refresh();</span>
+<span class="nc" id="L185">                    });</span>
+<span class="nc" id="L186">                    gameField.getMainMenu().addActionListener(arg014 -&gt; {</span>
+<span class="nc" id="L187">                        mainMenu.setVisible(true);</span>
+<span class="nc" id="L188">                        gameField.setVisible(false);</span>
+<span class="nc" id="L189">                        refresh();</span>
+<span class="nc" id="L190">                    });</span>
+<span class="nc" id="L191">                    gameField.getExit().setVisible(true);</span>
+<span class="nc" id="L192">                    gameField.getExit().addActionListener(arg015 -&gt; exit());</span>
+<span class="nc" id="L193">                    refresh();</span>
+                } else {
+<span class="nc" id="L195">                    settIsClicked = 0;</span>
+<span class="nc" id="L196">                    gameField.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L197">                    gameField.getMusic().setVisible(false);</span>
+<span class="nc" id="L198">                    gameField.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L199">                    gameField.getExit().setVisible(false);</span>
+<span class="nc" id="L200">                    refresh();</span>
+                }
+<span class="nc" id="L202">            });</span>
+<span class="nc" id="L203">            add(gameField);</span>
+<span class="nc" id="L204">            gameField.setVisible(true);</span>
+<span class="nc" id="L205">            pvpMenu.setVisible(false);</span>
+<span class="nc" id="L206">            mainMenu.setVisible(false);</span>
+<span class="nc" id="L207">            pvpgame = new PvPGameProcess(3);</span>
+<span class="nc" id="L208">            refresh();</span>
+<span class="nc" id="L209">        });</span>
+
+<span class="nc" id="L211">        pvpMenu.getFiveButton().addActionListener(e -&gt; {</span>
+<span class="nc" id="L212">            settIsClicked = 0;</span>
+<span class="nc" id="L213">            pvpMenu.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L214">            pvpMenu.getMusic().setVisible(false);</span>
+<span class="nc" id="L215">            pvpMenu.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L216">            pvpMenu.getExit().setVisible(false);</span>
+<span class="nc" id="L217">            bgforfield = &quot;res/bg/bg5.jpg&quot;;</span>
+<span class="nc" id="L218">            gameField = new GamePanel(bgforfield, 5, 0, 1);</span>
+<span class="nc" id="L219">            gameField.getSettings().addActionListener(arg0 -&gt; {</span>
+<span class="nc bnc" id="L220" title="All 2 branches missed.">                if (settIsClicked == 0) {</span>
+<span class="nc" id="L221">                    settIsClicked = 1;</span>
+<span class="nc" id="L222">                    gameField.getSettings().setIcon(AllImages.close);</span>
+<span class="nc" id="L223">                    gameField.getMusic().setVisible(true);</span>
+<span class="nc bnc" id="L224" title="All 2 branches missed.">                    if (musicPlay)</span>
+<span class="nc" id="L225">                        gameField.getMusic().setIcon(AllImages.music);</span>
+                    else
+<span class="nc" id="L227">                        gameField.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L228">                    gameField.getMusic().addActionListener(e12 -&gt; {</span>
+<span class="nc bnc" id="L229" title="All 2 branches missed.">                        if (musicPlay) {</span>
+<span class="nc" id="L230">                            musicPlay = false;</span>
+<span class="nc" id="L231">                            music.getMusic().stop();</span>
+<span class="nc" id="L232">                            gameField.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L233">                            refresh();</span>
+                        } else {
+<span class="nc" id="L235">                            musicPlay = true;</span>
+<span class="nc" id="L236">                            music.getMusic().start();</span>
+<span class="nc" id="L237">                            music.getMusic().loop(10);</span>
+<span class="nc" id="L238">                            gameField.getMusic().setIcon(AllImages.music);</span>
+<span class="nc" id="L239">                            refresh();</span>
+                        }
+<span class="nc" id="L241">                    });</span>
+<span class="nc" id="L242">                    gameField.getMainMenu().setVisible(true);</span>
+<span class="nc" id="L243">                    gameField.getMainMenu().addActionListener(arg016 -&gt; {</span>
+<span class="nc" id="L244">                        mainMenu.setVisible(true);</span>
+<span class="nc" id="L245">                        gameField.setVisible(false);</span>
+<span class="nc" id="L246">                        refresh();</span>
+<span class="nc" id="L247">                    });</span>
+<span class="nc" id="L248">                    gameField.getExit().setVisible(true);</span>
+<span class="nc" id="L249">                    gameField.getExit().addActionListener(arg017 -&gt; exit());</span>
+<span class="nc" id="L250">                    refresh();</span>
+                } else {
+<span class="nc" id="L252">                    settIsClicked = 0;</span>
+<span class="nc" id="L253">                    gameField.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L254">                    gameField.getMusic().setVisible(false);</span>
+<span class="nc" id="L255">                    gameField.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L256">                    gameField.getExit().setVisible(false);</span>
+<span class="nc" id="L257">                    refresh();</span>
+                }
+<span class="nc" id="L259">            });</span>
+<span class="nc" id="L260">            add(gameField);</span>
+<span class="nc" id="L261">            gameField.setVisible(true);</span>
+<span class="nc" id="L262">            pvpMenu.setVisible(false);</span>
+<span class="nc" id="L263">            mainMenu.setVisible(false);</span>
+<span class="nc" id="L264">            pvpgame = new PvPGameProcess(5);</span>
+<span class="nc" id="L265">            refresh();</span>
+<span class="nc" id="L266">        });</span>
+
+<span class="nc" id="L268">        pvpMenu.getSevenButton().addActionListener(e -&gt; {</span>
+<span class="nc" id="L269">            settIsClicked = 0;</span>
+<span class="nc" id="L270">            pvpMenu.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L271">            pvpMenu.getMusic().setVisible(false);</span>
+<span class="nc" id="L272">            pvpMenu.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L273">            pvpMenu.getExit().setVisible(false);</span>
+<span class="nc" id="L274">            bgforfield = &quot;res/bg/bg7.jpg&quot;;</span>
+<span class="nc" id="L275">            gameField = new GamePanel(bgforfield, 7, 0, 1);</span>
+<span class="nc" id="L276">            gameField.getSettings().addActionListener(arg0 -&gt; {</span>
+<span class="nc bnc" id="L277" title="All 2 branches missed.">                if (settIsClicked == 0) {</span>
+<span class="nc" id="L278">                    settIsClicked = 1;</span>
+<span class="nc" id="L279">                    gameField.getSettings().setIcon(AllImages.close);</span>
+<span class="nc" id="L280">                    gameField.getMusic().setVisible(true);</span>
+<span class="nc bnc" id="L281" title="All 2 branches missed.">                    if (musicPlay)</span>
+<span class="nc" id="L282">                        gameField.getMusic().setIcon(AllImages.music);</span>
+                    else
+<span class="nc" id="L284">                        gameField.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L285">                    gameField.getMusic().addActionListener(e13 -&gt; {</span>
+<span class="nc bnc" id="L286" title="All 2 branches missed.">                        if (musicPlay) {</span>
+<span class="nc" id="L287">                            musicPlay = false;</span>
+<span class="nc" id="L288">                            music.getMusic().stop();</span>
+<span class="nc" id="L289">                            gameField.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L290">                            refresh();</span>
+                        } else {
+<span class="nc" id="L292">                            musicPlay = true;</span>
+<span class="nc" id="L293">                            music.getMusic().start();</span>
+<span class="nc" id="L294">                            music.getMusic().loop(10);</span>
+<span class="nc" id="L295">                            gameField.getMusic().setIcon(AllImages.music);</span>
+<span class="nc" id="L296">                            refresh();</span>
+                        }
+<span class="nc" id="L298">                    });</span>
+<span class="nc" id="L299">                    gameField.getMainMenu().setVisible(true);</span>
+<span class="nc" id="L300">                    gameField.getMainMenu().addActionListener(arg018 -&gt; {</span>
+<span class="nc" id="L301">                        mainMenu.setVisible(true);</span>
+<span class="nc" id="L302">                        gameField.setVisible(false);</span>
+<span class="nc" id="L303">                        refresh();</span>
+<span class="nc" id="L304">                    });</span>
+<span class="nc" id="L305">                    gameField.getExit().setVisible(true);</span>
+<span class="nc" id="L306">                    gameField.getExit().addActionListener(arg019 -&gt; exit());</span>
+<span class="nc" id="L307">                    refresh();</span>
+                } else {
+<span class="nc" id="L309">                    settIsClicked = 0;</span>
+<span class="nc" id="L310">                    gameField.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L311">                    gameField.getMusic().setVisible(false);</span>
+<span class="nc" id="L312">                    gameField.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L313">                    gameField.getExit().setVisible(false);</span>
+<span class="nc" id="L314">                    refresh();</span>
+                }
+<span class="nc" id="L316">            });</span>
+<span class="nc" id="L317">            add(gameField);</span>
+<span class="nc" id="L318">            gameField.setVisible(true);</span>
+<span class="nc" id="L319">            pvpMenu.setVisible(false);</span>
+<span class="nc" id="L320">            mainMenu.setVisible(false);</span>
+<span class="nc" id="L321">            pvpgame = new PvPGameProcess(7);</span>
+<span class="nc" id="L322">            refresh();</span>
+<span class="nc" id="L323">        });</span>
+
+<span class="nc" id="L325">        mainMenu.getPvMButton().addActionListener(e -&gt; {</span>
+<span class="nc" id="L326">            settIsClicked = 0;</span>
+<span class="nc" id="L327">            mainMenu.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L328">            mainMenu.getMusic().setVisible(false);</span>
+<span class="nc" id="L329">            mainMenu.getExit().setVisible(false);</span>
+<span class="nc" id="L330">            add(pvmMenu);</span>
+<span class="nc" id="L331">            pvmMenu.setVisible(true);</span>
+<span class="nc" id="L332">            mainMenu.setVisible(false);</span>
+<span class="nc" id="L333">            refresh();</span>
+<span class="nc" id="L334">        });</span>
+
+<span class="nc" id="L336">        pvmMenu.getSettings().addActionListener(arg0 -&gt; {</span>
+<span class="nc bnc" id="L337" title="All 2 branches missed.">            if (settIsClicked == 0) {</span>
+<span class="nc" id="L338">                settIsClicked = 1;</span>
+<span class="nc" id="L339">                pvmMenu.getSettings().setIcon(AllImages.close);</span>
+<span class="nc" id="L340">                pvmMenu.getMusic().setVisible(true);</span>
+<span class="nc bnc" id="L341" title="All 2 branches missed.">                if (musicPlay)</span>
+<span class="nc" id="L342">                    pvmMenu.getMusic().setIcon(AllImages.music);</span>
+                else
+<span class="nc" id="L344">                    pvmMenu.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L345">                pvmMenu.getMusic().addActionListener(e -&gt; {</span>
+<span class="nc bnc" id="L346" title="All 2 branches missed.">                    if (musicPlay) {</span>
+<span class="nc" id="L347">                        musicPlay = false;</span>
+<span class="nc" id="L348">                        music.getMusic().stop();</span>
+<span class="nc" id="L349">                        pvmMenu.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L350">                        refresh();</span>
+                    } else {
+<span class="nc" id="L352">                        musicPlay = true;</span>
+<span class="nc" id="L353">                        music.getMusic().start();</span>
+<span class="nc" id="L354">                        music.getMusic().loop(10);</span>
+<span class="nc" id="L355">                        pvmMenu.getMusic().setIcon(AllImages.music);</span>
+<span class="nc" id="L356">                        refresh();</span>
+                    }
+<span class="nc" id="L358">                });</span>
+<span class="nc" id="L359">                pvmMenu.getMainMenu().setVisible(true);</span>
+<span class="nc" id="L360">                pvmMenu.getMainMenu().addActionListener(arg0110 -&gt; {</span>
+<span class="nc" id="L361">                    settIsClicked = 0;</span>
+<span class="nc" id="L362">                    pvmMenu.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L363">                    pvmMenu.getMusic().setVisible(false);</span>
+<span class="nc" id="L364">                    pvmMenu.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L365">                    pvmMenu.getExit().setVisible(false);</span>
+<span class="nc" id="L366">                    mainMenu.setVisible(true);</span>
+<span class="nc" id="L367">                    pvmMenu.setVisible(false);</span>
+<span class="nc" id="L368">                    refresh();</span>
+<span class="nc" id="L369">                });</span>
+<span class="nc" id="L370">                pvmMenu.getExit().setVisible(true);</span>
+<span class="nc" id="L371">                pvmMenu.getExit().addActionListener(arg0111 -&gt; exit());</span>
+<span class="nc" id="L372">                refresh();</span>
+            } else {
+<span class="nc" id="L374">                settIsClicked = 0;</span>
+<span class="nc" id="L375">                pvmMenu.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L376">                pvmMenu.getMusic().setVisible(false);</span>
+<span class="nc" id="L377">                pvmMenu.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L378">                pvmMenu.getExit().setVisible(false);</span>
+<span class="nc" id="L379">                refresh();</span>
+            }
+<span class="nc" id="L381">        });</span>
+
+<span class="nc" id="L383">        pvmMenu.getPlayPvMButton().addActionListener(e -&gt; {</span>
+<span class="nc" id="L384">            settIsClicked = 0;</span>
+<span class="nc" id="L385">            pvmMenu.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L386">            pvmMenu.getMusic().setVisible(false);</span>
+<span class="nc" id="L387">            pvmMenu.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L388">            pvmMenu.getExit().setVisible(false);</span>
+<span class="nc bnc" id="L389" title="All 2 branches missed.">            if (pvmMenu.getThree().isSelected()) {</span>
+<span class="nc" id="L390">                fieldSize = 3;</span>
+<span class="nc" id="L391">                bgforfield = &quot;res/bg/bg3.jpg&quot;;</span>
+<span class="nc bnc" id="L392" title="All 2 branches missed.">            } else if (pvmMenu.getFive().isSelected()) {</span>
+<span class="nc" id="L393">                fieldSize = 5;</span>
+<span class="nc" id="L394">                bgforfield = &quot;res/bg/bg5.jpg&quot;;</span>
+            } else {
+<span class="nc" id="L396">                fieldSize = 7;</span>
+<span class="nc" id="L397">                bgforfield = &quot;res/bg/bg7.jpg&quot;;</span>
+            }
+<span class="nc bnc" id="L399" title="All 2 branches missed.">            if (pvmMenu.getEasy().isSelected())</span>
+<span class="nc" id="L400">                difficulty = 1;</span>
+<span class="nc bnc" id="L401" title="All 2 branches missed.">            else if (pvmMenu.getMedium().isSelected())</span>
+<span class="nc" id="L402">                difficulty = 2;</span>
+<span class="nc bnc" id="L403" title="All 2 branches missed.">            else if (pvmMenu.getHard().isSelected())</span>
+<span class="nc" id="L404">                difficulty = 3;</span>
+            else
+<span class="nc" id="L406">                difficulty = 4;</span>
+<span class="nc" id="L407">            gameField = new GamePanel(bgforfield, fieldSize, difficulty, 2);</span>
+<span class="nc" id="L408">            gameField.getSettings().addActionListener(arg0 -&gt; {</span>
+<span class="nc bnc" id="L409" title="All 2 branches missed.">                if (settIsClicked == 0) {</span>
+<span class="nc" id="L410">                    settIsClicked = 1;</span>
+<span class="nc" id="L411">                    gameField.getSettings().setIcon(AllImages.close);</span>
+<span class="nc" id="L412">                    gameField.getMusic().setVisible(true);</span>
+<span class="nc bnc" id="L413" title="All 2 branches missed.">                    if (musicPlay)</span>
+<span class="nc" id="L414">                        gameField.getMusic().setIcon(AllImages.music);</span>
+                    else
+<span class="nc" id="L416">                        gameField.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L417">                    gameField.getMusic().addActionListener(e14 -&gt; {</span>
+<span class="nc bnc" id="L418" title="All 2 branches missed.">                        if (musicPlay) {</span>
+<span class="nc" id="L419">                            musicPlay = false;</span>
+<span class="nc" id="L420">                            music.getMusic().stop();</span>
+<span class="nc" id="L421">                            gameField.getMusic().setIcon(AllImages.nomusic);</span>
+<span class="nc" id="L422">                            refresh();</span>
+                        } else {
+<span class="nc" id="L424">                            musicPlay = true;</span>
+<span class="nc" id="L425">                            music.getMusic().start();</span>
+<span class="nc" id="L426">                            music.getMusic().loop(10);</span>
+<span class="nc" id="L427">                            gameField.getMusic().setIcon(AllImages.music);</span>
+<span class="nc" id="L428">                            refresh();</span>
+                        }
+<span class="nc" id="L430">                    });</span>
+<span class="nc" id="L431">                    gameField.getMainMenu().setVisible(true);</span>
+<span class="nc" id="L432">                    gameField.getMainMenu().addActionListener(arg0112 -&gt; {</span>
+<span class="nc" id="L433">                        gameField.setVisible(false);</span>
+<span class="nc" id="L434">                        mainMenu.setVisible(true);</span>
+<span class="nc" id="L435">                        refresh();</span>
+<span class="nc" id="L436">                    });</span>
+<span class="nc" id="L437">                    gameField.getExit().setVisible(true);</span>
+<span class="nc" id="L438">                    gameField.getExit().addActionListener(arg0113 -&gt; exit());</span>
+<span class="nc" id="L439">                    refresh();</span>
+                } else {
+<span class="nc" id="L441">                    settIsClicked = 0;</span>
+<span class="nc" id="L442">                    gameField.getSettings().setIcon(AllImages.settings);</span>
+<span class="nc" id="L443">                    gameField.getMusic().setVisible(false);</span>
+<span class="nc" id="L444">                    gameField.getMainMenu().setVisible(false);</span>
+<span class="nc" id="L445">                    gameField.getExit().setVisible(false);</span>
+<span class="nc" id="L446">                    refresh();</span>
+                }
+<span class="nc" id="L448">            });</span>
+<span class="nc" id="L449">            pvmgame = new PvMGameProcess(fieldSize, difficulty);</span>
+<span class="nc" id="L450">            PvMGameProcess.refresh();</span>
+<span class="nc" id="L451">            gameField.setVisible(true);</span>
+<span class="nc" id="L452">            pvmMenu.setVisible(false);</span>
+<span class="nc" id="L453">            add(gameField);</span>
+
+<span class="nc" id="L455">        });</span>
+<span class="nc" id="L456">    }</span>
+
+    private void exit() {
+<span class="nc" id="L459">        music.getMusic().stop();</span>
+<span class="nc" id="L460">        dispose();</span>
+<span class="nc" id="L461">        refresh();</span>
+<span class="nc" id="L462">    }</span>
+
+    public void refresh() {
+<span class="nc" id="L465">        validate();</span>
+<span class="nc" id="L466">        repaint();</span>
+<span class="nc" id="L467">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>

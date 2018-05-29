@@ -2,91 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/view/GameFrame$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/model/BotTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/model/ButtonsTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/model/CheckWinnerTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/model/PointTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/model/PvPGameProcessTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/model/UltrScoreTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.24.tar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.24.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.26.tar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.26.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.33.tar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.33.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.34.tar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.34.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.35.tar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.35.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.36.tar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.36.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.37.tar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.37.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.38.tar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.38.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.40.tar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/tictactoe-1.2.40.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/libs/tictactoe-1.2.24.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/libs/tictactoe-1.2.26.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/libs/tictactoe-1.2.33.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/libs/tictactoe-1.2.34.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/libs/tictactoe-1.2.35.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/libs/tictactoe-1.2.36.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/libs/tictactoe-1.2.37.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/libs/tictactoe-1.2.38.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/libs/tictactoe-1.2.40.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Bot.java.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Buttons.java.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/CheckWinner.java.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/EasyBot.java.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/HardBot.java.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/MediumBot.java.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/PvMGameProcess.java.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/PvPGameProcess.java.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/UltrBot.java.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.BotTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ButtonsTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.PointTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.PvPGameProcessTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.UltrScoreTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/tictactoe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/tictactoe.bat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.BotTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.ButtonsTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.CheckWinnerTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.PointTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.PvPGameProcessTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.UltrScoreTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.0.jar_3qwhoe99vl9nmsqda8ecd1b03/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.0.jar_3qwhoe99vl9nmsqda8ecd1b03/META-INF/maven/org.jacoco/org.jacoco.agent/pom.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.0.jar_3qwhoe99vl9nmsqda8ecd1b03/META-INF/maven/org.jacoco/org.jacoco.agent/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.0.jar_3qwhoe99vl9nmsqda8ecd1b03/about.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.0.jar_3qwhoe99vl9nmsqda8ecd1b03/jacocoagent.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.0.jar_3qwhoe99vl9nmsqda8ecd1b03/org/jacoco/agent/AgentJar.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/libs/tictactoe-1.2.41.jar" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/BotTest.java" afterPath="$PROJECT_DIR$/src/test/java/model/BotTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -160,10 +85,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PvPGameProcessTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PvPGameProcessTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/model/PvPGameProcessTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
+            <state relative-caret-position="586">
               <caret line="94" column="9" lean-forward="false" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
               <folding />
             </state>
@@ -173,7 +98,7 @@
       <file leaf-file-name="PvPGameProcess.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/PvPGameProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
+            <state relative-caret-position="938">
               <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding />
             </state>
@@ -222,11 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BotTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BotTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/model/BotTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+            <state relative-caret-position="84">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#212#213#0" expanded="true" />
@@ -804,7 +729,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TicTacToe [jar]">
+  <component name="RunManager" selected="Gradle.TicTacToe [testClasses]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -825,7 +750,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="TicTacToe [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TicTacToe [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -836,7 +761,25 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="TicTacToe [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildNeeded" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -861,24 +804,6 @@
       </ExternalSystemSettings>
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
-    <configuration name="TicTacToe [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-    </configuration>
     <configuration name="TicTacToe [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -897,7 +822,7 @@
       </ExternalSystemSettings>
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
-    <configuration name="TicTacToe [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TicTacToe [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -908,7 +833,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="run" />
+            <option value="testClasses" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -976,19 +901,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [classes]" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [run]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [clean]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [jar]" />
+      <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [buildDependents]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [buildNeeded]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [classes]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [jar]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [testClasses]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [jar]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [clean]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [run]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [classes]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [testClasses]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [jar]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [classes]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [buildNeeded]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [buildDependents]" />
       </list>
     </recent_temporary>
   </component>
@@ -1021,7 +946,7 @@
       <workItem from="1526974695331" duration="18074000" />
       <workItem from="1527055037266" duration="3243000" />
       <workItem from="1527523490962" duration="1461000" />
-      <workItem from="1527599278321" duration="4393000" />
+      <workItem from="1527599278321" duration="4734000" />
     </task>
     <task id="LOCAL-00001" summary="Some demo">
       <created>1520400457337</created>
@@ -1188,25 +1113,25 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PvPGameProcessTest - 2018.05.29 at 17h 06m 55s.xml">
-      <configuration name="PvPGameProcessTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PvPGameProcessTest - 2018.05.29 at 17h 07m 42s.xml">
-      <configuration name="PvPGameProcessTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PvPGameProcessTest - 2018.05.29 at 17h 08m 23s.xml">
-      <configuration name="PvPGameProcessTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PvPGameProcessTest - 2018.05.29 at 17h 09m 57s.xml">
       <configuration name="PvPGameProcessTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PvPGameProcessTest_CheckThatIsWinnerCreatesRightObjWithFirstWinImgName - 2018.05.29 at 17h 07m 16s.xml">
-      <configuration name="PvPGameProcessTest.CheckThatIsWinnerCreatesRightObjWithFirstWinImgName" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TicTacToe_[check] - 2018.05.29 at 17h 20m 46s.xml">
       <configuration name="TicTacToe [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="TicTacToe_[check] - 2018.05.29 at 17h 25m 00s.xml">
+      <configuration name="TicTacToe [check]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TicTacToe_[check] - 2018.05.29 at 17h 25m 54s.xml">
+      <configuration name="TicTacToe [check]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TicTacToe_[check] - 2018.05.29 at 17h 26m 44s.xml">
+      <configuration name="TicTacToe [check]" configurationId="GradleRunConfiguration" />
+    </history-entry>
     <history-entry file="TicTacToe_[test] - 2018.05.29 at 17h 20m 42s.xml">
+      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TicTacToe_[test] - 2018.05.29 at 17h 25m 51s.xml">
       <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
     <history-entry file="model_in_tictactoe_test - 2018.05.29 at 17h 10m 46s.xml">
@@ -1220,7 +1145,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70433000" />
+    <option name="totallyTimeSpent" value="70774000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1233,7 +1158,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1244,7 +1168,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32027027" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3189189" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1027027" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1496,6 +1420,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1563,6 +1488,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/BotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="564">
@@ -1583,7 +1520,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/PvPGameProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
+        <state relative-caret-position="938">
           <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding />
         </state>
@@ -1591,21 +1528,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/PvPGameProcessTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
+        <state relative-caret-position="586">
           <caret line="94" column="9" lean-forward="false" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/BotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

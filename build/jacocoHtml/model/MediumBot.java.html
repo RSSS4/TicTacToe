@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MediumBot.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tictactoe</a> &gt; <a href="index.source.html" class="el_package">model</a> &gt; <span class="el_source">MediumBot.java</span></div><h1>MediumBot.java</h1><pre class="source lang-java linenums">package model;
+
+import view.GameField;
+
+public class MediumBot extends Bot {
+
+    private int who;
+
+
+<span class="fc" id="L10">    public MediumBot(int who) {</span>
+<span class="fc" id="L11">        this.who = who;</span>
+<span class="fc" id="L12">    }</span>
+
+    @Override
+    public void hitBot() {
+<span class="nc bnc" id="L16" title="All 2 branches missed.">        if (!winAttack(who)) {</span>
+<span class="nc bnc" id="L17" title="All 2 branches missed.">            if (!defAttack(who)) {</span>
+<span class="nc" id="L18">                isFind = false;</span>
+<span class="nc bnc" id="L19" title="All 2 branches missed.">                for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="nc bnc" id="L20" title="All 2 branches missed.">                    if (isFind) break;</span>
+<span class="nc bnc" id="L21" title="All 2 branches missed.">                    for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="nc" id="L22">                        isFind2 = false;</span>
+<span class="nc" id="L23">                        checkWinner.refreshData(buttons);</span>
+<span class="nc bnc" id="L24" title="All 4 branches missed.">                        if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="nc" id="L25">                            buttons[i][j].setTest(enemywho, false);</span>
+<span class="nc" id="L26">                            isFind2 = true;</span>
+<span class="nc bnc" id="L27" title="All 2 branches missed.">                            for (int k = 0; k &lt; fieldSize; k++) {</span>
+<span class="nc bnc" id="L28" title="All 2 branches missed.">                                if (isFind) break;</span>
+<span class="nc bnc" id="L29" title="All 2 branches missed.">                                for (int l = 0; l &lt; fieldSize; l++) {</span>
+<span class="nc bnc" id="L30" title="All 4 branches missed.">                                    if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="nc" id="L31">                                        buttons[k][l].setTest(enemywho, false);</span>
+<span class="nc bnc" id="L32" title="All 2 branches missed.">                                        if (checkWinner.checkWin(enemywho, k, l)) {</span>
+<span class="nc" id="L33">                                            buttons[i][j].setTest(0, true);</span>
+<span class="nc" id="L34">                                            buttons[i][j].setWho(who);</span>
+<span class="nc" id="L35">                                            isFind = true;</span>
+<span class="nc" id="L36">                                            buttons[k][l].setTest(0, true);</span>
+<span class="nc" id="L37">                                            PvMGameProcess.isWinner(i, j);</span>
+<span class="nc" id="L38">                                            break;</span>
+<span class="nc" id="L39">                                        } else buttons[k][l].setTest(0, true);</span>
+                                    }
+                                }
+                            }
+                        }
+<span class="nc bnc" id="L44" title="All 2 branches missed.">                        if (isFind) break;</span>
+<span class="nc bnc" id="L45" title="All 2 branches missed.">                        if (isFind2) buttons[i][j].setTest(0, true);</span>
+                    }
+                }
+<span class="nc bnc" id="L48" title="All 2 branches missed.">                if (!isFind) {</span>
+<span class="nc" id="L49">                    randomMove(who, fieldSize);</span>
+                }
+            }
+        }
+<span class="nc" id="L53">    }</span>
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>

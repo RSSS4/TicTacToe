@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PvPMenu.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tictactoe</a> &gt; <a href="index.source.html" class="el_package">view</a> &gt; <span class="el_source">PvPMenu.java</span></div><h1>PvPMenu.java</h1><pre class="source lang-java linenums">package view;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class PvPMenu extends JPanel {
+
+    private transient Image bgimg;
+    private JButton three;
+    private JButton five;
+    private JButton seven;
+    private JButton settings;
+    private JButton music;
+    private JButton mainM;
+    private JButton exit;
+
+    public PvPMenu(String bgimg) {
+<span class="nc" id="L18">        this(new ImageIcon(bgimg).getImage());</span>
+<span class="nc" id="L19">    }</span>
+
+<span class="nc" id="L21">    public PvPMenu(Image bgimg) {</span>
+<span class="nc" id="L22">        this.bgimg = bgimg;</span>
+
+<span class="nc" id="L24">        setLayout(new GridBagLayout());</span>
+<span class="nc" id="L25">        GridBagConstraints c = new GridBagConstraints();</span>
+
+<span class="nc" id="L27">        settings = new JButton();</span>
+<span class="nc" id="L28">        settings.setIcon(AllImages.settings);</span>
+<span class="nc" id="L29">        settings.setPreferredSize(new Dimension(settings.getIcon().getIconWidth(), settings.getIcon().getIconHeight()));</span>
+<span class="nc" id="L30">        settings.setBorderPainted(false);</span>
+<span class="nc" id="L31">        c.fill = GridBagConstraints.NONE;</span>
+<span class="nc" id="L32">        c.gridx = 2;</span>
+<span class="nc" id="L33">        c.gridy = 0;</span>
+<span class="nc" id="L34">        c.insets = new Insets(-190, 90, 0, -130);</span>
+<span class="nc" id="L35">        c.anchor = GridBagConstraints.NORTHEAST;</span>
+<span class="nc" id="L36">        add(settings, c);</span>
+
+<span class="nc" id="L38">        music = new JButton();</span>
+<span class="nc" id="L39">        music.setIcon(AllImages.music);</span>
+<span class="nc" id="L40">        music.setPreferredSize(new Dimension(music.getIcon().getIconWidth(), music.getIcon().getIconHeight()));</span>
+<span class="nc" id="L41">        music.setBorderPainted(false);</span>
+<span class="nc" id="L42">        c.fill = GridBagConstraints.NONE;</span>
+<span class="nc" id="L43">        c.gridx = 2;</span>
+<span class="nc" id="L44">        c.gridy = 0;</span>
+<span class="nc" id="L45">        c.insets = new Insets(-130, 90, 0, -130);</span>
+<span class="nc" id="L46">        c.anchor = GridBagConstraints.NORTHEAST;</span>
+<span class="nc" id="L47">        music.setVisible(false);</span>
+<span class="nc" id="L48">        add(music, c);</span>
+
+<span class="nc" id="L50">        mainM = new JButton();</span>
+<span class="nc" id="L51">        mainM.setIcon(AllImages.mainM);</span>
+<span class="nc" id="L52">        mainM.setPreferredSize(new Dimension(mainM.getIcon().getIconWidth(), mainM.getIcon().getIconHeight()));</span>
+<span class="nc" id="L53">        mainM.setBorderPainted(false);</span>
+<span class="nc" id="L54">        c.fill = GridBagConstraints.NONE;</span>
+<span class="nc" id="L55">        c.gridx = 2;</span>
+<span class="nc" id="L56">        c.gridy = 1;</span>
+<span class="nc" id="L57">        c.insets = new Insets(-70, 90, 0, -130);</span>
+<span class="nc" id="L58">        c.anchor = GridBagConstraints.NORTHEAST;</span>
+<span class="nc" id="L59">        mainM.setVisible(false);</span>
+<span class="nc" id="L60">        add(mainM, c);</span>
+
+<span class="nc" id="L62">        exit = new JButton();</span>
+<span class="nc" id="L63">        exit.setIcon(AllImages.exit);</span>
+<span class="nc" id="L64">        exit.setPreferredSize(new Dimension(exit.getIcon().getIconWidth(), exit.getIcon().getIconHeight()));</span>
+<span class="nc" id="L65">        exit.setBorderPainted(false);</span>
+<span class="nc" id="L66">        c.fill = GridBagConstraints.NONE;</span>
+<span class="nc" id="L67">        c.gridx = 2;</span>
+<span class="nc" id="L68">        c.gridy = 1;</span>
+<span class="nc" id="L69">        c.insets = new Insets(-10, 90, 0, -130);</span>
+<span class="nc" id="L70">        c.anchor = GridBagConstraints.NORTHEAST;</span>
+<span class="nc" id="L71">        exit.setVisible(false);</span>
+<span class="nc" id="L72">        add(exit, c);</span>
+
+<span class="nc" id="L74">        three = new JButton();</span>
+<span class="nc" id="L75">        three.setIcon(AllImages.three);</span>
+<span class="nc" id="L76">        three.setPreferredSize(new Dimension(three.getIcon().getIconWidth(), three.getIcon().getIconHeight()));</span>
+<span class="nc" id="L77">        three.setBorderPainted(false);</span>
+<span class="nc" id="L78">        c.fill = GridBagConstraints.NONE;</span>
+<span class="nc" id="L79">        c.gridx = 1;</span>
+<span class="nc" id="L80">        c.gridy = 1;</span>
+<span class="nc" id="L81">        c.insets = new Insets(0, 30, 20, 0);</span>
+<span class="nc" id="L82">        c.anchor = GridBagConstraints.NORTHEAST;</span>
+<span class="nc" id="L83">        add(three, c);</span>
+
+<span class="nc" id="L85">        five = new JButton();</span>
+<span class="nc" id="L86">        five.setIcon(AllImages.five);</span>
+<span class="nc" id="L87">        five.setPreferredSize(new Dimension(five.getIcon().getIconWidth(), five.getIcon().getIconHeight()));</span>
+<span class="nc" id="L88">        five.setBorderPainted(false);</span>
+<span class="nc" id="L89">        c.fill = GridBagConstraints.NONE;</span>
+<span class="nc" id="L90">        c.gridx = 1;</span>
+<span class="nc" id="L91">        c.gridy = 2;</span>
+<span class="nc" id="L92">        c.insets = new Insets(0, 30, 20, 0);</span>
+<span class="nc" id="L93">        c.anchor = GridBagConstraints.NORTHEAST;</span>
+<span class="nc" id="L94">        add(five, c);</span>
+
+<span class="nc" id="L96">        seven = new JButton();</span>
+<span class="nc" id="L97">        seven.setIcon(AllImages.seven);</span>
+<span class="nc" id="L98">        seven.setPreferredSize(new Dimension(seven.getIcon().getIconWidth(), seven.getIcon().getIconHeight()));</span>
+<span class="nc" id="L99">        seven.setBorderPainted(false);</span>
+<span class="nc" id="L100">        c.fill = GridBagConstraints.NONE;</span>
+<span class="nc" id="L101">        c.gridx = 1;</span>
+<span class="nc" id="L102">        c.gridy = 3;</span>
+<span class="nc" id="L103">        c.insets = new Insets(0, 30, -150, 0);</span>
+<span class="nc" id="L104">        c.anchor = GridBagConstraints.NORTHEAST;</span>
+<span class="nc" id="L105">        add(seven, c);</span>
+
+<span class="nc" id="L107">    }</span>
+
+    public void paintComponent(Graphics g) {
+<span class="nc" id="L110">        g.drawImage(bgimg, 0, 0, null);</span>
+<span class="nc" id="L111">    }</span>
+
+    public JButton getSettings() {
+<span class="nc" id="L114">        return settings;</span>
+    }
+
+    public JButton getMusic() {
+<span class="nc" id="L118">        return music;</span>
+    }
+
+    public JButton getMainMenu() {
+<span class="nc" id="L122">        return mainM;</span>
+    }
+
+    public JButton getExit() {
+<span class="nc" id="L126">        return exit;</span>
+    }
+
+    public JButton getThreeButton() {
+<span class="nc" id="L130">        return three;</span>
+    }
+
+    public JButton getFiveButton() {
+<span class="nc" id="L134">        return five;</span>
+    }
+
+    public JButton getSevenButton() {
+<span class="nc" id="L138">        return seven;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>
