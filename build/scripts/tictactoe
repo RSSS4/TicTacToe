@@ -64,7 +64,7 @@ case "`uname`" in
     ;;
 esac
 
-CLASSPATH=$APP_HOME/lib/tictactoe-1.2.43.jar
+CLASSPATH=$APP_HOME/lib/tictactoe-1.2.44.jar
 
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
