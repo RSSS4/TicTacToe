@@ -14,8 +14,8 @@ public class Buttons extends JButton{
     // first - 1, second - 2
     private int who;
     private boolean free;
-    private int X;
-    private int Y;
+    private int coordX;
+    private int coordY;
 
     // 1 - pvp, 2 - pvm
     public Buttons(int whichGame) {
@@ -52,7 +52,7 @@ public class Buttons extends JButton{
             if (free) {
                 setWho(PvPGameProcess.turn());
                 free = false;
-                PvPGameProcess.isWinner(X, Y);
+                PvPGameProcess.isWinner(coordX, coordY);
             }
         });
     }
@@ -79,7 +79,7 @@ public class Buttons extends JButton{
     {
         int which = PvMGameProcess.getTurn();
         setWho(which == 0 ? 2 : 1);
-        PvMGameProcess.isWinner(X, Y);
+        PvMGameProcess.isWinner(coordX, coordY);
         PvMGameProcess.setComp(true);
         PvMGameProcess.lvl();
         PvMGameProcess.setComp(false);
@@ -97,8 +97,8 @@ public class Buttons extends JButton{
         return free;
     }
 
-    public void setX(int X){this.X = X;}
-    public void setY(int Y){this.Y = Y;}
+    public void setX(int coordX){this.coordX = coordX;}
+    public void setY(int coordY){this.coordY = coordY;}
 
     public void setFree(boolean free){this.free=free;}
 
