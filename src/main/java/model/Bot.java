@@ -14,6 +14,8 @@ public abstract class Bot {
     protected int enemywho = 1;
 
     protected int pointToWin = 0;
+    protected int randX;
+    protected int randY;
 
 
 

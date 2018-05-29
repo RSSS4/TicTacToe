@@ -54,4 +54,6 @@ public class ResultFrame extends JFrame {
         });
 
     }
+
+    public Result getResultPanel(){return resultPanel;}
 }

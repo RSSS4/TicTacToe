@@ -7,14 +7,14 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class BotTest {
-    protected EasyBot easyBot;
+    private EasyBot easyBot;
     @Before
     public void creat(){
         easyBot = new EasyBot(1);
     }
 
 
-    @Ignore
+    @Test
     public void winAttack() {
         PvMGameProcess pvMGameProcess = new PvMGameProcess(3,1);
         Buttons buttons[][] = new Buttons[3][3];
@@ -33,7 +33,7 @@ public class BotTest {
 
     }
 
-    @Test
+    @Ignore
     public void defAttack() {
         PvMGameProcess pvMGameProcess = new PvMGameProcess(3,1);
         Buttons buttons[][] = new Buttons[5][5];

@@ -7,14 +7,16 @@ import java.awt.*;
 public class Result extends JPanel{
     private transient Image bgimg;
     private JButton ok;
+    private String nameImg;
 
     public Result(String bgimg) {
         this(new ImageIcon(bgimg).getImage());
+        nameImg = bgimg;
+
     }
 
     public Result(Image bgimg) {
         this.bgimg = bgimg;
-
         setVisible(true);
 
         setLayout(new GridBagLayout());
@@ -37,5 +39,6 @@ public class Result extends JPanel{
     public void paintComponent(Graphics g) {
         g.drawImage(bgimg, 0, 0, null);
     }
+    public String getNameImg(){return nameImg;}
 }
 
