@@ -77,8 +77,5 @@ public class PvPGameProcess {
 
     public static ResultFrame getResult(){return result;}
 
-    public static void setResult(ResultFrame result){PvPGameProcess.result = result;}
-
-
 
 }
