@@ -127,7 +127,11 @@ private void setData(int fieldSize, int difficulty){
         return turn;
     }
     public static void setTurn(int turn){PvMGameProcess.turn = turn;}
+    public static void setEasyBot(EasyBot easyBot){
+        boteasy = easyBot;
+    }
 
+    public static ResultFrame getResult(){return result;}
     public static void setComp(boolean comp) {
         PvMGameProcess.comp = comp;
     }
@@ -135,4 +139,7 @@ private void setData(int fieldSize, int difficulty){
         PvMGameProcess.buttons = buttons;
     }
     public static void setEndGame(boolean endGame){PvMGameProcess.endGame = endGame;}
+    public Buttons[][] getButtons() {
+        return buttons;
+    }
 }
