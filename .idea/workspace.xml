@@ -115,8 +115,8 @@
       <file leaf-file-name="PvMGameProcessTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/model/PvMGameProcessTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="138">
+              <caret line="99" column="9" lean-forward="false" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#338#339#0" expanded="true" />
@@ -887,31 +887,17 @@
       <option name="project" value="LOCAL" />
       <updated>1528229958351</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add new tests">
+      <created>1528230203246</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528230203246</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 11m 22s.xml">
-      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 12m 26s.xml">
-      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 13m 16s.xml">
-      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 14m 32s.xml">
-      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 14m 48s.xml">
-      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 15m 58s.xml">
-      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 16m 08s.xml">
-      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 16m 13s.xml">
       <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -919,6 +905,27 @@
       <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
     <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 16m 42s.xml">
+      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 28m 20s.xml">
+      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 28m 29s.xml">
+      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 29m 42s.xml">
+      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 30m 12s.xml">
+      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 31m 08s.xml">
+      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 32m 02s.xml">
+      <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 33m 25s.xml">
       <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
@@ -1087,8 +1094,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/PvMGameProcessTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="138">
+          <caret line="99" column="9" lean-forward="false" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#338#339#0" expanded="true" />

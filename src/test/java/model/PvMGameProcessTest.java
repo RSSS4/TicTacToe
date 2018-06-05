@@ -97,7 +97,7 @@ public class PvMGameProcessTest {
         String actual = resultPanel.getNameImg();
         assertEquals(expected,actual);
     }
-    @Ignore
+    @Test
     public void checkThatIsWinnerCreatesRightImageDraw() {
         Buttons buttons[][] = new Buttons[3][3];
         for (int i = 0; i < 3 ; i++) {
