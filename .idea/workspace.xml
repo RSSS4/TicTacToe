@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/tictactoe" afterPath="$PROJECT_DIR$/build/scripts/tictactoe" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/tictactoe.bat" afterPath="$PROJECT_DIR$/build/scripts/tictactoe.bat" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/PvPGameProcessTest.java" afterPath="$PROJECT_DIR$/src/test/java/model/PvPGameProcessTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -86,8 +79,8 @@
       <file leaf-file-name="PvPGameProcessTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/model/PvPGameProcessTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="75" column="9" lean-forward="false" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+            <state relative-caret-position="204">
+              <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -718,7 +711,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TicTacToe [jacocoTestReport]">
+  <component name="RunManager" selected="Gradle.TicTacToe [build]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -738,6 +731,24 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="TicTacToe [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
     <configuration name="TicTacToe [jacocoTestCoverageVerification]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -769,24 +780,6 @@
         <option name="taskNames">
           <list>
             <option value="jacocoTestReport" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-    </configuration>
-    <configuration name="TicTacToe [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -890,19 +883,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [jar]" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [testClasses]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [test]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestCoverageVerification]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestReport]" />
+      <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [testClasses]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [test]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestCoverageVerification]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestReport]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestReport]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestCoverageVerification]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [test]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [testClasses]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [jar]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestReport]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestCoverageVerification]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [test]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -1155,7 +1148,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75533000" />
+    <option name="totallyTimeSpent" value="75824000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1572,8 +1565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/PvPGameProcessTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="75" column="9" lean-forward="false" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+        <state relative-caret-position="204">
+          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding />
         </state>
       </provider>
