@@ -112,13 +112,11 @@ public class PvMGameProcessTest {
             }
         }
         PvMGameProcess.refreshData(buttons);
-        String expected = "res/result/draw.png";
 
         PvMGameProcess.isWinner(0,0);
         ResultFrame result = PvMGameProcess.getResult();
-        Result resultPanel = result.getResultPanel();
-        String actual = resultPanel.getNameImg();
-        assertEquals(expected,actual);
+        assertNotEquals(0,result);
+
     }
 
     @Test
