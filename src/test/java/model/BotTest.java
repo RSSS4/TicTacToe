@@ -14,7 +14,7 @@ public class BotTest {
     }
 
 
-    @Ignore
+    @Test
     public void winAttack() {
         PvMGameProcess pvMGameProcess = new PvMGameProcess(3,1);
         Buttons buttons[][] = new Buttons[3][3];
@@ -49,6 +49,7 @@ public class BotTest {
         easyBot.setTestEnemyWho(2);
         easyBot.refreshData(buttons);
         PvMGameProcess.refreshData(buttons);
+        PvMGameProcess.setEndGame(false);
         easyBot.defAttack(1);
         assertEquals(1,buttons[0][3].getWho());
 

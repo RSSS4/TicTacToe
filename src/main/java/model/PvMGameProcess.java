@@ -134,5 +134,5 @@ private void setData(int fieldSize, int difficulty){
     public static void refreshData(Buttons[][] buttons) {
         PvMGameProcess.buttons = buttons;
     }
-
+    public static void setEndGame(boolean endGame){PvMGameProcess.endGame = endGame;}
 }
