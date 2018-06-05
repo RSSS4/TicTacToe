@@ -25,7 +25,7 @@ public class ResultFrame extends JFrame {
 <span class="fc" id="L25">        setResizable(false);</span>
 <span class="fc" id="L26">        setVisible(true);</span>
 
-<span class="pc bpc" id="L28" title="1 of 5 branches missed.">        switch (result) {</span>
+<span class="pc bfc" id="L28" title="All 5 branches covered.">        switch (result) {</span>
             case FIRSTWIN:
 <span class="fc" id="L30">                resultPanel = new Result(firstWin);</span>
 <span class="fc" id="L31">                add(resultPanel);</span>
@@ -35,9 +35,9 @@ public class ResultFrame extends JFrame {
 <span class="fc" id="L35">                add(resultPanel);</span>
 <span class="fc" id="L36">                break;</span>
             case WIN:
-<span class="nc" id="L38">                resultPanel = new Result(pvmLose);</span>
-<span class="nc" id="L39">                add(resultPanel);</span>
-<span class="nc" id="L40">                break;</span>
+<span class="fc" id="L38">                resultPanel = new Result(pvmLose);</span>
+<span class="fc" id="L39">                add(resultPanel);</span>
+<span class="fc" id="L40">                break;</span>
             case LOSE:
 <span class="fc" id="L42">                resultPanel = new Result(pvmWin);</span>
 <span class="fc" id="L43">                add(resultPanel);</span>

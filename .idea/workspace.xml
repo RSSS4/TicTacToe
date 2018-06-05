@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/BotTest.java" afterPath="$PROJECT_DIR$/src/test/java/model/BotTest.java" />
-    </list>
+    <list default="true" id="2d4218be-a9eb-47ea-8f12-2e01cbb1527b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -727,7 +725,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TicTacToe [build]">
+  <component name="RunManager" selected="Gradle.TicTacToe [jacocoTestReport]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -748,7 +746,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="TicTacToe [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TicTacToe [jacocoTestCoverageVerification]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -759,7 +757,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="jacocoTestCoverageVerification" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -784,6 +782,24 @@
       </ExternalSystemSettings>
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
+    <configuration name="TicTacToe [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
     <configuration name="TicTacToe [pitest]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -802,30 +818,23 @@
       </ExternalSystemSettings>
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
-    <configuration name="BotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tictactoe_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.BotTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+    <configuration name="TicTacToe [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testClasses" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -836,31 +845,6 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="model in tictactoe_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tictactoe_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -913,19 +897,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestReport]" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
+      <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [jar]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [testClasses]" />
       <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [pitest]" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.model in tictactoe_test" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BotTest" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestCoverageVerification]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestReport]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.model in tictactoe_test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BotTest" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestReport]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestCoverageVerification]" />
         <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [pitest]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [jacocoTestReport]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [testClasses]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [jar]" />
       </list>
     </recent_temporary>
   </component>
@@ -1146,9 +1130,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BotTest - 2018.06.05 at 14h 36m 13s.xml">
-      <configuration name="BotTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BotTest - 2018.06.05 at 14h 38m 01s.xml">
       <configuration name="BotTest" configurationId="JUnit" />
     </history-entry>
@@ -1176,9 +1157,12 @@
     <history-entry file="model_in_tictactoe_test - 2018.06.05 at 16h 19m 26s.xml">
       <configuration name="model in tictactoe_test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="model_in_tictactoe_test - 2018.06.05 at 16h 27m 10s.xml">
+      <configuration name="model in tictactoe_test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77796000" />
+    <option name="totallyTimeSpent" value="78001000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

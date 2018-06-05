@@ -44,43 +44,43 @@ import java.util.Random;
 <span class="fc" id="L44">        setEnemywho(who);</span>
 <span class="fc" id="L45">        setPointToWin(fieldSize);</span>
 <span class="fc" id="L46">        checkWinner = new CheckWinner(fieldSize,pointToWin);</span>
-<span class="pc bpc" id="L47" title="1 of 2 branches missed.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
-<span class="pc bpc" id="L48" title="1 of 2 branches missed.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
 <span class="fc" id="L49">                checkWinner.refreshData(buttons);</span>
 <span class="pc bpc" id="L50" title="1 of 4 branches missed.">                if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
 <span class="fc" id="L51">                    buttons[i][j].setTest(who, false);</span>
-<span class="pc bpc" id="L52" title="1 of 2 branches missed.">                    if (checkWinner.checkWin(who, i, j)) {</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">                    if (checkWinner.checkWin(who, i, j)) {</span>
 <span class="fc" id="L53">                        buttons[i][j].setTest(0, true);</span>
 <span class="fc" id="L54">                        buttons[i][j].setWho(who);</span>
 <span class="fc" id="L55">                        PvMGameProcess.isWinner(i, j);</span>
 <span class="fc" id="L56">                        return true;</span>
-<span class="nc" id="L57">                    } else buttons[i][j].setTest(0, true);</span>
+<span class="fc" id="L57">                    } else buttons[i][j].setTest(0, true);</span>
                 }
             }
         }
-<span class="nc" id="L61">        return false;</span>
+<span class="fc" id="L61">        return false;</span>
     }
 
 
     protected boolean defAttack(int who){
 <span class="fc" id="L66">        setPointToWin(fieldSize);</span>
 <span class="fc" id="L67">        checkWinner = new CheckWinner(fieldSize, pointToWin);</span>
-<span class="pc bpc" id="L68" title="1 of 2 branches missed.">            for (int i = 0; i &lt; fieldSize; i++) {</span>
-<span class="pc bpc" id="L69" title="1 of 2 branches missed.">                for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="fc bfc" id="L68" title="All 2 branches covered.">            for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="fc bfc" id="L69" title="All 2 branches covered.">                for (int j = 0; j &lt; fieldSize; j++) {</span>
 <span class="fc" id="L70">                    checkWinner.refreshData(buttons);</span>
 <span class="pc bpc" id="L71" title="1 of 4 branches missed.">                    if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
 <span class="fc" id="L72">                        buttons[i][j].setTest(enemywho, false);</span>
-<span class="pc bpc" id="L73" title="1 of 2 branches missed.">                        if (checkWinner.checkWin(enemywho, i, j)) {</span>
+<span class="fc bfc" id="L73" title="All 2 branches covered.">                        if (checkWinner.checkWin(enemywho, i, j)) {</span>
 <span class="fc" id="L74">                            buttons[i][j].setTest(0, true);</span>
 <span class="fc" id="L75">                            buttons[i][j].setWho(who);</span>
 <span class="fc" id="L76">                            isFind = true;</span>
 <span class="fc" id="L77">                            PvMGameProcess.isWinner(i, j);</span>
 <span class="fc" id="L78">                            return true;</span>
-<span class="nc" id="L79">                        } else buttons[i][j].setTest(0, true);</span>
+<span class="fc" id="L79">                        } else buttons[i][j].setTest(0, true);</span>
                     }
                 }
             }
-<span class="nc" id="L83">        return false;</span>
+<span class="fc" id="L83">        return false;</span>
     }
 
     private int randValue(int fieldSize) {

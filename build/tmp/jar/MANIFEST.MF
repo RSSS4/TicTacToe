@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Implementation-Version: 1.2.56
-Implementation-Sha: fb9cf5a
+Implementation-Version: 1.2.57
+Implementation-Sha: 4c37145
 Specification-Version: 1.2
 

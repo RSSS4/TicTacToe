@@ -38,15 +38,15 @@ private void setData(int fieldSize, int difficulty){
 <span class="fc" id="L38">    this.difficulty = difficulty;</span>
 <span class="pc bpc" id="L39" title="3 of 4 branches missed.">    checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));</span>
 <span class="fc" id="L40">    turn = randFirstTurn();</span>
-<span class="pc bpc" id="L41" title="1 of 2 branches missed.">    boteasy = new EasyBot(turn == 0 ? 1 : 2);</span>
-<span class="pc bpc" id="L42" title="1 of 2 branches missed.">    botmid = new MediumBot(turn == 0 ? 1 : 2);</span>
-<span class="pc bpc" id="L43" title="1 of 2 branches missed.">    bothard = new HardBot(turn == 0 ? 1 : 2);</span>
-<span class="pc bpc" id="L44" title="1 of 2 branches missed.">    botultr = new UltrBot(turn == 0 ? 1 : 2);</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">    boteasy = new EasyBot(turn == 0 ? 1 : 2);</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">    botmid = new MediumBot(turn == 0 ? 1 : 2);</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">    bothard = new HardBot(turn == 0 ? 1 : 2);</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">    botultr = new UltrBot(turn == 0 ? 1 : 2);</span>
 <span class="fc" id="L45">    color = new ChangeColor();</span>
-<span class="pc bpc" id="L46" title="1 of 2 branches missed.">    player = turn == 0 ? false : true;</span>
-<span class="pc bpc" id="L47" title="1 of 2 branches missed.">    comp = turn == 0 ? true : false;</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">    player = turn == 0 ? false : true;</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">    comp = turn == 0 ? true : false;</span>
 <span class="fc" id="L48">    buttons = GameField.getButtons();</span>
-<span class="pc bpc" id="L49" title="1 of 2 branches missed.">    if (!comp)</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">    if (!comp)</span>
 <span class="fc" id="L50">        color.changePvMTextColor(false);</span>
 <span class="fc" id="L51">}</span>
     public static void lvl() {
@@ -72,8 +72,8 @@ private void setData(int fieldSize, int difficulty){
 <span class="fc" id="L72">        checkWinner.refreshData(buttons);</span>
 <span class="fc bfc" id="L73" title="All 2 branches covered.">        if (checkWinner.checkWin(1, coordX, coordY)) {</span>
 <span class="fc" id="L74">            endGame();</span>
-<span class="pc bpc" id="L75" title="1 of 2 branches missed.">            if (turn == 0)</span>
-<span class="nc" id="L76">                result = new ResultFrame(ResultVariable.ResultVar.WIN);</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">            if (turn == 0)</span>
+<span class="fc" id="L76">                result = new ResultFrame(ResultVariable.ResultVar.WIN);</span>
             else
 <span class="fc" id="L78">                result = new ResultFrame(ResultVariable.ResultVar.LOSE);</span>
 <span class="pc bpc" id="L79" title="1 of 2 branches missed.">        } else if (checkWinner.checkWin(2, coordX, coordY)) {</span>
