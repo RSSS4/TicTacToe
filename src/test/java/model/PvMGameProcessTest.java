@@ -121,7 +121,7 @@ public class PvMGameProcessTest {
         assertEquals(expected,actual);
     }
 
-    @Ignore
+    @Test
     public void checkThatEndGameMakesAllButtonsInactive() {
         Buttons buttons[][] = new Buttons[3][3];
         for (int i = 0; i < 3 ; i++) {
