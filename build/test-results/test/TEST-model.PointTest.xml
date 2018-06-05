@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.PointTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-06-05T14:36:11" hostname="DESKTOP-M0VGVUA" time="0.002">
+<testsuite name="model.PointTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-06-05T20:14:31" hostname="DESKTOP-5F2QA50" time="0.031">
   <properties/>
-  <testcase name="setXTest" classname="model.PointTest" time="0.001"/>
+  <testcase name="setXTest" classname="model.PointTest" time="0.015"/>
   <testcase name="setYTest" classname="model.PointTest" time="0.0"/>
   <testcase name="getXTest" classname="model.PointTest" time="0.0"/>
-  <testcase name="getYTest" classname="model.PointTest" time="0.001"/>
+  <testcase name="getYTest" classname="model.PointTest" time="0.016"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
