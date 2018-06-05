@@ -153,27 +153,4 @@ public class PvMGameProcessTest {
        assertEquals(false,pvmGameProcess.isEndGame());
     }
 
-    @Test
-    public void isEndGame() {
-    }
-
-    @Test
-    public void getTurn() {
-    }
-
-    @Test
-    public void setTurn() {
-    }
-
-    @Test
-    public void setComp() {
-    }
-
-    @Test
-    public void refreshData() {
-    }
-
-    @Test
-    public void setEndGame() {
-    }
 }

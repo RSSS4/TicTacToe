@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.BotTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-06-05T20:40:18" hostname="DESKTOP-5F2QA50" time="0.5">
+<testsuite name="model.BotTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-06-05T21:41:34" hostname="DESKTOP-5F2QA50" time="0.688">
   <properties/>
-  <testcase name="winAttackDidnotFindWinPositionAndReturnFalse" classname="model.BotTest" time="0.172"/>
+  <testcase name="winAttackDidnotFindWinPositionAndReturnFalse" classname="model.BotTest" time="0.266"/>
   <testcase name="getPointToWinOnSize3x3" classname="model.BotTest" time="0.0"/>
   <testcase name="getPointToWinOnSize5x5" classname="model.BotTest" time="0.0"/>
-  <testcase name="getPointToWinOnSize7x7" classname="model.BotTest" time="0.141"/>
-  <testcase name="defAttackClosedWinPosition" classname="model.BotTest" time="0.187"/>
+  <testcase name="getPointToWinOnSize7x7" classname="model.BotTest" time="0.0"/>
+  <testcase name="defAttackClosedWinPosition" classname="model.BotTest" time="0.422"/>
   <testcase name="setEnemyWhoOn1WhenTurnIs0" classname="model.BotTest" time="0.0"/>
   <testcase name="setEnemyWhoOn1WhenTurnIs1" classname="model.BotTest" time="0.0"/>
   <testcase name="setEnemyWhoOn2WhenTurnIs0" classname="model.BotTest" time="0.0"/>

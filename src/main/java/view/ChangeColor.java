@@ -30,4 +30,5 @@ public class ChangeColor {
             GamePanel.playerText().setForeground(new Color(139, 0, 0));
         }
     }
+
 }
