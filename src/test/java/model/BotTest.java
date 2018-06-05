@@ -8,15 +8,16 @@ import static org.junit.Assert.*;
 
 public class BotTest {
     private EasyBot easyBot;
+    private PvMGameProcess pvMGameProcess;
     @Before
     public void creat(){
         easyBot = new EasyBot(1);
+        pvMGameProcess = new PvMGameProcess(3,1);
     }
 
 
-    @Ignore
-    public void winAttack() {
-        PvMGameProcess pvMGameProcess = new PvMGameProcess(3,1);
+    @Test
+    public void winAttackSetWinPosition() {
         Buttons buttons[][] = new Buttons[3][3];
         for (int i = 0; i < 3 ; i++) {
             for (int j = 0; j < 3; j++) {
@@ -34,8 +35,24 @@ public class BotTest {
     }
 
     @Test
-    public void defAttack() {
-        PvMGameProcess pvMGameProcess = new PvMGameProcess(3,1);
+    public void winAttackDidnotFindWinPositionAndReturnFalse() {
+        Buttons buttons[][] = new Buttons[3][3];
+        for (int i = 0; i < 3 ; i++) {
+            for (int j = 0; j < 3; j++) {
+                buttons[i][j] = new Buttons(1);
+            }
+        }
+        easyBot.setFieldSize(3);
+        easyBot.refreshData(buttons);
+        PvMGameProcess.refreshData(buttons);
+        boolean actual = easyBot.winAttack(1);
+        assertEquals(false,actual);
+
+    }
+
+
+    @Test
+    public void defAttackClosedWinPosition() {
         Buttons buttons[][] = new Buttons[5][5];
         for (int i = 0; i < 5 ; i++) {
             for (int j = 0; j < 5; j++) {
@@ -52,8 +69,25 @@ public class BotTest {
         PvMGameProcess.setEndGame(false);
         easyBot.defAttack(1);
         assertEquals(1,buttons[0][3].getWho());
-
     }
+
+    @Test
+    public void defAttackDidNotFindWinAttackForEnemyAndReturnFalse() {
+        Buttons buttons[][] = new Buttons[5][5];
+        for (int i = 0; i < 5 ; i++) {
+            for (int j = 0; j < 5; j++) {
+                buttons[i][j] = new Buttons(1);
+            }
+        }
+        easyBot.setFieldSize(5);
+        easyBot.setTestEnemyWho(2);
+        easyBot.refreshData(buttons);
+        PvMGameProcess.refreshData(buttons);
+        PvMGameProcess.setEndGame(false);
+        boolean actual =easyBot.defAttack(1);
+        assertEquals(false,actual);
+    }
+
 
     @Test
     public void setEnemyWhoOn1WhenTurnIs0() {
