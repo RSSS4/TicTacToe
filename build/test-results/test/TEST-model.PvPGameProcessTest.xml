@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.PvPGameProcessTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-06-05T13:19:12" hostname="DESKTOP-M0VGVUA" time="0.001">
+<testsuite name="model.PvPGameProcessTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-06-05T13:24:01" hostname="DESKTOP-M0VGVUA" time="0.002">
   <properties/>
-  <testcase name="Return_2_WhenTurnIsTrue" classname="model.PvPGameProcessTest" time="0.0"/>
-  <testcase name="Return_1_WhenTurnIsFalse" classname="model.PvPGameProcessTest" time="0.001"/>
-  <testcase name="refreshShouldChangeTurnOnTrue" classname="model.PvPGameProcessTest" time="0.0"/>
+  <testcase name="Return_2_WhenTurnIsTrue" classname="model.PvPGameProcessTest" time="0.001"/>
+  <testcase name="Return_1_WhenTurnIsFalse" classname="model.PvPGameProcessTest" time="0.0"/>
+  <testcase name="refreshShouldChangeTurnOnTrue" classname="model.PvPGameProcessTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
