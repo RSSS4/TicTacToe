@@ -24,5 +24,14 @@ public class ChangeColorTest {
 
     @Test
     public void changePvMTextColor() {
+        String bgforfield = "res/bg/bg3.jpg";
+        GamePanel gameField = new GamePanel(bgforfield, 3, 0, 1);
+        JTextArea playerLeftText = new JTextArea();
+        playerLeftText.setForeground(gameField.playerLeftText().getForeground());
+
+        ChangeColor color = new ChangeColor();
+        color.changePvMTextColor(true);
+
+        assertNotEquals(playerLeftText,gameField.playerLeftText());
     }
 }

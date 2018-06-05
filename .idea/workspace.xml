@@ -2,40 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24124f7c-2d7a-4fa3-a781-877381c05c1d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/index.html" afterPath="$PROJECT_DIR$/build/reports/pitest/index.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Bot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Bot.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Buttons.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Buttons.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/EasyBot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/EasyBot.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/MediumBot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/MediumBot.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/Point.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/PvPGameProcess.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/PvPGameProcess.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/UltrBot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/UltrBot.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/UltrScore.java.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/index.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/index.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.BotTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.BotTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ButtonsTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ButtonsTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CheckWinnerTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.MediumBotTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.MediumBotTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.PointTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.PointTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.PvPGameProcessTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.PvPGameProcessTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.UltrScoreTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.UltrScoreTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.BotTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.BotTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.ButtonsTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.ButtonsTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.CheckWinnerTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.CheckWinnerTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.MediumBotTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.MediumBotTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.PointTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.PointTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.PvPGameProcessTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.PvPGameProcessTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.UltrScoreTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.UltrScoreTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/ChangeColor.java" afterPath="$PROJECT_DIR$/src/main/java/view/ChangeColor.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/PvMGameProcessTest.java" afterPath="$PROJECT_DIR$/src/test/java/model/PvMGameProcessTest.java" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/CheckWinner.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/CheckWinner.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/HardBot.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/HardBot.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/model/PvMGameProcess.java.html" afterPath="$PROJECT_DIR$/build/reports/pitest/model/PvMGameProcess.java.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" afterPath="$PROJECT_DIR$/build/reports/pitest/mutations.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/view/ChangeColorTest.java" afterPath="$PROJECT_DIR$/src/test/java/view/ChangeColorTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -118,8 +92,8 @@
       <file leaf-file-name="ChangeColorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/view/ChangeColorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -676,7 +650,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TicTacToe [test]">
+  <component name="RunManager" selected="JUnit.ChangeColorTest.changePvMTextColor">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -697,24 +671,6 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="TicTacToe [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-    </configuration>
     <configuration name="TicTacToe [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -732,6 +688,31 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="ChangeColorTest.changePvMTextColor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tictactoe_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="view" />
+      <option name="MAIN_CLASS_NAME" value="view.ChangeColorTest" />
+      <option name="METHOD_NAME" value="changePvMTextColor" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="ChangeColorTest.changePvPTextColor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -870,18 +851,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.PvMGameProcessTest.checkThatIsWinnerCreatesRightImageDraw" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.TicTacToe [test]" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PvMGameProcessTest.checkIfRefreshUpdatesEndGame" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ChangeColorTest.changePvPTextColor" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.TicTacToe [test]" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PvMGameProcessTest.checkIfRefreshUpdatesEndGame" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ChangeColorTest.changePvPTextColor" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ChangeColorTest.changePvMTextColor" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ChangeColorTest.changePvPTextColor" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PvMGameProcessTest.checkIfRefreshUpdatesEndGame" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PvMGameProcessTest.checkThatIsWinnerCreatesRightImageDraw" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.TicTacToe [test]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [build]" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ChangeColorTest.changePvMTextColor" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ChangeColorTest.changePvPTextColor" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PvMGameProcessTest.checkIfRefreshUpdatesEndGame" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PvMGameProcessTest.checkThatIsWinnerCreatesRightImageDraw" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.TicTacToe [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -948,10 +929,20 @@
       <option name="project" value="LOCAL" />
       <updated>1528233755105</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add new tests">
+      <created>1528234922400</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1528234922400</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="ChangeColorTest_changePvMTextColor - 2018.06.06 at 00h 43m 45s.xml">
+      <configuration name="ChangeColorTest.changePvMTextColor" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ChangeColorTest_changePvPTextColor - 2018.06.06 at 00h 39m 24s.xml">
       <configuration name="ChangeColorTest.changePvPTextColor" configurationId="JUnit" />
     </history-entry>
@@ -969,9 +960,6 @@
     </history-entry>
     <history-entry file="PvMGameProcessTest_checkIfRefreshUpdatesEndGame - 2018.06.06 at 00h 21m 35s.xml">
       <configuration name="PvMGameProcessTest.checkIfRefreshUpdatesEndGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PvMGameProcessTest_checkThatIsWinnerCreatesRightImageDraw - 2018.06.05 at 23h 39m 38s.xml">
-      <configuration name="PvMGameProcessTest.checkThatIsWinnerCreatesRightImageDraw" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TicTacToe_[test] - 2018.06.05 at 23h 40m 19s.xml">
       <configuration name="TicTacToe [test]" configurationId="GradleRunConfiguration" />
@@ -1205,8 +1193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/view/ChangeColorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
