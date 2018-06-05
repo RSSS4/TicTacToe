@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PvPGameProcess.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tictactoe</a> &gt; <a href="index.source.html" class="el_package">model</a> &gt; <span class="el_source">PvPGameProcess.java</span></div><h1>PvPGameProcess.java</h1><pre class="source lang-java linenums">package model;
+
+import view.*;
+
+import java.awt.*;
+
+public class PvPGameProcess {
+
+    private static ResultFrame result;
+
+    //first - false, second - true
+<span class="fc" id="L12">    private static boolean turn = true;</span>
+
+    private static final int FIRST = 1;
+    private static final int SECOND = 2;
+
+    private static CheckWinner checkWinner;
+    private static ChangeColor color;
+    private static int fieldSize;
+    private static Buttons[][] buttons;
+
+<span class="fc" id="L22">    public PvPGameProcess(int fieldSize) {</span>
+<span class="fc" id="L23">        setData(fieldSize);</span>
+<span class="fc" id="L24">    }</span>
+    private void setData(int fieldSize){
+<span class="fc" id="L26">    this.fieldSize = fieldSize;</span>
+<span class="pc bpc" id="L27" title="3 of 4 branches missed.">    checkWinner = new CheckWinner(fieldSize, fieldSize == 3 ? 3 : (fieldSize == 5 ? 4 : 5));</span>
+<span class="fc" id="L28">    color = new ChangeColor();</span>
+<span class="fc" id="L29">    color.changePvPTextColor(turn);</span>
+<span class="fc" id="L30">    buttons = GameField.getButtons();</span>
+<span class="fc" id="L31">}</span>
+    public static int turn() {
+<span class="fc bfc" id="L33" title="All 2 branches covered.">        turn = !turn;</span>
+<span class="fc" id="L34">        color.changePvPTextColor(turn);</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        if (turn) return SECOND;</span>
+<span class="fc" id="L36">        return FIRST;</span>
+    }
+
+    public static void isWinner(int coordX, int coordY) {
+<span class="fc" id="L40">        checkWinner.refreshData(buttons);</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if (checkWinner.checkWin(FIRST, coordX, coordY)) {</span>
+<span class="fc" id="L42">            endGame();</span>
+<span class="fc" id="L43">            result = new ResultFrame(ResultVariable.ResultVar.FIRSTWIN);</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        } else if (checkWinner.checkWin(SECOND, coordX, coordY)) {</span>
+<span class="fc" id="L45">            endGame();</span>
+<span class="fc" id="L46">            result = new ResultFrame(ResultVariable.ResultVar.SECONDWIN);</span>
+<span class="pc bpc" id="L47" title="1 of 2 branches missed.">        } else if (checkWinner.checkDraw()) {</span>
+<span class="fc" id="L48">            endGame();</span>
+<span class="fc" id="L49">            result = new ResultFrame(ResultVariable.ResultVar.DRAW);</span>
+        }
+<span class="fc" id="L51">    }</span>
+
+    public static void endGame() {
+<span class="fc bfc" id="L54" title="All 2 branches covered.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">                if (buttons[i][j].getWho() == 0)</span>
+<span class="fc" id="L57">                    buttons[i][j].endGame();</span>
+            }
+        }
+<span class="fc" id="L60">    }</span>
+
+    public static void refresh() {
+<span class="fc" id="L63">        turn = true;</span>
+<span class="fc" id="L64">        color.changePvPTextColor(turn);</span>
+<span class="fc" id="L65">    }</span>
+
+    public static boolean getTurn() {
+<span class="fc" id="L68">        return turn;</span>
+    }
+    public static void setTurn(boolean turn) {
+<span class="fc" id="L71">        PvPGameProcess.turn = turn;</span>
+<span class="fc" id="L72">    }</span>
+
+    public static void refreshData(Buttons[][] buttons) {
+<span class="fc" id="L75">        PvPGameProcess.buttons = buttons;</span>
+<span class="fc" id="L76">    }</span>
+
+<span class="fc" id="L78">    public static ResultFrame getResult(){return result;}</span>
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>

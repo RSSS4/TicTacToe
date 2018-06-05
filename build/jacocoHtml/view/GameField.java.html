@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GameField.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tictactoe</a> &gt; <a href="index.source.html" class="el_package">view</a> &gt; <span class="el_source">GameField.java</span></div><h1>GameField.java</h1><pre class="source lang-java linenums">package view;
+
+import model.*;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class GameField extends JPanel {
+
+    private static int fieldSize;
+    private static Buttons[][] buttons;
+
+<span class="nc" id="L13">    public GameField(int fieldSize, int whichGame) {</span>
+<span class="nc" id="L14">        setData(fieldSize, whichGame);</span>
+<span class="nc" id="L15">    }</span>
+
+    private void setData(int fieldSize, int whichGame){
+<span class="nc" id="L18">        this.fieldSize = fieldSize;</span>
+
+<span class="nc" id="L20">        setLayout(new GridLayout(fieldSize, fieldSize));</span>
+<span class="nc" id="L21">        setSize(400, 400);</span>
+
+<span class="nc" id="L23">        buttons = new Buttons[fieldSize][fieldSize];</span>
+<span class="nc bnc" id="L24" title="All 2 branches missed.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="nc bnc" id="L25" title="All 2 branches missed.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="nc" id="L26">                buttons[i][j] = new Buttons(whichGame);</span>
+<span class="nc" id="L27">                buttons[i][j].setX(i);</span>
+<span class="nc" id="L28">                buttons[i][j].setY(j);</span>
+<span class="nc" id="L29">                buttons[i][j].setBackground(new Color(127, 131, 135));</span>
+<span class="nc" id="L30">                buttons[i][j].setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));</span>
+<span class="nc" id="L31">                add(buttons[i][j]);</span>
+            }
+        }
+
+<span class="nc" id="L35">        setVisible(true);</span>
+<span class="nc" id="L36">    }</span>
+
+    public static int getFieldSize() {
+<span class="fc" id="L39">        return fieldSize;</span>
+    }
+
+    public static Buttons[][] getButtons() {
+<span class="fc" id="L43">        return buttons;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>

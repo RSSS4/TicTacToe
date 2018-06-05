@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Buttons.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tictactoe</a> &gt; <a href="index.source.html" class="el_package">model</a> &gt; <span class="el_source">Buttons.java</span></div><h1>Buttons.java</h1><pre class="source lang-java linenums">package model;
+
+import view.*;
+
+import model.PvMGameProcess;
+import model.PvPGameProcess;
+
+import javax.swing.*;
+import java.awt.*;
+
+
+public class Buttons extends JButton{
+
+    // first - 1, second - 2
+    private int who;
+    private boolean free;
+    private int coordX;
+    private int coordY;
+
+    // 1 - pvp, 2 - pvm
+<span class="fc" id="L21">    public Buttons(int whichGame) {</span>
+<span class="pc bpc" id="L22" title="1 of 2 branches missed.">        if (whichGame == 1)</span>
+<span class="fc" id="L23">            gamePvP();</span>
+        else
+<span class="nc" id="L25">            gameWithAI();</span>
+
+<span class="fc" id="L27">        free = true;</span>
+
+
+<span class="fc" id="L30">    }</span>
+
+    public void setWho(int who) {
+<span class="pc bpc" id="L33" title="1 of 2 branches missed.">        if (free) {</span>
+<span class="fc" id="L34">            free = false;</span>
+<span class="fc" id="L35">            this.who = who;</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">            if (who == 1)</span>
+<span class="pc bpc" id="L37" title="1 of 2 branches missed.">                setIcon(GameField.getFieldSize() == 3 ? AllImages.x3</span>
+<span class="pc bpc" id="L38" title="1 of 2 branches missed.">                        : (GameField.getFieldSize() == 5 ? AllImages.x5 : AllImages.x7));</span>
+            else
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">                setIcon(GameField.getFieldSize() == 3 ? AllImages.o3</span>
+<span class="pc bpc" id="L41" title="1 of 2 branches missed.">                        : (GameField.getFieldSize() == 5 ? AllImages.o5 : AllImages.o7));</span>
+        }
+<span class="fc" id="L43">    }</span>
+
+    public void setTest(int who, boolean free) {
+<span class="fc" id="L46">        this.free = free;</span>
+<span class="fc" id="L47">        this.who = who;</span>
+<span class="fc" id="L48">    }</span>
+
+    public void gamePvP() {
+<span class="fc" id="L51">        this.addActionListener( e -&gt; {</span>
+<span class="nc bnc" id="L52" title="All 2 branches missed.">            if (free) {</span>
+<span class="nc" id="L53">                setWho(PvPGameProcess.turn());</span>
+<span class="nc" id="L54">                free = false;</span>
+<span class="nc" id="L55">                PvPGameProcess.isWinner(coordX, coordY);</span>
+            }
+<span class="nc" id="L57">        });</span>
+<span class="fc" id="L58">    }</span>
+
+    public void gameWithAI() {
+<span class="nc" id="L61">        this.addActionListener( e -&gt; {</span>
+<span class="nc bnc" id="L62" title="All 4 branches missed.">            if (PvMGameProcess.getTurn() == 0 &amp;&amp; free) {</span>
+<span class="nc" id="L63">                aiGameProcess ();</span>
+            }
+<span class="nc bnc" id="L65" title="All 4 branches missed.">            if (PvMGameProcess.getTurn() == 1 &amp;&amp; free) {</span>
+<span class="nc" id="L66">                aiGameProcess ();</span>
+            }
+<span class="nc" id="L68">        });</span>
+<span class="nc" id="L69">    }</span>
+
+    public void refresh() {
+<span class="fc" id="L72">        who = 0;</span>
+<span class="fc" id="L73">        setIcon(null);</span>
+<span class="fc" id="L74">        setEnabled(true);</span>
+<span class="fc" id="L75">        free = true;</span>
+<span class="fc" id="L76">    }</span>
+
+    public void aiGameProcess ()
+    {
+<span class="nc" id="L80">        int which = PvMGameProcess.getTurn();</span>
+<span class="nc bnc" id="L81" title="All 2 branches missed.">        setWho(which == 0 ? 2 : 1);</span>
+<span class="nc" id="L82">        PvMGameProcess.isWinner(coordX, coordY);</span>
+<span class="nc" id="L83">        PvMGameProcess.setComp(true);</span>
+<span class="nc" id="L84">        PvMGameProcess.lvl();</span>
+<span class="nc" id="L85">        PvMGameProcess.setComp(false);</span>
+<span class="nc" id="L86">    }</span>
+
+    public void endGame() {
+<span class="fc" id="L89">        free = false;</span>
+<span class="fc" id="L90">    }</span>
+
+    public int getWho() {
+<span class="fc" id="L93">        return who;</span>
+    }
+
+    public boolean isFree() {
+<span class="fc" id="L97">        return free;</span>
+    }
+
+<span class="nc" id="L100">    public void setX(int coordX){this.coordX = coordX;}</span>
+<span class="nc" id="L101">    public void setY(int coordY){this.coordY = coordY;}</span>
+
+<span class="fc" id="L103">    public void setFree(boolean free){this.free=free;}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CheckWinner.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tictactoe</a> &gt; <a href="index.source.html" class="el_package">model</a> &gt; <span class="el_source">CheckWinner.java</span></div><h1>CheckWinner.java</h1><pre class="source lang-java linenums">package model;
+
+public class CheckWinner {
+
+<span class="fc" id="L5">    private int countwin = 0;</span>
+
+    private int fieldSize;
+    private int pointstowin;
+
+    private Buttons[][] buttons;
+
+<span class="fc" id="L12">    public CheckWinner(int fieldSize, int pointstowin) {</span>
+<span class="fc" id="L13">        this.fieldSize = fieldSize;</span>
+<span class="fc" id="L14">        this.pointstowin = pointstowin;</span>
+<span class="fc" id="L15">    }</span>
+
+    public void refreshData(Buttons[][] buttons) {
+<span class="fc" id="L18">        this.buttons = buttons;</span>
+<span class="fc" id="L19">    }</span>
+
+    private boolean checkLine(int startRow, int startCol, int dRow, int dCol, int who, int key) {
+<span class="pc bpc" id="L22" title="1 of 2 branches missed.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">            if (checkOutOfField(startRow - i * key * dRow, startCol - i * key * dCol)) {</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">                if (buttons[startRow - i * key * dRow][startCol - i * key * dCol].getWho() == who) {</span>
+<span class="fc" id="L25">                    countwin++;</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">                    if (countwin == pointstowin)</span>
+<span class="fc" id="L27">                        return true;</span>
+                } else
+                    break;
+            } else
+                break;
+        }
+
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (key == -1) {</span>
+<span class="fc" id="L35">            countwin--; //because we starting at start position twice</span>
+<span class="fc" id="L36">            key = 1;</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">            if (checkLine(startRow, startCol, dRow, dCol, who, key))</span>
+<span class="fc" id="L38">                return true;</span>
+        }
+<span class="fc" id="L40">        return false;</span>
+    }
+
+    public boolean checkWin(int who, int row, int col) {                        //get curr value of button
+<span class="fc" id="L44">        countwin = 0;</span>
+<span class="fc" id="L45">        int key = -1;</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        if (checkLine(row, col, 0, 1, who, key)) {                           //Find similars in rows(horizontal)</span>
+<span class="fc" id="L47">            return true;</span>
+        }
+<span class="fc" id="L49">        countwin = 0;</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">        if (checkLine(row, col, 1, 0, who, key)) {                               //Find similars in cols(vertical)</span>
+<span class="fc" id="L51">            return true;</span>
+        }
+<span class="fc" id="L53">        countwin = 0;</span>
+<span class="pc bpc" id="L54" title="1 of 2 branches missed.">        if (checkLine(row, col, 1, 1, who, key)) {                             //Find similars in cols(vertical)</span>
+<span class="nc" id="L55">            return true;</span>
+        }
+<span class="fc" id="L57">        countwin = 0;</span>
+<span class="pc bpc" id="L58" title="1 of 2 branches missed.">        if (checkLine(row, col, -1, 1, who, key)) {                      //Find similars in cols(vertical)</span>
+<span class="nc" id="L59">            return true;</span>
+        }
+<span class="fc" id="L61">        return false;</span>
+    }
+
+    public boolean checkDraw() {                                      //Check if is it a draw
+<span class="fc bfc" id="L65" title="All 2 branches covered.">        for (int i = 0; i &lt; fieldSize; i++)</span>
+<span class="fc bfc" id="L66" title="All 2 branches covered.">            for (int j = 0; j &lt; fieldSize; j++)</span>
+<span class="fc bfc" id="L67" title="All 2 branches covered.">                if (buttons[i][j].getWho() == 0)</span>
+<span class="fc" id="L68">                    return false;</span>
+<span class="fc" id="L69">        return true;</span>
+    }
+
+    public boolean checkOutOfField(int i, int j) {         //Check if index is out of array
+<span class="pc bpc" id="L73" title="1 of 8 branches missed.">        return i &lt; fieldSize &amp;&amp; i &gt;= 0 &amp;&amp; j &lt; fieldSize &amp;&amp; j &gt;= 0;</span>
+    }
+    public Buttons[][] getButtons() {
+<span class="fc" id="L76">        return buttons;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>
