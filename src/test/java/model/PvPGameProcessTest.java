@@ -30,7 +30,7 @@ public class PvPGameProcessTest {
         int actual = pvPGameProcess.turn();
         assertEquals(expected,actual);
     }
-    @Ignore
+    @Test
     public  void CheckThatIsWinnerCreatesRightObjWithFirstWinImgName(){
         Buttons buttons[][] = new Buttons[3][3];
         for (int i = 0; i < 3 ; i++) {
@@ -48,7 +48,7 @@ public class PvPGameProcessTest {
         assertEquals(expected,actual);
     }
 
-    @Ignore
+    @Test
     public  void CheckThatIsWinnerCreatesRightObjWithSecondWinImgName(){
         Buttons buttons[][] = new Buttons[3][3];
         for (int i = 0; i < 3 ; i++) {
@@ -66,7 +66,7 @@ public class PvPGameProcessTest {
         assertEquals(expected,actual);
     }
 
-    @Ignore
+    @Test
     public  void CheckThatIsWinnerCreatesRightObjWithDrawImgName(){
         Buttons buttons[][] = new Buttons[3][3];
         for (int i = 0; i < 3 ; i++) {

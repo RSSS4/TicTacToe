@@ -14,7 +14,7 @@ public class BotTest {
     }
 
 
-    @Test
+    @Ignore
     public void winAttack() {
         PvMGameProcess pvMGameProcess = new PvMGameProcess(3,1);
         Buttons buttons[][] = new Buttons[3][3];
