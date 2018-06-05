@@ -130,6 +130,9 @@ private void setData(int fieldSize, int difficulty){
     public static void setEasyBot(EasyBot easyBot){
         boteasy = easyBot;
     }
+    public static Bot getEasyBot(){
+        return boteasy;
+    }
 
     public static ResultFrame getResult(){return result;}
     public static void setComp(boolean comp) {

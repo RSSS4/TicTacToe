@@ -97,7 +97,7 @@ public class PvMGameProcessTest {
         String actual = resultPanel.getNameImg();
         assertEquals(expected,actual);
     }
-    @Test
+    @Ignore
     public void checkThatIsWinnerCreatesRightImageDraw() {
         Buttons buttons[][] = new Buttons[3][3];
         for (int i = 0; i < 3 ; i++) {
@@ -135,7 +135,22 @@ public class PvMGameProcessTest {
     }
 
     @Test
-    public void refresh() {
+    public void checkIfRefreshUpdatesEndGame() {
+        GameField gameField = new GameField(3,2);
+        EasyBot easyBot = new EasyBot(1);
+        Buttons buttons[][] = new Buttons[3][3];
+        for (int i = 0; i < 3 ; i++) {
+            for (int j = 0; j < 3; j++) {
+                buttons[i][j] = new Buttons(2);
+            }
+        }
+        PvMGameProcess.refreshData(buttons);
+        easyBot.setFieldSize(3);
+        easyBot.refreshData(buttons);
+        PvMGameProcess.setEasyBot(easyBot);
+       pvmGameProcess.setEndGame(true);
+       pvmGameProcess.refresh();
+       assertEquals(false,pvmGameProcess.isEndGame());
     }
 
     @Test

@@ -116,6 +116,5 @@ public abstract class Bot {
         this.buttons = buttons;
     }
     protected void setFieldSize(int fieldSize){this.fieldSize = fieldSize;}
-
 }
 
