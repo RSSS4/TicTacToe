@@ -19,10 +19,10 @@ public class Buttons extends JButton{
 
     // 1 - pvp, 2 - pvm
 <span class="fc" id="L21">    public Buttons(int whichGame) {</span>
-<span class="pc bpc" id="L22" title="1 of 2 branches missed.">        if (whichGame == 1)</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">        if (whichGame == 1)</span>
 <span class="fc" id="L23">            gamePvP();</span>
         else
-<span class="nc" id="L25">            gameWithAI();</span>
+<span class="fc" id="L25">            gameWithAI();</span>
 
 <span class="fc" id="L27">        free = true;</span>
 
@@ -58,7 +58,7 @@ public class Buttons extends JButton{
 <span class="fc" id="L58">    }</span>
 
     public void gameWithAI() {
-<span class="nc" id="L61">        this.addActionListener( e -&gt; {</span>
+<span class="fc" id="L61">        this.addActionListener( e -&gt; {</span>
 <span class="nc bnc" id="L62" title="All 4 branches missed.">            if (PvMGameProcess.getTurn() == 0 &amp;&amp; free) {</span>
 <span class="nc" id="L63">                aiGameProcess ();</span>
             }
@@ -66,7 +66,7 @@ public class Buttons extends JButton{
 <span class="nc" id="L66">                aiGameProcess ();</span>
             }
 <span class="nc" id="L68">        });</span>
-<span class="nc" id="L69">    }</span>
+<span class="fc" id="L69">    }</span>
 
     public void refresh() {
 <span class="fc" id="L72">        who = 0;</span>
@@ -97,8 +97,8 @@ public class Buttons extends JButton{
 <span class="fc" id="L97">        return free;</span>
     }
 
-<span class="nc" id="L100">    public void setX(int coordX){this.coordX = coordX;}</span>
-<span class="nc" id="L101">    public void setY(int coordY){this.coordY = coordY;}</span>
+<span class="fc" id="L100">    public void setX(int coordX){this.coordX = coordX;}</span>
+<span class="fc" id="L101">    public void setY(int coordY){this.coordY = coordY;}</span>
 
 <span class="fc" id="L103">    public void setFree(boolean free){this.free=free;}</span>
 

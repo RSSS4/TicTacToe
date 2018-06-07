@@ -10,30 +10,30 @@ public class GameField extends JPanel {
     private static int fieldSize;
     private static Buttons[][] buttons;
 
-<span class="nc" id="L13">    public GameField(int fieldSize, int whichGame) {</span>
-<span class="nc" id="L14">        setData(fieldSize, whichGame);</span>
-<span class="nc" id="L15">    }</span>
+<span class="fc" id="L13">    public GameField(int fieldSize, int whichGame) {</span>
+<span class="fc" id="L14">        setData(fieldSize, whichGame);</span>
+<span class="fc" id="L15">    }</span>
 
     private void setData(int fieldSize, int whichGame){
-<span class="nc" id="L18">        this.fieldSize = fieldSize;</span>
+<span class="fc" id="L18">        this.fieldSize = fieldSize;</span>
 
-<span class="nc" id="L20">        setLayout(new GridLayout(fieldSize, fieldSize));</span>
-<span class="nc" id="L21">        setSize(400, 400);</span>
+<span class="fc" id="L20">        setLayout(new GridLayout(fieldSize, fieldSize));</span>
+<span class="fc" id="L21">        setSize(400, 400);</span>
 
-<span class="nc" id="L23">        buttons = new Buttons[fieldSize][fieldSize];</span>
-<span class="nc bnc" id="L24" title="All 2 branches missed.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
-<span class="nc bnc" id="L25" title="All 2 branches missed.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
-<span class="nc" id="L26">                buttons[i][j] = new Buttons(whichGame);</span>
-<span class="nc" id="L27">                buttons[i][j].setX(i);</span>
-<span class="nc" id="L28">                buttons[i][j].setY(j);</span>
-<span class="nc" id="L29">                buttons[i][j].setBackground(new Color(127, 131, 135));</span>
-<span class="nc" id="L30">                buttons[i][j].setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));</span>
-<span class="nc" id="L31">                add(buttons[i][j]);</span>
+<span class="fc" id="L23">        buttons = new Buttons[fieldSize][fieldSize];</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="fc" id="L26">                buttons[i][j] = new Buttons(whichGame);</span>
+<span class="fc" id="L27">                buttons[i][j].setX(i);</span>
+<span class="fc" id="L28">                buttons[i][j].setY(j);</span>
+<span class="fc" id="L29">                buttons[i][j].setBackground(new Color(127, 131, 135));</span>
+<span class="fc" id="L30">                buttons[i][j].setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));</span>
+<span class="fc" id="L31">                add(buttons[i][j]);</span>
             }
         }
 
-<span class="nc" id="L35">        setVisible(true);</span>
-<span class="nc" id="L36">    }</span>
+<span class="fc" id="L35">        setVisible(true);</span>
+<span class="fc" id="L36">    }</span>
 
     public static int getFieldSize() {
 <span class="fc" id="L39">        return fieldSize;</span>

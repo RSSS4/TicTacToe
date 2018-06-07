@@ -21,7 +21,7 @@ public class BotTest {
         Buttons buttons[][] = new Buttons[3][3];
         for (int i = 0; i < 3 ; i++) {
             for (int j = 0; j < 3; j++) {
-                buttons[i][j] = new Buttons(1);
+                buttons[i][j] = new Buttons(2);
             }
         }
         buttons[0][0].setWho(1);
@@ -39,7 +39,7 @@ public class BotTest {
         Buttons buttons[][] = new Buttons[3][3];
         for (int i = 0; i < 3 ; i++) {
             for (int j = 0; j < 3; j++) {
-                buttons[i][j] = new Buttons(1);
+                buttons[i][j] = new Buttons(2);
             }
         }
         easyBot.setFieldSize(3);
@@ -56,7 +56,7 @@ public class BotTest {
         Buttons buttons[][] = new Buttons[5][5];
         for (int i = 0; i < 5 ; i++) {
             for (int j = 0; j < 5; j++) {
-                buttons[i][j] = new Buttons(1);
+                buttons[i][j] = new Buttons(2);
             }
         }
         buttons[0][0].setWho(2);
@@ -76,7 +76,7 @@ public class BotTest {
         Buttons buttons[][] = new Buttons[5][5];
         for (int i = 0; i < 5 ; i++) {
             for (int j = 0; j < 5; j++) {
-                buttons[i][j] = new Buttons(1);
+                buttons[i][j] = new Buttons(2);
             }
         }
         easyBot.setFieldSize(5);

@@ -70,12 +70,12 @@ private void setData(int fieldSize, int difficulty){
 
     public static void isWinner(int coordX, int coordY) {
 <span class="fc" id="L72">        checkWinner.refreshData(buttons);</span>
-<span class="fc bfc" id="L73" title="All 2 branches covered.">        if (checkWinner.checkWin(1, coordX, coordY)) {</span>
-<span class="fc" id="L74">            endGame();</span>
-<span class="fc bfc" id="L75" title="All 2 branches covered.">            if (turn == 0)</span>
-<span class="fc" id="L76">                result = new ResultFrame(ResultVariable.ResultVar.WIN);</span>
+<span class="pc bpc" id="L73" title="1 of 2 branches missed.">        if (checkWinner.checkWin(1, coordX, coordY)) {</span>
+<span class="nc" id="L74">            endGame();</span>
+<span class="nc bnc" id="L75" title="All 2 branches missed.">            if (turn == 0)</span>
+<span class="nc" id="L76">                result = new ResultFrame(ResultVariable.ResultVar.WIN);</span>
             else
-<span class="fc" id="L78">                result = new ResultFrame(ResultVariable.ResultVar.LOSE);</span>
+<span class="nc" id="L78">                result = new ResultFrame(ResultVariable.ResultVar.LOSE);</span>
 <span class="pc bpc" id="L79" title="1 of 2 branches missed.">        } else if (checkWinner.checkWin(2, coordX, coordY)) {</span>
 <span class="nc" id="L80">            endGame();</span>
 <span class="nc bnc" id="L81" title="All 2 branches missed.">            if (turn == 0)</span>
@@ -92,22 +92,22 @@ private void setData(int fieldSize, int difficulty){
 <span class="fc" id="L92">        endGame = true;</span>
 <span class="fc bfc" id="L93" title="All 2 branches covered.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
 <span class="fc bfc" id="L94" title="All 2 branches covered.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
-<span class="fc bfc" id="L95" title="All 2 branches covered.">                if (buttons[i][j].getWho() == 0)</span>
+<span class="pc bpc" id="L95" title="1 of 2 branches missed.">                if (buttons[i][j].getWho() == 0)</span>
 <span class="fc" id="L96">                    buttons[i][j].endGame();</span>
             }
         }
 <span class="fc" id="L99">    }</span>
 
     public static void refresh() {
-<span class="nc" id="L102">        endGame = false;</span>
-<span class="nc" id="L103">        turn = randFirstTurn();</span>
-<span class="nc bnc" id="L104" title="All 2 branches missed.">        boteasy = new EasyBot(turn == 0 ? 1 : 2);</span>
-<span class="nc bnc" id="L105" title="All 2 branches missed.">        botmid = new MediumBot(turn == 0 ? 1 : 2);</span>
-<span class="nc bnc" id="L106" title="All 2 branches missed.">        bothard = new HardBot(turn == 0 ? 1 : 2);</span>
-<span class="nc bnc" id="L107" title="All 2 branches missed.">        botultr = new UltrBot(turn == 0 ? 1 : 2);</span>
-<span class="nc bnc" id="L108" title="All 2 branches missed.">        player = turn == 0 ? false : true;</span>
-<span class="nc bnc" id="L109" title="All 2 branches missed.">        comp = turn == 0 ? true : false;</span>
-<span class="nc bnc" id="L110" title="All 2 branches missed.">        if (comp) {</span>
+<span class="fc" id="L102">        endGame = false;</span>
+<span class="fc" id="L103">        turn = randFirstTurn();</span>
+<span class="pc bpc" id="L104" title="1 of 2 branches missed.">        boteasy = new EasyBot(turn == 0 ? 1 : 2);</span>
+<span class="pc bpc" id="L105" title="1 of 2 branches missed.">        botmid = new MediumBot(turn == 0 ? 1 : 2);</span>
+<span class="pc bpc" id="L106" title="1 of 2 branches missed.">        bothard = new HardBot(turn == 0 ? 1 : 2);</span>
+<span class="pc bpc" id="L107" title="1 of 2 branches missed.">        botultr = new UltrBot(turn == 0 ? 1 : 2);</span>
+<span class="pc bpc" id="L108" title="1 of 2 branches missed.">        player = turn == 0 ? false : true;</span>
+<span class="pc bpc" id="L109" title="1 of 2 branches missed.">        comp = turn == 0 ? true : false;</span>
+<span class="pc bpc" id="L110" title="1 of 2 branches missed.">        if (comp) {</span>
 <span class="nc bnc" id="L111" title="All 2 branches missed.">            if (difficulty == 1)</span>
 <span class="nc" id="L112">                boteasy.hitBot();</span>
 <span class="nc bnc" id="L113" title="All 2 branches missed.">            else if (difficulty == 2) {</span>
@@ -117,7 +117,7 @@ private void setData(int fieldSize, int difficulty){
             else
 <span class="nc" id="L118">                botultr.hitBot();</span>
         }
-<span class="nc" id="L120">    }</span>
+<span class="fc" id="L120">    }</span>
 
     public static boolean isEndGame() {
 <span class="fc" id="L123">        return endGame;</span>
@@ -127,13 +127,23 @@ private void setData(int fieldSize, int difficulty){
 <span class="fc" id="L127">        return turn;</span>
     }
 <span class="fc" id="L129">    public static void setTurn(int turn){PvMGameProcess.turn = turn;}</span>
+    public static void setEasyBot(EasyBot easyBot){
+<span class="fc" id="L131">        boteasy = easyBot;</span>
+<span class="fc" id="L132">    }</span>
+    public static Bot getEasyBot(){
+<span class="nc" id="L134">        return boteasy;</span>
+    }
 
+<span class="nc" id="L137">    public static ResultFrame getResult(){return result;}</span>
     public static void setComp(boolean comp) {
-<span class="nc" id="L132">        PvMGameProcess.comp = comp;</span>
-<span class="nc" id="L133">    }</span>
+<span class="nc" id="L139">        PvMGameProcess.comp = comp;</span>
+<span class="nc" id="L140">    }</span>
     public static void refreshData(Buttons[][] buttons) {
-<span class="fc" id="L135">        PvMGameProcess.buttons = buttons;</span>
-<span class="fc" id="L136">    }</span>
-<span class="fc" id="L137">    public static void setEndGame(boolean endGame){PvMGameProcess.endGame = endGame;}</span>
+<span class="fc" id="L142">        PvMGameProcess.buttons = buttons;</span>
+<span class="fc" id="L143">    }</span>
+<span class="fc" id="L144">    public static void setEndGame(boolean endGame){PvMGameProcess.endGame = endGame;}</span>
+    public Buttons[][] getButtons() {
+<span class="fc" id="L146">        return buttons;</span>
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>

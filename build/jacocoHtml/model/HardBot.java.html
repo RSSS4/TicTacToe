@@ -17,208 +17,208 @@ public class HardBot extends Bot {
 
     @Override
     public void hitBot() {
-<span class="nc bnc" id="L20" title="All 4 branches missed.">        if (!winAttack( who) &amp;&amp; !defAttack( who)) {</span>
-<span class="nc" id="L21">            nextprediction2 = false;</span>
-<span class="nc bnc" id="L22" title="All 2 branches missed.">            if (!predictionAttack()) {</span>
-<span class="nc" id="L23">                nextprediction2 = true;</span>
-<span class="nc" id="L24">                isFind = false;</span>
-<span class="nc bnc" id="L25" title="All 2 branches missed.">                for (int i = 0; i &lt; fieldSize; i++) {</span>
-<span class="nc bnc" id="L26" title="All 2 branches missed.">                    if (isFind) break;</span>
-<span class="nc bnc" id="L27" title="All 2 branches missed.">                    for (int j = 0; j &lt; fieldSize; j++) {</span>
-<span class="nc" id="L28">                        isFind2 = false;</span>
-<span class="nc" id="L29">                        checkWinner.refreshData(buttons);</span>
-<span class="nc bnc" id="L30" title="All 4 branches missed.">                        if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L31">                            buttons[i][j].setTest(enemywho, false);</span>
-<span class="nc" id="L32">                            isFind2 = true;</span>
-<span class="nc bnc" id="L33" title="All 2 branches missed.">                            for (int k = 0; k &lt; fieldSize; k++) {</span>
-<span class="nc bnc" id="L34" title="All 2 branches missed.">                                if (isFind) break;</span>
-<span class="nc bnc" id="L35" title="All 2 branches missed.">                                for (int l = 0; l &lt; fieldSize; l++) {</span>
-<span class="nc bnc" id="L36" title="All 4 branches missed.">                                    if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L37">                                        buttons[k][l].setTest(enemywho, false);</span>
-<span class="nc bnc" id="L38" title="All 2 branches missed.">                                        if (checkWinner.checkWin(enemywho, k, l)) {</span>
-<span class="nc" id="L39">                                            buttons[k][l].setTest(0, true);</span>
-<span class="nc" id="L40">                                            buttons[k][l].setWho(who);</span>
-<span class="nc" id="L41">                                            isFind = true;</span>
-<span class="nc" id="L42">                                            nextprediction2 = false;</span>
-<span class="nc" id="L43">                                            buttons[i][j].setTest(0, true);</span>
-<span class="nc" id="L44">                                            PvMGameProcess.isWinner(i, j);</span>
-<span class="nc" id="L45">                                            break;</span>
-<span class="nc" id="L46">                                        } else buttons[k][l].setTest(0, true);</span>
+<span class="pc bpc" id="L20" title="2 of 4 branches missed.">        if (!winAttack( who) &amp;&amp; !defAttack( who)) {</span>
+<span class="fc" id="L21">            nextprediction2 = false;</span>
+<span class="pc bpc" id="L22" title="1 of 2 branches missed.">            if (!predictionAttack()) {</span>
+<span class="fc" id="L23">                nextprediction2 = true;</span>
+<span class="fc" id="L24">                isFind = false;</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">                for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">                    if (isFind) break;</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">                    for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="fc" id="L28">                        isFind2 = false;</span>
+<span class="fc" id="L29">                        checkWinner.refreshData(buttons);</span>
+<span class="pc bpc" id="L30" title="1 of 4 branches missed.">                        if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L31">                            buttons[i][j].setTest(enemywho, false);</span>
+<span class="fc" id="L32">                            isFind2 = true;</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">                            for (int k = 0; k &lt; fieldSize; k++) {</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">                                if (isFind) break;</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">                                for (int l = 0; l &lt; fieldSize; l++) {</span>
+<span class="pc bpc" id="L36" title="1 of 4 branches missed.">                                    if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L37">                                        buttons[k][l].setTest(enemywho, false);</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">                                        if (checkWinner.checkWin(enemywho, k, l)) {</span>
+<span class="fc" id="L39">                                            buttons[k][l].setTest(0, true);</span>
+<span class="fc" id="L40">                                            buttons[k][l].setWho(who);</span>
+<span class="fc" id="L41">                                            isFind = true;</span>
+<span class="fc" id="L42">                                            nextprediction2 = false;</span>
+<span class="fc" id="L43">                                            buttons[i][j].setTest(0, true);</span>
+<span class="fc" id="L44">                                            PvMGameProcess.isWinner(i, j);</span>
+<span class="fc" id="L45">                                            break;</span>
+<span class="fc" id="L46">                                        } else buttons[k][l].setTest(0, true);</span>
                                     }
                                 }
                             }
                         }
-<span class="nc bnc" id="L51" title="All 2 branches missed.">                        if (isFind) break;</span>
-<span class="nc bnc" id="L52" title="All 2 branches missed.">                        if (isFind2) buttons[i][j].setTest(0, true);</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">                        if (isFind) break;</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">                        if (isFind2) buttons[i][j].setTest(0, true);</span>
                     }
                 }
             }
         }
-<span class="nc bnc" id="L57" title="All 2 branches missed.">        if (nextprediction2) {</span>
-<span class="nc" id="L58">            nextprediction3 = false;</span>
-<span class="nc bnc" id="L59" title="All 2 branches missed.">            if (!predictionAttack2()) {</span>
-<span class="nc" id="L60">                nextprediction3 = true;</span>
-<span class="nc" id="L61">                isFind = false;</span>
-<span class="nc bnc" id="L62" title="All 2 branches missed.">                for (int i = 0; i &lt; fieldSize; i++) {</span>
-<span class="nc bnc" id="L63" title="All 2 branches missed.">                    if (isFind) break;</span>
-<span class="nc bnc" id="L64" title="All 2 branches missed.">                    for (int j = 0; j &lt; fieldSize; j++) {</span>
-<span class="nc" id="L65">                        isFind2 = false;</span>
-<span class="nc" id="L66">                        checkWinner.refreshData(buttons);</span>
-<span class="nc bnc" id="L67" title="All 4 branches missed.">                        if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L68">                            buttons[i][j].setTest(enemywho, false);</span>
-<span class="nc" id="L69">                            isFind2 = true;</span>
-<span class="nc bnc" id="L70" title="All 2 branches missed.">                            for (int k = 0; k &lt; fieldSize; k++) {</span>
-<span class="nc bnc" id="L71" title="All 2 branches missed.">                                if (isFind) break;</span>
-<span class="nc bnc" id="L72" title="All 2 branches missed.">                                for (int l = 0; l &lt; fieldSize; l++) {</span>
-<span class="nc" id="L73">                                    isFind3 = false;</span>
-<span class="nc bnc" id="L74" title="All 4 branches missed.">                                    if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L75">                                        buttons[k][l].setTest(enemywho, false);</span>
-<span class="nc" id="L76">                                        isFind3 = true;</span>
-<span class="nc bnc" id="L77" title="All 2 branches missed.">                                        for (int m = 0; m &lt; fieldSize; m++) {</span>
-<span class="nc bnc" id="L78" title="All 2 branches missed.">                                            if (isFind) break;</span>
-<span class="nc bnc" id="L79" title="All 2 branches missed.">                                            for (int n = 0; n &lt; fieldSize; n++) {</span>
-<span class="nc bnc" id="L80" title="All 4 branches missed.">                                                if (buttons[m][n].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L81">                                                    buttons[m][n].setTest(enemywho, false);</span>
-<span class="nc bnc" id="L82" title="All 2 branches missed.">                                                    if (checkWinner.checkWin(enemywho, m, n)) {</span>
-<span class="nc" id="L83">                                                        buttons[m][n].setTest(0, true);</span>
-<span class="nc" id="L84">                                                        buttons[m][n].setWho(who);</span>
-<span class="nc" id="L85">                                                        nextprediction3 = false;</span>
-<span class="nc" id="L86">                                                        isFind = true;</span>
-<span class="nc" id="L87">                                                        buttons[i][j].setTest(0, true);</span>
-<span class="nc" id="L88">                                                        buttons[k][l].setTest(0, true);</span>
-<span class="nc" id="L89">                                                        PvMGameProcess.isWinner(i, j);</span>
-<span class="nc" id="L90">                                                        break;</span>
-<span class="nc" id="L91">                                                    } else buttons[m][n].setTest(0, true);</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">        if (nextprediction2) {</span>
+<span class="fc" id="L58">            nextprediction3 = false;</span>
+<span class="pc bpc" id="L59" title="1 of 2 branches missed.">            if (!predictionAttack2()) {</span>
+<span class="fc" id="L60">                nextprediction3 = true;</span>
+<span class="fc" id="L61">                isFind = false;</span>
+<span class="fc bfc" id="L62" title="All 2 branches covered.">                for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">                    if (isFind) break;</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">                    for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="fc" id="L65">                        isFind2 = false;</span>
+<span class="fc" id="L66">                        checkWinner.refreshData(buttons);</span>
+<span class="pc bpc" id="L67" title="1 of 4 branches missed.">                        if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L68">                            buttons[i][j].setTest(enemywho, false);</span>
+<span class="fc" id="L69">                            isFind2 = true;</span>
+<span class="fc bfc" id="L70" title="All 2 branches covered.">                            for (int k = 0; k &lt; fieldSize; k++) {</span>
+<span class="fc bfc" id="L71" title="All 2 branches covered.">                                if (isFind) break;</span>
+<span class="fc bfc" id="L72" title="All 2 branches covered.">                                for (int l = 0; l &lt; fieldSize; l++) {</span>
+<span class="fc" id="L73">                                    isFind3 = false;</span>
+<span class="pc bpc" id="L74" title="1 of 4 branches missed.">                                    if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L75">                                        buttons[k][l].setTest(enemywho, false);</span>
+<span class="fc" id="L76">                                        isFind3 = true;</span>
+<span class="fc bfc" id="L77" title="All 2 branches covered.">                                        for (int m = 0; m &lt; fieldSize; m++) {</span>
+<span class="fc bfc" id="L78" title="All 2 branches covered.">                                            if (isFind) break;</span>
+<span class="fc bfc" id="L79" title="All 2 branches covered.">                                            for (int n = 0; n &lt; fieldSize; n++) {</span>
+<span class="pc bpc" id="L80" title="1 of 4 branches missed.">                                                if (buttons[m][n].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L81">                                                    buttons[m][n].setTest(enemywho, false);</span>
+<span class="fc bfc" id="L82" title="All 2 branches covered.">                                                    if (checkWinner.checkWin(enemywho, m, n)) {</span>
+<span class="fc" id="L83">                                                        buttons[m][n].setTest(0, true);</span>
+<span class="fc" id="L84">                                                        buttons[m][n].setWho(who);</span>
+<span class="fc" id="L85">                                                        nextprediction3 = false;</span>
+<span class="fc" id="L86">                                                        isFind = true;</span>
+<span class="fc" id="L87">                                                        buttons[i][j].setTest(0, true);</span>
+<span class="fc" id="L88">                                                        buttons[k][l].setTest(0, true);</span>
+<span class="fc" id="L89">                                                        PvMGameProcess.isWinner(i, j);</span>
+<span class="fc" id="L90">                                                        break;</span>
+<span class="fc" id="L91">                                                    } else buttons[m][n].setTest(0, true);</span>
                                                 }
                                             }
                                         }
                                     }
-<span class="nc bnc" id="L96" title="All 2 branches missed.">                                    if (isFind) break;</span>
-<span class="nc bnc" id="L97" title="All 2 branches missed.">                                    if (isFind3) buttons[k][l].setTest(0, true);</span>
+<span class="fc bfc" id="L96" title="All 2 branches covered.">                                    if (isFind) break;</span>
+<span class="fc bfc" id="L97" title="All 2 branches covered.">                                    if (isFind3) buttons[k][l].setTest(0, true);</span>
                                 }
                             }
                         }
-<span class="nc bnc" id="L101" title="All 2 branches missed.">                        if (isFind) break;</span>
-<span class="nc bnc" id="L102" title="All 2 branches missed.">                        if (isFind2) buttons[i][j].setTest(0, true);</span>
+<span class="fc bfc" id="L101" title="All 2 branches covered.">                        if (isFind) break;</span>
+<span class="fc bfc" id="L102" title="All 2 branches covered.">                        if (isFind2) buttons[i][j].setTest(0, true);</span>
                     }
                 }
-<span class="nc bnc" id="L105" title="All 4 branches missed.">                if (!isFind &amp;&amp; fieldSize != 7) {</span>
+<span class="pc bpc" id="L105" title="1 of 4 branches missed.">                if (!isFind &amp;&amp; fieldSize != 7) {</span>
 <span class="nc" id="L106">                    randomMove(who, fieldSize);</span>
                 }
             }
         }
-<span class="nc bnc" id="L110" title="All 6 branches missed.">        if (nextprediction3 &amp;&amp; fieldSize == 7 &amp;&amp; !predictionAttack3()) {</span>
-<span class="nc" id="L111">                isFind = false;</span>
-<span class="nc bnc" id="L112" title="All 2 branches missed.">                for (int i = 0; i &lt; fieldSize; i++) {</span>
-<span class="nc bnc" id="L113" title="All 2 branches missed.">                    if (isFind) break;</span>
-<span class="nc bnc" id="L114" title="All 2 branches missed.">                    for (int j = 0; j &lt; fieldSize; j++) {</span>
-<span class="nc" id="L115">                        isFind2 = false;</span>
-<span class="nc" id="L116">                        checkWinner.refreshData(buttons);</span>
-<span class="nc bnc" id="L117" title="All 4 branches missed.">                        if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L118">                            buttons[i][j].setTest(enemywho, false);</span>
-<span class="nc" id="L119">                            isFind2 = true;</span>
-<span class="nc bnc" id="L120" title="All 2 branches missed.">                            for (int k = 0; k &lt; fieldSize; k++) {</span>
-<span class="nc bnc" id="L121" title="All 2 branches missed.">                                if (isFind) break;</span>
-<span class="nc bnc" id="L122" title="All 2 branches missed.">                                for (int l = 0; l &lt; fieldSize; l++) {</span>
-<span class="nc" id="L123">                                    isFind3 = false;</span>
-<span class="nc bnc" id="L124" title="All 4 branches missed.">                                    if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L125">                                        buttons[k][l].setTest(enemywho, false);</span>
-<span class="nc" id="L126">                                        isFind3 = true;</span>
-<span class="nc bnc" id="L127" title="All 2 branches missed.">                                        for (int m = 0; m &lt; fieldSize; m++) {</span>
-<span class="nc bnc" id="L128" title="All 2 branches missed.">                                            if (isFind) break;</span>
-<span class="nc bnc" id="L129" title="All 2 branches missed.">                                            for (int n = 0; n &lt; fieldSize; n++) {</span>
-<span class="nc" id="L130">                                                isFind4 = false;</span>
-<span class="nc bnc" id="L131" title="All 4 branches missed.">                                                if (buttons[m][n].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L132">                                                    buttons[m][n].setTest(enemywho, false);</span>
-<span class="nc" id="L133">                                                    isFind4 = true;</span>
-<span class="nc bnc" id="L134" title="All 2 branches missed.">                                                    for (int o = 0; o &lt; fieldSize; o++) {</span>
-<span class="nc bnc" id="L135" title="All 2 branches missed.">                                                        if (isFind) break;</span>
-<span class="nc bnc" id="L136" title="All 2 branches missed.">                                                        for (int p = 0; p &lt; fieldSize; p++) {</span>
-<span class="nc bnc" id="L137" title="All 4 branches missed.">                                                            if (buttons[o][p].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L138">                                                                buttons[o][p].setTest(enemywho, false);</span>
-<span class="nc bnc" id="L139" title="All 2 branches missed.">                                                                if (checkWinner.checkWin(enemywho, o, p)) {</span>
-<span class="nc" id="L140">                                                                    buttons[o][p].setTest(0, true);</span>
-<span class="nc" id="L141">                                                                    buttons[o][p].setWho(who);</span>
-<span class="nc" id="L142">                                                                    isFind = true;</span>
-<span class="nc" id="L143">                                                                    buttons[i][j].setTest(0, true);</span>
-<span class="nc" id="L144">                                                                    buttons[m][n].setTest(0, true);</span>
-<span class="nc" id="L145">                                                                    buttons[k][l].setTest(0, true);</span>
-<span class="nc" id="L146">                                                                    PvMGameProcess.isWinner(i, j);</span>
-<span class="nc" id="L147">                                                                    break;</span>
+<span class="pc bpc" id="L110" title="2 of 6 branches missed.">        if (nextprediction3 &amp;&amp; fieldSize == 7 &amp;&amp; !predictionAttack3()) {</span>
+<span class="fc" id="L111">                isFind = false;</span>
+<span class="pc bpc" id="L112" title="1 of 2 branches missed.">                for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="fc bfc" id="L113" title="All 2 branches covered.">                    if (isFind) break;</span>
+<span class="pc bpc" id="L114" title="1 of 2 branches missed.">                    for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="fc" id="L115">                        isFind2 = false;</span>
+<span class="fc" id="L116">                        checkWinner.refreshData(buttons);</span>
+<span class="pc bpc" id="L117" title="1 of 4 branches missed.">                        if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L118">                            buttons[i][j].setTest(enemywho, false);</span>
+<span class="fc" id="L119">                            isFind2 = true;</span>
+<span class="pc bpc" id="L120" title="1 of 2 branches missed.">                            for (int k = 0; k &lt; fieldSize; k++) {</span>
+<span class="fc bfc" id="L121" title="All 2 branches covered.">                                if (isFind) break;</span>
+<span class="pc bpc" id="L122" title="1 of 2 branches missed.">                                for (int l = 0; l &lt; fieldSize; l++) {</span>
+<span class="fc" id="L123">                                    isFind3 = false;</span>
+<span class="pc bpc" id="L124" title="1 of 4 branches missed.">                                    if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L125">                                        buttons[k][l].setTest(enemywho, false);</span>
+<span class="fc" id="L126">                                        isFind3 = true;</span>
+<span class="pc bpc" id="L127" title="1 of 2 branches missed.">                                        for (int m = 0; m &lt; fieldSize; m++) {</span>
+<span class="fc bfc" id="L128" title="All 2 branches covered.">                                            if (isFind) break;</span>
+<span class="pc bpc" id="L129" title="1 of 2 branches missed.">                                            for (int n = 0; n &lt; fieldSize; n++) {</span>
+<span class="fc" id="L130">                                                isFind4 = false;</span>
+<span class="pc bpc" id="L131" title="1 of 4 branches missed.">                                                if (buttons[m][n].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L132">                                                    buttons[m][n].setTest(enemywho, false);</span>
+<span class="fc" id="L133">                                                    isFind4 = true;</span>
+<span class="pc bpc" id="L134" title="1 of 2 branches missed.">                                                    for (int o = 0; o &lt; fieldSize; o++) {</span>
+<span class="fc bfc" id="L135" title="All 2 branches covered.">                                                        if (isFind) break;</span>
+<span class="pc bpc" id="L136" title="1 of 2 branches missed.">                                                        for (int p = 0; p &lt; fieldSize; p++) {</span>
+<span class="pc bpc" id="L137" title="1 of 4 branches missed.">                                                            if (buttons[o][p].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L138">                                                                buttons[o][p].setTest(enemywho, false);</span>
+<span class="pc bpc" id="L139" title="1 of 2 branches missed.">                                                                if (checkWinner.checkWin(enemywho, o, p)) {</span>
+<span class="fc" id="L140">                                                                    buttons[o][p].setTest(0, true);</span>
+<span class="fc" id="L141">                                                                    buttons[o][p].setWho(who);</span>
+<span class="fc" id="L142">                                                                    isFind = true;</span>
+<span class="fc" id="L143">                                                                    buttons[i][j].setTest(0, true);</span>
+<span class="fc" id="L144">                                                                    buttons[m][n].setTest(0, true);</span>
+<span class="fc" id="L145">                                                                    buttons[k][l].setTest(0, true);</span>
+<span class="fc" id="L146">                                                                    PvMGameProcess.isWinner(i, j);</span>
+<span class="fc" id="L147">                                                                    break;</span>
 <span class="nc" id="L148">                                                                } else buttons[o][p].setTest(0, true);</span>
                                                             }
                                                         }
                                                     }
                                                 }
-<span class="nc bnc" id="L153" title="All 2 branches missed.">                                                if (isFind) break;</span>
-<span class="nc bnc" id="L154" title="All 2 branches missed.">                                                if (isFind4) buttons[m][n].setTest(0, true);</span>
+<span class="fc bfc" id="L153" title="All 2 branches covered.">                                                if (isFind) break;</span>
+<span class="pc bpc" id="L154" title="1 of 2 branches missed.">                                                if (isFind4) buttons[m][n].setTest(0, true);</span>
                                             }
                                         }
                                     }
-<span class="nc bnc" id="L158" title="All 2 branches missed.">                                    if (isFind) break;</span>
-<span class="nc bnc" id="L159" title="All 2 branches missed.">                                    if (isFind3) buttons[k][l].setTest(0, true);</span>
+<span class="fc bfc" id="L158" title="All 2 branches covered.">                                    if (isFind) break;</span>
+<span class="pc bpc" id="L159" title="1 of 2 branches missed.">                                    if (isFind3) buttons[k][l].setTest(0, true);</span>
                                 }
                             }
                         }
-<span class="nc bnc" id="L163" title="All 2 branches missed.">                        if (isFind) break;</span>
-<span class="nc bnc" id="L164" title="All 2 branches missed.">                        if (isFind2) buttons[i][j].setTest(0, true);</span>
+<span class="fc bfc" id="L163" title="All 2 branches covered.">                        if (isFind) break;</span>
+<span class="pc bpc" id="L164" title="1 of 2 branches missed.">                        if (isFind2) buttons[i][j].setTest(0, true);</span>
                     }
                 }
-<span class="nc bnc" id="L167" title="All 2 branches missed.">                if (!isFind) {</span>
+<span class="pc bpc" id="L167" title="1 of 2 branches missed.">                if (!isFind) {</span>
 <span class="nc" id="L168">                    randomMove(who, fieldSize);</span>
                 }
         }
-<span class="nc" id="L171">    }</span>
+<span class="fc" id="L171">    }</span>
 
 
     private boolean predictionAttack() {
-<span class="nc bnc" id="L175" title="All 2 branches missed.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
-<span class="nc bnc" id="L176" title="All 2 branches missed.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
-<span class="nc" id="L177">                isFind2 = false;</span>
-<span class="nc" id="L178">                checkWinner.refreshData(buttons);</span>
-<span class="nc bnc" id="L179" title="All 4 branches missed.">                if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L180">                    buttons[i][j].setTest(who, false);</span>
-<span class="nc" id="L181">                    isFind2 = true;</span>
-<span class="nc bnc" id="L182" title="All 2 branches missed.">                    for (int k = 0; k &lt; fieldSize; k++) {</span>
-<span class="nc bnc" id="L183" title="All 2 branches missed.">                        for (int l = 0; l &lt; fieldSize; l++) {</span>
-<span class="nc bnc" id="L184" title="All 4 branches missed.">                            if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L185">                                buttons[k][l].setTest(who, false);</span>
-<span class="nc bnc" id="L186" title="All 2 branches missed.">                                if (checkWinner.checkWin(who, k, l)) {</span>
+<span class="fc bfc" id="L175" title="All 2 branches covered.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="fc bfc" id="L176" title="All 2 branches covered.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="fc" id="L177">                isFind2 = false;</span>
+<span class="fc" id="L178">                checkWinner.refreshData(buttons);</span>
+<span class="pc bpc" id="L179" title="1 of 4 branches missed.">                if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L180">                    buttons[i][j].setTest(who, false);</span>
+<span class="fc" id="L181">                    isFind2 = true;</span>
+<span class="fc bfc" id="L182" title="All 2 branches covered.">                    for (int k = 0; k &lt; fieldSize; k++) {</span>
+<span class="fc bfc" id="L183" title="All 2 branches covered.">                        for (int l = 0; l &lt; fieldSize; l++) {</span>
+<span class="pc bpc" id="L184" title="1 of 4 branches missed.">                            if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L185">                                buttons[k][l].setTest(who, false);</span>
+<span class="pc bpc" id="L186" title="1 of 2 branches missed.">                                if (checkWinner.checkWin(who, k, l)) {</span>
 <span class="nc" id="L187">                                    buttons[k][l].setTest(0, true);</span>
 <span class="nc" id="L188">                                    buttons[k][l].setWho(who);</span>
 <span class="nc" id="L189">                                    buttons[i][j].setTest(0, true);</span>
 <span class="nc" id="L190">                                    PvMGameProcess.isWinner(i, j);</span>
 <span class="nc" id="L191">                                    return true;</span>
-<span class="nc" id="L192">                                } else buttons[k][l].setTest(0, true);</span>
+<span class="fc" id="L192">                                } else buttons[k][l].setTest(0, true);</span>
                             }
                         }
                     }
                 }
-<span class="nc bnc" id="L197" title="All 2 branches missed.">                if (isFind2) buttons[i][j].setTest(0, true);</span>
+<span class="fc bfc" id="L197" title="All 2 branches covered.">                if (isFind2) buttons[i][j].setTest(0, true);</span>
             }
         }
-<span class="nc" id="L200">        return false;</span>
+<span class="fc" id="L200">        return false;</span>
     }
 
     private boolean predictionAttack2() {
-<span class="nc bnc" id="L204" title="All 2 branches missed.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
-<span class="nc bnc" id="L205" title="All 2 branches missed.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
-<span class="nc" id="L206">                isFind2 = false;</span>
-<span class="nc" id="L207">                checkWinner.refreshData(buttons);</span>
-<span class="nc bnc" id="L208" title="All 4 branches missed.">                if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L209">                    buttons[i][j].setTest(who, false);</span>
-<span class="nc" id="L210">                    isFind2 = true;</span>
-<span class="nc bnc" id="L211" title="All 2 branches missed.">                    for (int k = 0; k &lt; fieldSize; k++) {</span>
-<span class="nc bnc" id="L212" title="All 2 branches missed.">                        for (int l = 0; l &lt; fieldSize; l++) {</span>
-<span class="nc" id="L213">                            isFind3 = false;</span>
-<span class="nc bnc" id="L214" title="All 4 branches missed.">                            if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L215">                                buttons[k][l].setTest(who, false);</span>
-<span class="nc" id="L216">                                isFind3 = true;</span>
-<span class="nc bnc" id="L217" title="All 2 branches missed.">                                for (int m = 0; m &lt; fieldSize; m++) {</span>
-<span class="nc bnc" id="L218" title="All 2 branches missed.">                                    for (int n = 0; n &lt; fieldSize; n++) {</span>
-<span class="nc bnc" id="L219" title="All 4 branches missed.">                                        if (buttons[m][n].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L220">                                            buttons[m][n].setTest(who, false);</span>
-<span class="nc bnc" id="L221" title="All 2 branches missed.">                                            if (checkWinner.checkWin(who, m, n)) {</span>
+<span class="fc bfc" id="L204" title="All 2 branches covered.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="fc bfc" id="L205" title="All 2 branches covered.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="fc" id="L206">                isFind2 = false;</span>
+<span class="fc" id="L207">                checkWinner.refreshData(buttons);</span>
+<span class="pc bpc" id="L208" title="1 of 4 branches missed.">                if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L209">                    buttons[i][j].setTest(who, false);</span>
+<span class="fc" id="L210">                    isFind2 = true;</span>
+<span class="fc bfc" id="L211" title="All 2 branches covered.">                    for (int k = 0; k &lt; fieldSize; k++) {</span>
+<span class="fc bfc" id="L212" title="All 2 branches covered.">                        for (int l = 0; l &lt; fieldSize; l++) {</span>
+<span class="fc" id="L213">                            isFind3 = false;</span>
+<span class="pc bpc" id="L214" title="1 of 4 branches missed.">                            if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L215">                                buttons[k][l].setTest(who, false);</span>
+<span class="fc" id="L216">                                isFind3 = true;</span>
+<span class="fc bfc" id="L217" title="All 2 branches covered.">                                for (int m = 0; m &lt; fieldSize; m++) {</span>
+<span class="fc bfc" id="L218" title="All 2 branches covered.">                                    for (int n = 0; n &lt; fieldSize; n++) {</span>
+<span class="pc bpc" id="L219" title="1 of 4 branches missed.">                                        if (buttons[m][n].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L220">                                            buttons[m][n].setTest(who, false);</span>
+<span class="pc bpc" id="L221" title="1 of 2 branches missed.">                                            if (checkWinner.checkWin(who, m, n)) {</span>
 <span class="nc" id="L222">                                                buttons[m][n].setTest(0, true);</span>
 <span class="nc" id="L223">                                                buttons[m][n].setWho(who);</span>
 <span class="nc" id="L224">                                                nextprediction3 = false;</span>
@@ -226,46 +226,46 @@ public class HardBot extends Bot {
 <span class="nc" id="L226">                                                buttons[k][l].setTest(0, true);</span>
 <span class="nc" id="L227">                                                PvMGameProcess.isWinner(i, j);</span>
 <span class="nc" id="L228">                                                return true;</span>
-<span class="nc" id="L229">                                            } else buttons[m][n].setTest(0, true);</span>
+<span class="fc" id="L229">                                            } else buttons[m][n].setTest(0, true);</span>
                                         }
                                     }
                                 }
                             }
-<span class="nc bnc" id="L234" title="All 2 branches missed.">                            if (isFind3) buttons[k][l].setTest(0, true);</span>
+<span class="fc bfc" id="L234" title="All 2 branches covered.">                            if (isFind3) buttons[k][l].setTest(0, true);</span>
                         }
                     }
                 }
-<span class="nc bnc" id="L238" title="All 2 branches missed.">                if (isFind2) buttons[i][j].setTest(0, true);</span>
+<span class="fc bfc" id="L238" title="All 2 branches covered.">                if (isFind2) buttons[i][j].setTest(0, true);</span>
             }
         }
-<span class="nc" id="L241">        return false;</span>
+<span class="fc" id="L241">        return false;</span>
     }
 
     private boolean predictionAttack3() {
-<span class="nc bnc" id="L245" title="All 2 branches missed.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
-<span class="nc bnc" id="L246" title="All 2 branches missed.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
-<span class="nc" id="L247">                isFind2 = false;</span>
-<span class="nc" id="L248">                checkWinner.refreshData(buttons);</span>
-<span class="nc bnc" id="L249" title="All 4 branches missed.">                if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L250">                    buttons[i][j].setTest(who, false);</span>
-<span class="nc" id="L251">                    isFind2 = true;</span>
-<span class="nc bnc" id="L252" title="All 2 branches missed.">                    for (int k = 0; k &lt; fieldSize; k++) {</span>
-<span class="nc bnc" id="L253" title="All 2 branches missed.">                        for (int l = 0; l &lt; fieldSize; l++) {</span>
-<span class="nc" id="L254">                            isFind3 = false;</span>
-<span class="nc bnc" id="L255" title="All 4 branches missed.">                            if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L256">                                buttons[k][l].setTest(who, false);</span>
-<span class="nc" id="L257">                                isFind3 = true;</span>
-<span class="nc bnc" id="L258" title="All 2 branches missed.">                                for (int m = 0; m &lt; fieldSize; m++) {</span>
-<span class="nc bnc" id="L259" title="All 2 branches missed.">                                    for (int n = 0; n &lt; fieldSize; n++) {</span>
-<span class="nc" id="L260">                                        isFind4 = false;</span>
-<span class="nc bnc" id="L261" title="All 4 branches missed.">                                        if (buttons[m][n].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L262">                                            buttons[m][n].setTest(who, false);</span>
-<span class="nc" id="L263">                                            isFind4 = true;</span>
-<span class="nc bnc" id="L264" title="All 2 branches missed.">                                            for (int o = 0; o &lt; fieldSize; o++) {</span>
-<span class="nc bnc" id="L265" title="All 2 branches missed.">                                                for (int p = 0; p &lt; fieldSize; p++) {</span>
-<span class="nc bnc" id="L266" title="All 4 branches missed.">                                                    if (buttons[o][p].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
-<span class="nc" id="L267">                                                        buttons[o][p].setTest(who, false);</span>
-<span class="nc bnc" id="L268" title="All 2 branches missed.">                                                        if (checkWinner.checkWin(who, o, p)) {</span>
+<span class="fc bfc" id="L245" title="All 2 branches covered.">        for (int i = 0; i &lt; fieldSize; i++) {</span>
+<span class="fc bfc" id="L246" title="All 2 branches covered.">            for (int j = 0; j &lt; fieldSize; j++) {</span>
+<span class="fc" id="L247">                isFind2 = false;</span>
+<span class="fc" id="L248">                checkWinner.refreshData(buttons);</span>
+<span class="pc bpc" id="L249" title="1 of 4 branches missed.">                if (buttons[i][j].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L250">                    buttons[i][j].setTest(who, false);</span>
+<span class="fc" id="L251">                    isFind2 = true;</span>
+<span class="fc bfc" id="L252" title="All 2 branches covered.">                    for (int k = 0; k &lt; fieldSize; k++) {</span>
+<span class="fc bfc" id="L253" title="All 2 branches covered.">                        for (int l = 0; l &lt; fieldSize; l++) {</span>
+<span class="fc" id="L254">                            isFind3 = false;</span>
+<span class="pc bpc" id="L255" title="1 of 4 branches missed.">                            if (buttons[k][l].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L256">                                buttons[k][l].setTest(who, false);</span>
+<span class="fc" id="L257">                                isFind3 = true;</span>
+<span class="fc bfc" id="L258" title="All 2 branches covered.">                                for (int m = 0; m &lt; fieldSize; m++) {</span>
+<span class="fc bfc" id="L259" title="All 2 branches covered.">                                    for (int n = 0; n &lt; fieldSize; n++) {</span>
+<span class="fc" id="L260">                                        isFind4 = false;</span>
+<span class="pc bpc" id="L261" title="1 of 4 branches missed.">                                        if (buttons[m][n].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L262">                                            buttons[m][n].setTest(who, false);</span>
+<span class="fc" id="L263">                                            isFind4 = true;</span>
+<span class="fc bfc" id="L264" title="All 2 branches covered.">                                            for (int o = 0; o &lt; fieldSize; o++) {</span>
+<span class="fc bfc" id="L265" title="All 2 branches covered.">                                                for (int p = 0; p &lt; fieldSize; p++) {</span>
+<span class="pc bpc" id="L266" title="1 of 4 branches missed.">                                                    if (buttons[o][p].isFree() &amp;&amp; !PvMGameProcess.isEndGame()) {</span>
+<span class="fc" id="L267">                                                        buttons[o][p].setTest(who, false);</span>
+<span class="pc bpc" id="L268" title="1 of 2 branches missed.">                                                        if (checkWinner.checkWin(who, o, p)) {</span>
 <span class="nc" id="L269">                                                            buttons[o][p].setTest(0, true);</span>
 <span class="nc" id="L270">                                                            buttons[o][p].setWho(who);</span>
 <span class="nc" id="L271">                                                            buttons[i][j].setTest(0, true);</span>
@@ -273,23 +273,23 @@ public class HardBot extends Bot {
 <span class="nc" id="L273">                                                            buttons[k][l].setTest(0, true);</span>
 <span class="nc" id="L274">                                                            PvMGameProcess.isWinner(i, j);</span>
 <span class="nc" id="L275">                                                            return true;</span>
-<span class="nc" id="L276">                                                        } else buttons[o][p].setTest(0, true);</span>
+<span class="fc" id="L276">                                                        } else buttons[o][p].setTest(0, true);</span>
                                                     }
                                                 }
                                             }
                                         }
-<span class="nc bnc" id="L281" title="All 2 branches missed.">                                        if (isFind4) buttons[m][n].setTest(0, true);</span>
+<span class="fc bfc" id="L281" title="All 2 branches covered.">                                        if (isFind4) buttons[m][n].setTest(0, true);</span>
                                     }
                                 }
                             }
-<span class="nc bnc" id="L285" title="All 2 branches missed.">                            if (isFind3) buttons[k][l].setTest(0, true);</span>
+<span class="fc bfc" id="L285" title="All 2 branches covered.">                            if (isFind3) buttons[k][l].setTest(0, true);</span>
                         }
                     }
                 }
-<span class="nc bnc" id="L289" title="All 2 branches missed.">                if (isFind2) buttons[i][j].setTest(0, true);</span>
+<span class="fc bfc" id="L289" title="All 2 branches covered.">                if (isFind2) buttons[i][j].setTest(0, true);</span>
             }
         }
-<span class="nc" id="L292">        return false;</span>
+<span class="fc" id="L292">        return false;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>

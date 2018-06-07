@@ -15,11 +15,11 @@ public class MediumBotTest {
     }
 
     @Test
-    public void hitBotCloseWinAttackOn2StepsForward() {
+    public void MediumBotCloseWinAttackOn2StepsForward() {
         Buttons buttons[][] = new Buttons[3][3];
         for (int i = 0; i < 3 ; i++) {
             for (int j = 0; j < 3; j++) {
-                buttons[i][j] = new Buttons(1);
+                buttons[i][j] = new Buttons(2);
             }
         }
         buttons[2][0].setWho(1);

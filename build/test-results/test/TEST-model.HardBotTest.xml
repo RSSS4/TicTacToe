@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.HardBotTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-06-07T18:33:58" hostname="DESKTOP-M0VGVUA" time="1.126">
+  <properties/>
+  <testcase name="HardBotCloseWinAttackOn4StepsForward" classname="model.HardBotTest" time="1.045"/>
+  <testcase name="HardBotCloseWinAttackOn3StepsForward" classname="model.HardBotTest" time="0.069"/>
+  <testcase name="HardBotCloseWinAttackOn2StepsForward" classname="model.HardBotTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

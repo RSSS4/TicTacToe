@@ -22,13 +22,14 @@ import javax.swing.*;
 <span class="fc" id="L22">    }</span>
 
     public void changePvMTextColor(boolean turn) {
-<span class="pc bpc" id="L25" title="1 of 2 branches missed.">        if (turn) {</span>
-<span class="nc" id="L26">            GamePanel.playerText().setForeground(new Color(255, 255, 255));</span>
-<span class="nc" id="L27">            GamePanel.modText().setForeground(new Color(139, 0, 0));</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">        if (turn) {</span>
+<span class="fc" id="L26">            GamePanel.playerText().setForeground(new Color(255, 255, 255));</span>
+<span class="fc" id="L27">            GamePanel.modText().setForeground(new Color(139, 0, 0));</span>
         } else {
 <span class="fc" id="L29">            GamePanel.modText().setForeground(new Color(255, 255, 255));</span>
 <span class="fc" id="L30">            GamePanel.playerText().setForeground(new Color(139, 0, 0));</span>
         }
 <span class="fc" id="L32">    }</span>
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>
